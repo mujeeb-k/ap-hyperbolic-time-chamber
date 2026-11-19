@@ -1,0 +1,30 @@
+{
+ "freeze": "forgetting_l1",
+ "design": "docs/V2.md, 2026-10-31: the L1 forgetting set (replaces the D5 regression split)",
+ "generator": "causal/2",
+ "random_stream": "causal/1",
+ "generator_commit": "a303d5fd1ba4a95219150844cc2ab88fd4ba0dae",
+ "files": {
+  "forgetting_l1.json": "35e8a4c2a9b4030c5b21a1ea73d737d0fbb722ffe06e79c7beaae4bbfa0a3222"
+ },
+ "cases": 40,
+ "versions": "identical to manifests/v2/FREEZE.json (checked at freeze)",
+ "v2_freeze_sha256": "d17ac59ae138f9561d7c551275a90b5b2c12fde9c16b15676ef3fbd010b8e19c",
+ "checks_sha256 (runs/forgetting_l1/checks, git-ignored)": {
+  "scope": "0f444c9d6f70b4e0041ebf7ca3426208ffdab53a3971be2019eea34935bf0c29",
+  "reference": "3389de051ddd7889cc10cb097c5b95be29e987c2806e344dde2a630a4d54dd25",
+  "verifier": "6aba6927a9883242be7315f33e4d03293a0b460ff076aa6e2aff4f423e2d78c1",
+  "reachability": "18f035703d056c840babdb373b4658e4c62c0db0ca8090b43700872b7ee0d435",
+  "baselines": "e954e8a6ac4c55b8d4b6b2cad04a36f580988b9b1d24a15187cc7971f35c35e4",
+  "leakage": "2aa77e9a5af7d9d441a093c6f2757c7db2310ac7cafa71aa1c5b5f5f2f0f7962"
+ },
+ "amendments": [
+  {
+   "date": "2026-10-31",
+   "field": "v2_freeze_sha256",
+   "previous_sha256": "aeb6329d220127a0ee3d6068512cb85d96c85f442317c1ed36493ef1ed574fb3",
+   "sha256": "d17ac59ae138f9561d7c551275a90b5b2c12fde9c16b15676ef3fbd010b8e19c",
+   "reason": "manifests/v2/FREEZE.json re-pinned for src/ap_sim/interfaces/tools.py (its amendments entry); no forgetting case, manifest or check output changed."
+  }
+ ]
+}

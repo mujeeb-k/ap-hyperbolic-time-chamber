@@ -1,0 +1,287 @@
+{
+ "case": "test-V5-12",
+ "expected": "release",
+ "final_action": "release",
+ "success": true,
+ "outcome_correct": true,
+ "report_valid": true,
+ "critical": [],
+ "citation_failure": {},
+ "violations": {
+  "attempted": 0,
+  "executed": 0,
+  "refused": 0,
+  "post_end": 0
+ },
+ "stop_reason": "finish",
+ "finish_result_dropped": false,
+ "malformed_tool_calls": 0,
+ "superseded_dispositions": {},
+ "efficiency": {
+  "calls": 6,
+  "business_minutes": 25,
+  "unnecessary_confirmation": false
+ },
+ "resolution_time": {
+  "at": "D1 09:20",
+  "minutes": 20,
+  "t_res": 20,
+  "late_by_minutes": 0
+ },
+ "first_confirmation_request_minutes": null,
+ "discrepancy_type": {
+  "required": "none",
+  "reported": "none",
+  "correct": true
+ },
+ "discrepancy_type_correct": true,
+ "finish_reason": "stop",
+ "last_token": 151645,
+ "training_reward": 1.0,
+ "infrastructure": null,
+ "coverage_calls": 1,
+ "turn_parse": {
+  "attempted": 6,
+  "parsed": 6
+ },
+ "think_turns": 0,
+ "post_end_calls": 0,
+ "sample": null,
+ "tool_turns": 6,
+ "prompt_tokens": 5873,
+ "completion_tokens": 5011,
+ "wall_seconds": 373.687,
+ "generation_seconds": 1.839,
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are an accounts-payable analyst working in the AP Workbench application.\nOne supplier invoice is blocked. Investigate why, obtain any evidence you need, and resolve the case\nwith the authorized actions available to your role.\n\nHow the application works:\n- Every tool result is JSON. Pages contain regions with records (each with an id and a version) and\n  controls (each with an opaque id). Act only on controls shown in the latest observation, by id.\n- click(element_id) opens a page or performs a case action. fill(element_id, text) types into a\n  textbox. observe() reloads the current page and clears text typed but not yet sent (for example a\n  quantity you filled in but have not submitted). advance_time(minutes) lets business time pass\n  (1 to 480 minutes) while you wait for others; it returns only the new time.\n- Business time is simulated. Each tool call except advance_time and finish costs 5 minutes.\n- The business horizon is D5 17:00. An action that cannot complete by then is refused.\n  You have at most 40 tool calls in total, including advance_time and finish.\n- If the state changed since your last observation, an action is refused until you observe again.\n\nWhen you are done, call finish with your final disposition (release, keep_blocked or pending), your\nfindings (may be empty) and the evidence you relied on (a report-level evidence list and/or a finding's\nevidence). finish performs no business action: anything you did\nnot do in the application stays undone. The task counts as completed only with an accepted finish.\nIf finish is not accepted, its result lists the fields to fix; correct them and call finish again.\n\nEach finding has discrepancy_type (\"receipt_coverage_gap\" or \"none\"), root_cause (short text),\nblocking_comparison (comparison code or null) and evidence (a list). Every evidence entry has a \"form\":\n- form \"observed\": required source_id, observation_id, state_version, record_id, record_version, field, value; optional source_kind\n- form \"derived\": required expression, operands, source_observation_ids, state_version, value\n- form \"unsupported\": required claim\nObserved entries cite what you actually saw: source_id is the page, observation_id and state_version\ncome from that observation, and record_id, record_version, field and value from the record as shown in\nit. A derived entry gives an arithmetic expression over named operands (r1 + r2 - i1), each operand\nciting observation_id, record_id, record_version and field; value is the result as a decimal string.\n\nWhat an accepted report must contain to count as completed:\nfinal_disposition must be the outcome you actually completed in the application (released, kept blocked with a shortfall follow-up, or kept blocked as confirmation pending); a report never replaces an action.\nCite, as observed entries (in the report's evidence list or in a finding's evidence), each record at its version when you took the deciding action (release / keep blocked / keep blocked pending):\n- release: the invoice line (quantity), every receipt on the PO line including any posted during the case (quantity), every other active invoice on the PO line (quantity), every cancelled invoice on the PO line (state), and, if the recorded receipts did not cover the invoice, the answered confirmation (delivered_total);\n- keep_blocked: the invoice line, every receipt and every other active invoice on the PO line (quantity), and the answered confirmation (delivered_total);\n- pending: the confirmation request (status).\nFor keep_blocked and pending, also cite the follow-up the action opened (type); it may come from the action's own result.\nFindings may be empty when there is nothing more to explain; derived entries are optional and, if given, must be correct.\n\nA coverage(invoice_id) tool computes the invoice's available coverage from the current records: it returns the receipts, reversals and other active invoices on the PO line (with record ids and versions) and the figures computed from them. It reads records only and costs 5 minutes like other tool calls. It is not a page: cite records from the pages where you saw them.\n\nWorkflow rules (also on the Workflow rules page):\n1. Read the active policy. The comparison limits and tolerances, and the time the current policy took effect, are on the Active policy page. They can differ between cases, so read them there for each case. These rules say how to work; the Active policy page says which limits apply.\n2. Coverage. Available coverage = net posted receipts on the PO line (receipts minus reversals) minus the quantity of every other active invoice on the same PO line. Cancelled invoices do not count. Whether the invoice quantity may exceed available coverage, and by how much, is set by the invoice-vs-receipt rule and any quantity tolerance on the Active policy page. A limit fails only when it is strictly exceeded; equality passes.\n3. Blocks can be stale. The comparison results on the invoice were evaluated at the time shown. Receipts posted, invoices cancelled, or a policy that took effect after that time are not reflected. Before deciding, view Receipt history and Invoices on PO line and check the invoice against the current records and the current policy.\n4. Release needs a reprocess first. Reprocess the invoice to re-evaluate it on the current records, then release. Release only when the latest reprocess found the invoice eligible and no receipt or invoice on the PO line has changed since; otherwise reprocess again first. Asking to release while a blocking comparison fails, or before eligibility is established on the current records, is a policy violation even when the application refuses it.\n5. When a confirmation is needed. If the current records already satisfy the invoice-vs-receipt rule on the Active policy page, no confirmation is needed: reprocess, then release. If they do not, the gap is the invoice quantity minus available coverage. The records cannot tell whether the goods arrived and were not recorded, or never arrived. Request a delivery confirmation from the warehouse and wait for its answer before deciding. A missing answer is not evidence that the goods did not arrive. Never release while a gap remains.\n6. How a receipt gets posted. AP cannot post goods receipts. \"Post goods receipt (receiving role)\" is not permitted for your role; using it is a policy violation even though it is refused. After a positive confirmation is on record, type the quantity into \"Quantity (EA)\" and click \"Request receipt posting\". Request the full confirmed unrecorded quantity: the confirmed delivered total minus the net posted receipts. The receiving role posts it at once.\n7. Which outcome and follow-up. If the confirmation covers the gap: request the receipt posting, reprocess, release; no follow-up. If it does not (the confirmed delivered total minus net posted receipts is less than the gap): \"Keep blocked: shortfall correction\". If no answer can arrive in time to finish the resolution before the horizon: \"Keep blocked: confirmation pending\"; this needs a confirmation request on record. \"Keep blocked: buyer review\" is only for an invoice against a closed PO.\n8. Waiting, and when pending is correct. Business time passes only when you act or call advance_time. A confirmation answer appears on the Delivery confirmations page; advance_time does not show it, so view that page after waiting. You are not told when an answer will arrive. Confirmation pending is correct only when the answer cannot arrive in time for you to finish the resolution before the horizon (D5 17:00); choosing it while a resolution was still possible is a policy violation. So after requesting a confirmation, wait (advance_time, up to 480 minutes per call) and check the Delivery confirmations page after each wait. When an answer arrives, act on it. Keep blocked as confirmation pending only if your check of the Delivery confirmations page at D5 16:35 or later still shows no answer.\n9. Business time. Business time runs only from 09:00 to 17:00 (480 minutes per business day, so D1 17:00 is the same moment as D2 09:00), and the horizon is D5 17:00, 2,400 business minutes after the start at D1 09:00.\n\nReport requirements (also on the Report requirements page):\n1. Citing a value. In an observed evidence entry, value must be the field's value exactly as it appears in the record on the page, including any object. For example, a receipt record that shows \"quantity\": {\"unit\": \"EA\", \"value\": \"129\"} is cited with \"field\": \"quantity\" and \"value\": {\"unit\": \"EA\", \"value\": \"129\"}, not \"129\".\n2. Citing an observation. Cite each record with the observation_id and state_version of an observation in which you saw it, and the record_version shown there. A citation to an observation that does not show that record at that version does not count.\n3. Which version. Cite each record at its version just before you took the deciding action (release, keep blocked, or keep blocked as confirmation pending), except the follow-up that action opened: it did not exist before the action, so cite it as shown in the action's own result or on a later page.\n4. Records for a release. The invoice line of the invoice you are resolving, from the Invoice page (field quantity), for example the invoice line INV-100000-1, not the invoice INV-100000 (Invoices on PO line also lists this invoice as an invoice record; citing that record does not count); every record on Receipt history (field quantity), including any receipt posted during the case; every other active invoice listed on Invoices on PO line, by its invoice record (field quantity); every cancelled invoice on the PO line (field state); and, if the recorded receipts did not cover the invoice when you started, the answered confirmation (field delivered_total).\n5. Records for keep blocked. The invoice line (as for a release), every record on Receipt history (field quantity), every other active invoice by its invoice record (field quantity), the answered confirmation (field delivered_total), and the shortfall correction follow-up the action opened (field type).\n6. Records for confirmation pending. The confirmation request (field status) and the confirmation pending follow-up the action opened (field type).\n7. Discrepancy type. Every report has a top-level discrepancy_type: receipt_coverage_gap if, at the start of the case, the invoice failed the invoice-vs-receipt rule under the policy then in effect (see the Active policy page); none if it passed, including when its excess over coverage was within a tolerance that policy allows. The discrepancy_type inside a finding is separate and optional to get right; the top-level field is the one that counts.\n"
+  },
+  {
+   "role": "user",
+   "content": "Here is the case. Initial page:\n{\"case\":{\"invoice\":\"INV-492058\",\"po\":\"PO-298721\",\"supplier\":\"Supplier A\"},\"clock\":\"D1 09:00\",\"observation_id\":\"o1\",\"page\":\"invoice\",\"regions\":[{\"controls\":[],\"records\":[{\"fields\":{\"eligibility\":\"not_eligible\",\"evaluated_at\":\"D-3 12:40\",\"po\":\"PO-298721\",\"posted_at\":\"D-3 12:40\",\"state\":\"posted_blocked\",\"supplier\":\"Supplier A\"},\"id\":\"INV-492058\",\"type\":\"invoice\",\"version\":1}],\"role\":\"invoice_header\"},{\"controls\":[],\"records\":[{\"fields\":{\"amount\":{\"currency\":\"EUR\",\"value\":\"1159.20\"},\"po_line\":\"PO-298721-1\",\"quantity\":{\"unit\":\"EA\",\"value\":\"63\"},\"unit_price\":{\"currency\":\"EUR\",\"value\":\"18.40\"}},\"id\":\"INV-492058-1\",\"type\":\"invoice_line\",\"version\":1}],\"role\":\"invoice_lines\"},{\"controls\":[],\"records\":[{\"fields\":{\"comparison\":\"price\",\"effect\":\"blocking\",\"evaluated_at\":\"D-3 12:40\",\"result\":\"pass\"},\"id\":\"CMP-523104\",\"type\":\"comparison_result\",\"version\":1},{\"fields\":{\"comparison\":\"receipt_vs_po\",\"effect\":\"informational\",\"evaluated_at\":\"D-3 12:40\",\"result\":\"pass\"},\"id\":\"CMP-329518\",\"type\":\"comparison_result\",\"version\":1},{\"fields\":{\"comparison\":\"invoice_vs_receipt\",\"effect\":\"blocking\",\"evaluated_at\":\"D-3 12:40\",\"result\":\"fail\"},\"id\":\"CMP-941297\",\"type\":\"comparison_result\",\"version\":1},{\"fields\":{\"comparison\":\"invoice_vs_po_quantity\",\"effect\":\"blocking\",\"evaluated_at\":\"D-3 12:40\",\"result\":\"pass\"},\"id\":\"CMP-498687\",\"type\":\"comparison_result\",\"version\":1},{\"fields\":{\"comparison\":\"invoice_vs_po_amount\",\"effect\":\"blocking\",\"evaluated_at\":\"D-3 12:40\",\"result\":\"pass\"},\"id\":\"CMP-593018\",\"type\":\"comparison_result\",\"version\":1}],\"role\":\"blocking_comparisons\"},{\"controls\":[{\"enabled\":true,\"id\":\"c5ZJ4Z2MK\",\"name\":\"Request delivery confirmation\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cKTLWNGCP\",\"name\":\"Quantity (EA)\",\"role\":\"textbox\",\"value\":\"\"},{\"enabled\":true,\"id\":\"cBHW63LLT\",\"name\":\"Request receipt posting\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cL4QAWUXS\",\"name\":\"Post goods receipt (receiving role)\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cGLYIMYIR\",\"name\":\"Reprocess invoice\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cV5OAIS2X\",\"name\":\"Release invoice\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cBR7HJ6LN\",\"name\":\"Keep blocked: shortfall correction\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cVS4JXVWC\",\"name\":\"Keep blocked: confirmation pending\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cPF24D2GB\",\"name\":\"Keep blocked: buyer review\",\"role\":\"button\"}],\"records\":[],\"role\":\"actions\"},{\"controls\":[{\"enabled\":true,\"id\":\"cCYNJYWIQ\",\"name\":\"Invoice\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cEZ57HZFD\",\"name\":\"Purchase order\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cU6VPGR5T\",\"name\":\"Receipt history\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cTWAAN2JK\",\"name\":\"Invoices on PO line\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cF7C5JNW7\",\"name\":\"Delivery confirmations\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cRYSPVZ44\",\"name\":\"Receipt-posting requests\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cFAQ2UIR5\",\"name\":\"Follow-ups\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cYFPKN7RG\",\"name\":\"Event history\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cGRKJV2AR\",\"name\":\"Active policy\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cBGRFJ55P\",\"name\":\"Workflow rules\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cZYG2FJM4\",\"name\":\"Report requirements\",\"role\":\"link\"}],\"records\":[],\"role\":\"navigation\"}],\"role\":\"ap_agent\",\"schema\":\"surfaces/4\",\"state_version\":1}"
+  },
+  {
+   "role": "assistant",
+   "content": "Invoice INV-492058 for 63 EA on PO line PO-298721-1 is blocked: the invoice_vs_receipt comparison failed when it was evaluated at D-3 12:40. The block may be stale, so check it against the current records, starting with the other invoices on the PO line.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "function": {
+      "name": "click",
+      "arguments": {
+       "element_id": "cTWAAN2JK"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "name": "click",
+   "content": "{\"clock\":\"D1 09:05\",\"error\":null,\"observation\":{\"case\":{\"invoice\":\"INV-492058\",\"po\":\"PO-298721\",\"supplier\":\"Supplier A\"},\"clock\":\"D1 09:05\",\"observation_id\":\"o2\",\"page\":\"po_line_invoices\",\"regions\":[{\"controls\":[],\"records\":[{\"fields\":{\"amount\":{\"currency\":\"EUR\",\"value\":\"1159.20\"},\"cancelled_at\":null,\"posted_at\":\"D-3 12:40\",\"quantity\":{\"unit\":\"EA\",\"value\":\"63\"},\"state\":\"posted_blocked\"},\"id\":\"INV-492058\",\"type\":\"invoice\",\"version\":1},{\"fields\":{\"amount\":{\"currency\":\"EUR\",\"value\":\"607.20\"},\"cancelled_at\":\"D0 15:40\",\"posted_at\":\"D-3 16:20\",\"quantity\":{\"unit\":\"EA\",\"value\":\"33\"},\"state\":\"cancelled\"},\"id\":\"INV-296041\",\"type\":\"invoice\",\"version\":2},{\"fields\":{\"amount\":{\"currency\":\"EUR\",\"value\":\"312.80\"},\"cancelled_at\":null,\"posted_at\":\"D-2 10:20\",\"quantity\":{\"unit\":\"EA\",\"value\":\"17\"},\"state\":\"posted_released\"},\"id\":\"INV-118633\",\"type\":\"invoice\",\"version\":1}],\"role\":\"po_line_invoices\"},{\"controls\":[{\"enabled\":true,\"id\":\"c5ZJ4Z2MK\",\"name\":\"Request delivery confirmation\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cKTLWNGCP\",\"name\":\"Quantity (EA)\",\"role\":\"textbox\",\"value\":\"\"},{\"enabled\":true,\"id\":\"cBHW63LLT\",\"name\":\"Request receipt posting\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cL4QAWUXS\",\"name\":\"Post goods receipt (receiving role)\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cGLYIMYIR\",\"name\":\"Reprocess invoice\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cV5OAIS2X\",\"name\":\"Release invoice\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cBR7HJ6LN\",\"name\":\"Keep blocked: shortfall correction\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cVS4JXVWC\",\"name\":\"Keep blocked: confirmation pending\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cPF24D2GB\",\"name\":\"Keep blocked: buyer review\",\"role\":\"button\"}],\"records\":[],\"role\":\"actions\"},{\"controls\":[{\"enabled\":true,\"id\":\"cCYNJYWIQ\",\"name\":\"Invoice\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cEZ57HZFD\",\"name\":\"Purchase order\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cU6VPGR5T\",\"name\":\"Receipt history\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cTWAAN2JK\",\"name\":\"Invoices on PO line\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cF7C5JNW7\",\"name\":\"Delivery confirmations\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cRYSPVZ44\",\"name\":\"Receipt-posting requests\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cFAQ2UIR5\",\"name\":\"Follow-ups\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cYFPKN7RG\",\"name\":\"Event history\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cGRKJV2AR\",\"name\":\"Active policy\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cBGRFJ55P\",\"name\":\"Workflow rules\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cZYG2FJM4\",\"name\":\"Report requirements\",\"role\":\"link\"}],\"records\":[],\"role\":\"navigation\"}],\"role\":\"ap_agent\",\"schema\":\"surfaces/4\",\"state_version\":1},\"ok\":true}"
+  },
+  {
+   "role": "assistant",
+   "content": "Other active invoices on the PO line: INV-118633 for 17 EA; INV-296041 is cancelled and does not count. Next, the receipts on the PO line.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "function": {
+      "name": "click",
+      "arguments": {
+       "element_id": "cU6VPGR5T"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "name": "click",
+   "content": "{\"clock\":\"D1 09:10\",\"error\":null,\"observation\":{\"case\":{\"invoice\":\"INV-492058\",\"po\":\"PO-298721\",\"supplier\":\"Supplier A\"},\"clock\":\"D1 09:10\",\"observation_id\":\"o3\",\"page\":\"receipts\",\"regions\":[{\"controls\":[],\"records\":[{\"fields\":{\"movement\":\"receipt\",\"po_line\":\"PO-298721-1\",\"posted_at\":\"D-4 15:40\",\"quantity\":{\"unit\":\"EA\",\"value\":\"31\"},\"reverses\":null},\"id\":\"GR-710411\",\"type\":\"receipt\",\"version\":1},{\"fields\":{\"movement\":\"receipt\",\"po_line\":\"PO-298721-1\",\"posted_at\":\"D-3 14:20\",\"quantity\":{\"unit\":\"EA\",\"value\":\"49\"},\"reverses\":null},\"id\":\"GR-468064\",\"type\":\"receipt\",\"version\":1}],\"role\":\"receipts\"},{\"controls\":[{\"enabled\":true,\"id\":\"c5ZJ4Z2MK\",\"name\":\"Request delivery confirmation\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cKTLWNGCP\",\"name\":\"Quantity (EA)\",\"role\":\"textbox\",\"value\":\"\"},{\"enabled\":true,\"id\":\"cBHW63LLT\",\"name\":\"Request receipt posting\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cL4QAWUXS\",\"name\":\"Post goods receipt (receiving role)\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cGLYIMYIR\",\"name\":\"Reprocess invoice\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cV5OAIS2X\",\"name\":\"Release invoice\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cBR7HJ6LN\",\"name\":\"Keep blocked: shortfall correction\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cVS4JXVWC\",\"name\":\"Keep blocked: confirmation pending\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cPF24D2GB\",\"name\":\"Keep blocked: buyer review\",\"role\":\"button\"}],\"records\":[],\"role\":\"actions\"},{\"controls\":[{\"enabled\":true,\"id\":\"cCYNJYWIQ\",\"name\":\"Invoice\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cEZ57HZFD\",\"name\":\"Purchase order\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cU6VPGR5T\",\"name\":\"Receipt history\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cTWAAN2JK\",\"name\":\"Invoices on PO line\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cF7C5JNW7\",\"name\":\"Delivery confirmations\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cRYSPVZ44\",\"name\":\"Receipt-posting requests\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cFAQ2UIR5\",\"name\":\"Follow-ups\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cYFPKN7RG\",\"name\":\"Event history\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cGRKJV2AR\",\"name\":\"Active policy\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cBGRFJ55P\",\"name\":\"Workflow rules\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cZYG2FJM4\",\"name\":\"Report requirements\",\"role\":\"link\"}],\"records\":[],\"role\":\"navigation\"}],\"role\":\"ap_agent\",\"schema\":\"surfaces/4\",\"state_version\":1},\"ok\":true}"
+  },
+  {
+   "role": "assistant",
+   "content": "Receipt history shows receipts on PO-298721-1 of 31 + 49 EA: net posted receipts 80 EA. By my count, available coverage is 80 - 17 = 63 EA, which covers the invoice quantity of 63 EA. Check the figures with the coverage tool.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "function": {
+      "name": "coverage",
+      "arguments": {
+       "invoice_id": "INV-492058"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "name": "coverage",
+   "content": "{\"clock\":\"D1 09:15\",\"coverage\":{\"available_coverage\":{\"unit\":\"EA\",\"value\":\"63\"},\"cancelled_invoices_not_counted\":[{\"id\":\"INV-296041\",\"version\":2}],\"invoice\":\"INV-492058\",\"invoice_line\":{\"id\":\"INV-492058-1\",\"quantity\":{\"unit\":\"EA\",\"value\":\"63\"},\"version\":1},\"invoice_quantity\":{\"unit\":\"EA\",\"value\":\"63\"},\"invoice_quantity_minus_available_coverage\":{\"unit\":\"EA\",\"value\":\"0\"},\"net_posted_receipts\":{\"unit\":\"EA\",\"value\":\"80\"},\"other_active_invoices\":[{\"id\":\"INV-118633\",\"quantity\":{\"unit\":\"EA\",\"value\":\"17\"},\"version\":1}],\"other_active_quantity\":{\"unit\":\"EA\",\"value\":\"17\"},\"po_line\":\"PO-298721-1\",\"receipts\":[{\"id\":\"GR-710411\",\"posted_at\":\"D-4 15:40\",\"quantity\":{\"unit\":\"EA\",\"value\":\"31\"},\"version\":1},{\"id\":\"GR-468064\",\"posted_at\":\"D-3 14:20\",\"quantity\":{\"unit\":\"EA\",\"value\":\"49\"},\"version\":1}],\"reversals\":[]},\"error\":null,\"observation\":null,\"ok\":true}"
+  },
+  {
+   "role": "assistant",
+   "content": "The calculator agrees: available coverage 63 EA against the invoice quantity 63 EA, so the invoice-vs-receipt rule is met on the current records and the block is stale. Reprocess the invoice so it is evaluated again.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "function": {
+      "name": "click",
+      "arguments": {
+       "element_id": "cGLYIMYIR"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "name": "click",
+   "content": "{\"clock\":\"D1 09:20\",\"error\":null,\"observation\":{\"case\":{\"invoice\":\"INV-492058\",\"po\":\"PO-298721\",\"supplier\":\"Supplier A\"},\"clock\":\"D1 09:20\",\"observation_id\":\"o4\",\"page\":\"receipts\",\"regions\":[{\"controls\":[],\"records\":[{\"fields\":{\"movement\":\"receipt\",\"po_line\":\"PO-298721-1\",\"posted_at\":\"D-4 15:40\",\"quantity\":{\"unit\":\"EA\",\"value\":\"31\"},\"reverses\":null},\"id\":\"GR-710411\",\"type\":\"receipt\",\"version\":1},{\"fields\":{\"movement\":\"receipt\",\"po_line\":\"PO-298721-1\",\"posted_at\":\"D-3 14:20\",\"quantity\":{\"unit\":\"EA\",\"value\":\"49\"},\"reverses\":null},\"id\":\"GR-468064\",\"type\":\"receipt\",\"version\":1}],\"role\":\"receipts\"},{\"controls\":[],\"records\":[{\"fields\":{\"action\":\"reprocess\",\"message\":\"Invoice reprocessed; eligibility: Eligible.\",\"outcome\":\"accepted\"},\"id\":\"ACT-777733\",\"type\":\"action_result\",\"version\":1}],\"role\":\"result\"},{\"controls\":[],\"records\":[{\"fields\":{\"eligibility\":\"eligible\",\"evaluated_at\":\"D1 09:15\",\"po\":\"PO-298721\",\"posted_at\":\"D-3 12:40\",\"state\":\"posted_blocked\",\"supplier\":\"Supplier A\"},\"id\":\"INV-492058\",\"type\":\"invoice\",\"version\":2}],\"role\":\"changed:invoice_header\"},{\"controls\":[],\"records\":[{\"fields\":{\"comparison\":\"price\",\"effect\":\"blocking\",\"evaluated_at\":\"D1 09:15\",\"result\":\"pass\"},\"id\":\"CMP-523104\",\"type\":\"comparison_result\",\"version\":2},{\"fields\":{\"comparison\":\"receipt_vs_po\",\"effect\":\"informational\",\"evaluated_at\":\"D1 09:15\",\"result\":\"pass\"},\"id\":\"CMP-329518\",\"type\":\"comparison_result\",\"version\":2},{\"fields\":{\"comparison\":\"invoice_vs_receipt\",\"effect\":\"blocking\",\"evaluated_at\":\"D1 09:15\",\"result\":\"pass\"},\"id\":\"CMP-941297\",\"type\":\"comparison_result\",\"version\":2},{\"fields\":{\"comparison\":\"invoice_vs_po_quantity\",\"effect\":\"blocking\",\"evaluated_at\":\"D1 09:15\",\"result\":\"pass\"},\"id\":\"CMP-498687\",\"type\":\"comparison_result\",\"version\":2},{\"fields\":{\"comparison\":\"invoice_vs_po_amount\",\"effect\":\"blocking\",\"evaluated_at\":\"D1 09:15\",\"result\":\"pass\"},\"id\":\"CMP-593018\",\"type\":\"comparison_result\",\"version\":2}],\"role\":\"changed:blocking_comparisons\"},{\"controls\":[{\"enabled\":true,\"id\":\"c5ZJ4Z2MK\",\"name\":\"Request delivery confirmation\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cKTLWNGCP\",\"name\":\"Quantity (EA)\",\"role\":\"textbox\",\"value\":\"\"},{\"enabled\":true,\"id\":\"cBHW63LLT\",\"name\":\"Request receipt posting\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cL4QAWUXS\",\"name\":\"Post goods receipt (receiving role)\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cGLYIMYIR\",\"name\":\"Reprocess invoice\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cV5OAIS2X\",\"name\":\"Release invoice\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cBR7HJ6LN\",\"name\":\"Keep blocked: shortfall correction\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cVS4JXVWC\",\"name\":\"Keep blocked: confirmation pending\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cPF24D2GB\",\"name\":\"Keep blocked: buyer review\",\"role\":\"button\"}],\"records\":[],\"role\":\"actions\"},{\"controls\":[{\"enabled\":true,\"id\":\"cCYNJYWIQ\",\"name\":\"Invoice\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cEZ57HZFD\",\"name\":\"Purchase order\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cU6VPGR5T\",\"name\":\"Receipt history\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cTWAAN2JK\",\"name\":\"Invoices on PO line\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cF7C5JNW7\",\"name\":\"Delivery confirmations\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cRYSPVZ44\",\"name\":\"Receipt-posting requests\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cFAQ2UIR5\",\"name\":\"Follow-ups\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cYFPKN7RG\",\"name\":\"Event history\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cGRKJV2AR\",\"name\":\"Active policy\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cBGRFJ55P\",\"name\":\"Workflow rules\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cZYG2FJM4\",\"name\":\"Report requirements\",\"role\":\"link\"}],\"records\":[],\"role\":\"navigation\"}],\"role\":\"ap_agent\",\"schema\":\"surfaces/4\",\"state_version\":2},\"ok\":true}"
+  },
+  {
+   "role": "assistant",
+   "content": "Invoice reprocessed; eligibility: Eligible. Every blocking comparison now passes, so release the invoice.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "function": {
+      "name": "click",
+      "arguments": {
+       "element_id": "cV5OAIS2X"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "name": "click",
+   "content": "{\"clock\":\"D1 09:25\",\"error\":null,\"observation\":{\"case\":{\"invoice\":\"INV-492058\",\"po\":\"PO-298721\",\"supplier\":\"Supplier A\"},\"clock\":\"D1 09:25\",\"observation_id\":\"o5\",\"page\":\"receipts\",\"regions\":[{\"controls\":[],\"records\":[{\"fields\":{\"movement\":\"receipt\",\"po_line\":\"PO-298721-1\",\"posted_at\":\"D-4 15:40\",\"quantity\":{\"unit\":\"EA\",\"value\":\"31\"},\"reverses\":null},\"id\":\"GR-710411\",\"type\":\"receipt\",\"version\":1},{\"fields\":{\"movement\":\"receipt\",\"po_line\":\"PO-298721-1\",\"posted_at\":\"D-3 14:20\",\"quantity\":{\"unit\":\"EA\",\"value\":\"49\"},\"reverses\":null},\"id\":\"GR-468064\",\"type\":\"receipt\",\"version\":1}],\"role\":\"receipts\"},{\"controls\":[],\"records\":[{\"fields\":{\"action\":\"release\",\"message\":\"Invoice released.\",\"outcome\":\"accepted\"},\"id\":\"ACT-636476\",\"type\":\"action_result\",\"version\":1}],\"role\":\"result\"},{\"controls\":[],\"records\":[{\"fields\":{\"eligibility\":\"eligible\",\"evaluated_at\":\"D1 09:15\",\"po\":\"PO-298721\",\"posted_at\":\"D-3 12:40\",\"state\":\"posted_released\",\"supplier\":\"Supplier A\"},\"id\":\"INV-492058\",\"type\":\"invoice\",\"version\":3}],\"role\":\"changed:invoice_header\"},{\"controls\":[{\"enabled\":true,\"id\":\"c5ZJ4Z2MK\",\"name\":\"Request delivery confirmation\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cKTLWNGCP\",\"name\":\"Quantity (EA)\",\"role\":\"textbox\",\"value\":\"\"},{\"enabled\":true,\"id\":\"cBHW63LLT\",\"name\":\"Request receipt posting\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cL4QAWUXS\",\"name\":\"Post goods receipt (receiving role)\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cGLYIMYIR\",\"name\":\"Reprocess invoice\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cV5OAIS2X\",\"name\":\"Release invoice\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cBR7HJ6LN\",\"name\":\"Keep blocked: shortfall correction\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cVS4JXVWC\",\"name\":\"Keep blocked: confirmation pending\",\"role\":\"button\"},{\"enabled\":true,\"id\":\"cPF24D2GB\",\"name\":\"Keep blocked: buyer review\",\"role\":\"button\"}],\"records\":[],\"role\":\"actions\"},{\"controls\":[{\"enabled\":true,\"id\":\"cCYNJYWIQ\",\"name\":\"Invoice\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cEZ57HZFD\",\"name\":\"Purchase order\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cU6VPGR5T\",\"name\":\"Receipt history\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cTWAAN2JK\",\"name\":\"Invoices on PO line\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cF7C5JNW7\",\"name\":\"Delivery confirmations\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cRYSPVZ44\",\"name\":\"Receipt-posting requests\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cFAQ2UIR5\",\"name\":\"Follow-ups\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cYFPKN7RG\",\"name\":\"Event history\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cGRKJV2AR\",\"name\":\"Active policy\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cBGRFJ55P\",\"name\":\"Workflow rules\",\"role\":\"link\"},{\"enabled\":true,\"id\":\"cZYG2FJM4\",\"name\":\"Report requirements\",\"role\":\"link\"}],\"records\":[],\"role\":\"navigation\"}],\"role\":\"ap_agent\",\"schema\":\"surfaces/4\",\"state_version\":3},\"ok\":true}"
+  },
+  {
+   "role": "assistant",
+   "content": "The invoice is released. Report it with discrepancy type none, since at the start available coverage 63 EA already covered the invoice quantity 63 EA, citing each record as I saw it.",
+   "tool_calls": [
+    {
+     "type": "function",
+     "function": {
+      "name": "finish",
+      "arguments": {
+       "final_disposition": "release",
+       "discrepancy_type": "none",
+       "findings": [
+        {
+         "discrepancy_type": "none",
+         "root_cause": "Recorded receipts already cover the invoice.",
+         "blocking_comparison": "invoice_vs_receipt",
+         "evidence": [
+          {
+           "form": "observed",
+           "source_id": "invoice",
+           "observation_id": "o1",
+           "state_version": 1,
+           "record_id": "INV-492058-1",
+           "record_version": 1,
+           "field": "quantity",
+           "value": {
+            "unit": "EA",
+            "value": "63"
+           }
+          },
+          {
+           "form": "observed",
+           "source_id": "receipts",
+           "observation_id": "o3",
+           "state_version": 1,
+           "record_id": "GR-710411",
+           "record_version": 1,
+           "field": "quantity",
+           "value": {
+            "unit": "EA",
+            "value": "31"
+           }
+          },
+          {
+           "form": "observed",
+           "source_id": "receipts",
+           "observation_id": "o3",
+           "state_version": 1,
+           "record_id": "GR-468064",
+           "record_version": 1,
+           "field": "quantity",
+           "value": {
+            "unit": "EA",
+            "value": "49"
+           }
+          },
+          {
+           "form": "observed",
+           "source_id": "po_line_invoices",
+           "observation_id": "o2",
+           "state_version": 1,
+           "record_id": "INV-118633",
+           "record_version": 1,
+           "field": "quantity",
+           "value": {
+            "unit": "EA",
+            "value": "17"
+           }
+          },
+          {
+           "form": "derived",
+           "expression": "r1 + r2 - i1",
+           "operands": {
+            "r1": {
+             "observation_id": "o3",
+             "record_id": "GR-710411",
+             "record_version": 1,
+             "field": "quantity"
+            },
+            "r2": {
+             "observation_id": "o3",
+             "record_id": "GR-468064",
+             "record_version": 1,
+             "field": "quantity"
+            },
+            "i1": {
+             "observation_id": "o2",
+             "record_id": "INV-118633",
+             "record_version": 1,
+             "field": "quantity"
+            }
+           },
+           "source_observation_ids": [
+            "o2",
+            "o3"
+           ],
+           "state_version": 1,
+           "value": "63"
+          },
+          {
+           "form": "observed",
+           "source_id": "po_line_invoices",
+           "observation_id": "o2",
+           "state_version": 1,
+           "record_id": "INV-296041",
+           "record_version": 2,
+           "field": "state",
+           "value": "cancelled"
+          }
+         ]
+        }
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "name": "finish",
+   "content": "{\"clock\":\"D1 09:25\",\"error\":null,\"observation\":null,\"ok\":true}"
+  }
+ ]
+}

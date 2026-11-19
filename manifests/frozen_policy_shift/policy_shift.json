@@ -1,0 +1,1901 @@
+{
+ "entries": [
+  {
+   "case_id": "PS4700-0-v1",
+   "disputed_o9": false,
+   "expected": "keep_blocked",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": -190,
+    "cancelled_invoices": [
+     37
+    ],
+    "delay": 240,
+    "invoice_qty": 41,
+    "other_invoices": [],
+    "physical_total": 40,
+    "po_qty": 112,
+    "policy": "sandbox-v1",
+    "price": "18.40",
+    "receipts": [
+     40
+    ],
+    "reversals": []
+   },
+   "params_sha256": "88f1e4e918b38a385934ba895752feaec7fa0de0a50355ca5fc75cbe5c9f3fe2",
+   "policy": "sandbox-v1",
+   "reference_v3_reward": 1,
+   "seed": 470000,
+   "signature": [
+    "V2_not_delivered",
+    1,
+    false,
+    0,
+    "before_block",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4700-0-v2",
+   "disputed_o9": false,
+   "expected": "release",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": -190,
+    "cancelled_invoices": [
+     37
+    ],
+    "delay": 240,
+    "invoice_qty": 41,
+    "other_invoices": [],
+    "physical_total": 40,
+    "po_qty": 112,
+    "policy": "sandbox-v2",
+    "price": "18.40",
+    "receipts": [
+     40
+    ],
+    "reversals": []
+   },
+   "params_sha256": "aeb6b3927965cf765d200d4faf99a263c0b642df73e2ee13f894fe566628759b",
+   "policy": "sandbox-v2",
+   "reference_v3_reward": 1,
+   "seed": 470000,
+   "signature": [
+    "V2_not_delivered",
+    1,
+    false,
+    0,
+    "before_block",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4701-0-v1",
+   "disputed_o9": false,
+   "expected": "keep_blocked",
+   "generator": "causal/1",
+   "level": "L1",
+   "params": {
+    "blocked_at": -1700,
+    "cancelled_at": null,
+    "cancelled_invoices": [],
+    "delay": 240,
+    "invoice_qty": 121,
+    "other_invoices": [],
+    "physical_total": 119,
+    "po_qty": 160,
+    "policy": "sandbox-v1",
+    "price": "4.80",
+    "receipts": [
+     53,
+     66
+    ],
+    "reversals": []
+   },
+   "params_sha256": "ce798ac1d76ffb115ed5db5587845a47d41d560c56c195940661db27195de59f",
+   "policy": "sandbox-v1",
+   "reference_v3_reward": 1,
+   "seed": 470100,
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    0,
+    "none",
+    true,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4701-0-v2",
+   "disputed_o9": false,
+   "expected": "release",
+   "generator": "causal/1",
+   "level": "L1",
+   "params": {
+    "blocked_at": -1700,
+    "cancelled_at": null,
+    "cancelled_invoices": [],
+    "delay": 240,
+    "invoice_qty": 121,
+    "other_invoices": [],
+    "physical_total": 119,
+    "po_qty": 160,
+    "policy": "sandbox-v2",
+    "price": "4.80",
+    "receipts": [
+     53,
+     66
+    ],
+    "reversals": []
+   },
+   "params_sha256": "d941459e615fa474f8ae42a5f765cb3020d72f44cf9a80dad65f3014d16f17c4",
+   "policy": "sandbox-v2",
+   "reference_v3_reward": 1,
+   "seed": 470100,
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    0,
+    "none",
+    true,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4702-0-v1",
+   "disputed_o9": false,
+   "expected": "keep_blocked",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": -80,
+    "cancelled_invoices": [
+     36
+    ],
+    "delay": 240,
+    "invoice_qty": 78,
+    "other_invoices": [
+     21,
+     11
+    ],
+    "physical_total": 108,
+    "po_qty": 185,
+    "policy": "sandbox-v1",
+    "price": "31.25",
+    "receipts": [
+     68,
+     40
+    ],
+    "reversals": []
+   },
+   "params_sha256": "4a32ece35983f543b3cf21b0f5e994e6ca94536afa2dd35c235253c3a8b51d1f",
+   "policy": "sandbox-v1",
+   "reference_v3_reward": 1,
+   "seed": 470200,
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    2,
+    "after_block",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4702-0-v2",
+   "disputed_o9": false,
+   "expected": "release",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": -80,
+    "cancelled_invoices": [
+     36
+    ],
+    "delay": 240,
+    "invoice_qty": 78,
+    "other_invoices": [
+     21,
+     11
+    ],
+    "physical_total": 108,
+    "po_qty": 185,
+    "policy": "sandbox-v2",
+    "price": "31.25",
+    "receipts": [
+     68,
+     40
+    ],
+    "reversals": []
+   },
+   "params_sha256": "8e5567f645ba752cac3537507a8b4699fadc8c93e120f42298cc33114428ab47",
+   "policy": "sandbox-v2",
+   "reference_v3_reward": 1,
+   "seed": 470200,
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    2,
+    "after_block",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4703-1-v1",
+   "disputed_o9": false,
+   "expected": "keep_blocked",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": null,
+    "cancelled_invoices": [],
+    "delay": 240,
+    "invoice_qty": 83,
+    "other_invoices": [
+     19,
+     21
+    ],
+    "physical_total": 122,
+    "po_qty": 153,
+    "policy": "sandbox-v1",
+    "price": "7.35",
+    "receipts": [
+     41,
+     81
+    ],
+    "reversals": []
+   },
+   "params_sha256": "31d1e6b4f734571ee232becd076dbc6d3a634eb5cb365d2ca7d90281ddbf5aaa",
+   "policy": "sandbox-v1",
+   "reference_v3_reward": 1,
+   "seed": 470301,
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    2,
+    "none",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4703-1-v2",
+   "disputed_o9": false,
+   "expected": "release",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": null,
+    "cancelled_invoices": [],
+    "delay": 240,
+    "invoice_qty": 83,
+    "other_invoices": [
+     19,
+     21
+    ],
+    "physical_total": 122,
+    "po_qty": 153,
+    "policy": "sandbox-v2",
+    "price": "7.35",
+    "receipts": [
+     41,
+     81
+    ],
+    "reversals": []
+   },
+   "params_sha256": "ad1f7c3debfaa13c9630939e0cbbeba53d88abdbd540abccf0cf9bdc135581f4",
+   "policy": "sandbox-v2",
+   "reference_v3_reward": 1,
+   "seed": 470301,
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    2,
+    "none",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4704-0-v1",
+   "disputed_o9": false,
+   "expected": "keep_blocked",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": -190,
+    "cancelled_invoices": [
+     29
+    ],
+    "delay": 240,
+    "invoice_qty": 114,
+    "other_invoices": [],
+    "physical_total": 109,
+    "po_qty": 188,
+    "policy": "sandbox-v1",
+    "price": "12.50",
+    "receipts": [
+     47,
+     62
+    ],
+    "reversals": []
+   },
+   "params_sha256": "c2a91b26190ebb67dbc8d5797e7294f7c1d9c58335cc635b6b067bb51d7a3353",
+   "policy": "sandbox-v1",
+   "reference_v3_reward": 1,
+   "seed": 470400,
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    0,
+    "before_block",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4704-0-v2",
+   "disputed_o9": false,
+   "expected": "release",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": -190,
+    "cancelled_invoices": [
+     29
+    ],
+    "delay": 240,
+    "invoice_qty": 114,
+    "other_invoices": [],
+    "physical_total": 109,
+    "po_qty": 188,
+    "policy": "sandbox-v2",
+    "price": "12.50",
+    "receipts": [
+     47,
+     62
+    ],
+    "reversals": []
+   },
+   "params_sha256": "e723df19215a423048c4b731302671d4e8f1a1ac0cc8037c035c6bd4056e403a",
+   "policy": "sandbox-v2",
+   "reference_v3_reward": 1,
+   "seed": 470400,
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    0,
+    "before_block",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4705-0-v1",
+   "disputed_o9": false,
+   "expected": "keep_blocked",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": -190,
+    "cancelled_invoices": [
+     37
+    ],
+    "delay": 240,
+    "invoice_qty": 48,
+    "other_invoices": [
+     21,
+     7
+    ],
+    "physical_total": 74,
+    "po_qty": 139,
+    "policy": "sandbox-v1",
+    "price": "12.50",
+    "receipts": [
+     74
+    ],
+    "reversals": []
+   },
+   "params_sha256": "3b0daaeefc3fd65d25da17341ebc3147f277a0c285d751d4bd49a3dc9466650a",
+   "policy": "sandbox-v1",
+   "reference_v3_reward": 1,
+   "seed": 470500,
+   "signature": [
+    "V2_not_delivered",
+    1,
+    false,
+    2,
+    "before_block",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4705-0-v2",
+   "disputed_o9": false,
+   "expected": "release",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": -190,
+    "cancelled_invoices": [
+     37
+    ],
+    "delay": 240,
+    "invoice_qty": 48,
+    "other_invoices": [
+     21,
+     7
+    ],
+    "physical_total": 74,
+    "po_qty": 139,
+    "policy": "sandbox-v2",
+    "price": "12.50",
+    "receipts": [
+     74
+    ],
+    "reversals": []
+   },
+   "params_sha256": "5310ea27a9406528e4c49156500750baca1b177b8ffe52765896f8ec0a852382",
+   "policy": "sandbox-v2",
+   "reference_v3_reward": 1,
+   "seed": 470500,
+   "signature": [
+    "V2_not_delivered",
+    1,
+    false,
+    2,
+    "before_block",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4706-0-v1",
+   "disputed_o9": false,
+   "expected": "keep_blocked",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -1700,
+    "cancelled_at": -1730,
+    "cancelled_invoices": [
+     13
+    ],
+    "delay": 240,
+    "invoice_qty": 36,
+    "other_invoices": [
+     21
+    ],
+    "physical_total": 56,
+    "po_qty": 120,
+    "policy": "sandbox-v1",
+    "price": "7.35",
+    "receipts": [
+     25,
+     31
+    ],
+    "reversals": []
+   },
+   "params_sha256": "db0029ae561ef0b8b728a2955674f0b09e21d72cc6223f070f9ef6a12176a117",
+   "policy": "sandbox-v1",
+   "reference_v3_reward": 1,
+   "seed": 470600,
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    1,
+    "before_block",
+    true,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4706-0-v2",
+   "disputed_o9": false,
+   "expected": "release",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -1700,
+    "cancelled_at": -1730,
+    "cancelled_invoices": [
+     13
+    ],
+    "delay": 240,
+    "invoice_qty": 36,
+    "other_invoices": [
+     21
+    ],
+    "physical_total": 56,
+    "po_qty": 120,
+    "policy": "sandbox-v2",
+    "price": "7.35",
+    "receipts": [
+     25,
+     31
+    ],
+    "reversals": []
+   },
+   "params_sha256": "3ed4bc68c6d8d25e0d38d7af27fa89cf0b5bd2fdeb064876035f55535729bec7",
+   "policy": "sandbox-v2",
+   "reference_v3_reward": 1,
+   "seed": 470600,
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    1,
+    "before_block",
+    true,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4707-0-v1",
+   "disputed_o9": false,
+   "expected": "keep_blocked",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -1700,
+    "cancelled_at": -1730,
+    "cancelled_invoices": [
+     34
+    ],
+    "delay": 240,
+    "invoice_qty": 42,
+    "other_invoices": [
+     11
+    ],
+    "physical_total": 51,
+    "po_qty": 112,
+    "policy": "sandbox-v1",
+    "price": "7.35",
+    "receipts": [
+     23,
+     28
+    ],
+    "reversals": []
+   },
+   "params_sha256": "e40ad67562c750dc7a7a8e16f2c53da4ed66e21c67c915dd4656a314f0568e4f",
+   "policy": "sandbox-v1",
+   "reference_v3_reward": 1,
+   "seed": 470700,
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    1,
+    "before_block",
+    true,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4707-0-v2",
+   "disputed_o9": false,
+   "expected": "release",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -1700,
+    "cancelled_at": -1730,
+    "cancelled_invoices": [
+     34
+    ],
+    "delay": 240,
+    "invoice_qty": 42,
+    "other_invoices": [
+     11
+    ],
+    "physical_total": 51,
+    "po_qty": 112,
+    "policy": "sandbox-v2",
+    "price": "7.35",
+    "receipts": [
+     23,
+     28
+    ],
+    "reversals": []
+   },
+   "params_sha256": "618edc8a6ee1252c274aea5c96d7e3d161b265ecb55681aa9e2e014aae65241d",
+   "policy": "sandbox-v2",
+   "reference_v3_reward": 1,
+   "seed": 470700,
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    1,
+    "before_block",
+    true,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4708-0-v1",
+   "disputed_o9": false,
+   "expected": "keep_blocked",
+   "generator": "causal/1",
+   "level": "L1",
+   "params": {
+    "blocked_at": -1700,
+    "cancelled_at": null,
+    "cancelled_invoices": [],
+    "delay": 240,
+    "invoice_qty": 108,
+    "other_invoices": [
+     12
+    ],
+    "physical_total": 116,
+    "po_qty": 166,
+    "policy": "sandbox-v1",
+    "price": "31.25",
+    "receipts": [
+     72,
+     44
+    ],
+    "reversals": []
+   },
+   "params_sha256": "f60bf9fb04f231ef7ecc4b2090865cf2588a53f577adfc042bd6e8085a679093",
+   "policy": "sandbox-v1",
+   "reference_v3_reward": 1,
+   "seed": 470800,
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    1,
+    "none",
+    true,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4708-0-v2",
+   "disputed_o9": false,
+   "expected": "release",
+   "generator": "causal/1",
+   "level": "L1",
+   "params": {
+    "blocked_at": -1700,
+    "cancelled_at": null,
+    "cancelled_invoices": [],
+    "delay": 240,
+    "invoice_qty": 108,
+    "other_invoices": [
+     12
+    ],
+    "physical_total": 116,
+    "po_qty": 166,
+    "policy": "sandbox-v2",
+    "price": "31.25",
+    "receipts": [
+     72,
+     44
+    ],
+    "reversals": []
+   },
+   "params_sha256": "ae3f0079d9046a4181374efcd9ca3e610d3a0edfba24aba3a4db72e6e4d2e42e",
+   "policy": "sandbox-v2",
+   "reference_v3_reward": 1,
+   "seed": 470800,
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    1,
+    "none",
+    true,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4709-0-v1",
+   "disputed_o9": false,
+   "expected": "keep_blocked",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -1700,
+    "cancelled_at": -80,
+    "cancelled_invoices": [
+     17
+    ],
+    "delay": 240,
+    "invoice_qty": 122,
+    "other_invoices": [],
+    "physical_total": 117,
+    "po_qty": 176,
+    "policy": "sandbox-v1",
+    "price": "4.80",
+    "receipts": [
+     83,
+     34
+    ],
+    "reversals": []
+   },
+   "params_sha256": "3eacbe8c84f53e402c382758d2860df0d002a9156599820160227589f7894cdf",
+   "policy": "sandbox-v1",
+   "reference_v3_reward": 1,
+   "seed": 470900,
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    0,
+    "after_block",
+    true,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4709-0-v2",
+   "disputed_o9": false,
+   "expected": "release",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -1700,
+    "cancelled_at": -80,
+    "cancelled_invoices": [
+     17
+    ],
+    "delay": 240,
+    "invoice_qty": 122,
+    "other_invoices": [],
+    "physical_total": 117,
+    "po_qty": 176,
+    "policy": "sandbox-v2",
+    "price": "4.80",
+    "receipts": [
+     83,
+     34
+    ],
+    "reversals": []
+   },
+   "params_sha256": "cdcf61a61da0e0326a01b1793701e8f2282f604afab550cc5c0af2a1ea704920",
+   "policy": "sandbox-v2",
+   "reference_v3_reward": 1,
+   "seed": 470900,
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    0,
+    "after_block",
+    true,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4710-0-v1",
+   "disputed_o9": false,
+   "expected": "keep_blocked",
+   "generator": "causal/1",
+   "level": "L1",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": null,
+    "cancelled_invoices": [],
+    "delay": 240,
+    "invoice_qty": 27,
+    "other_invoices": [
+     29
+    ],
+    "physical_total": 55,
+    "po_qty": 85,
+    "policy": "sandbox-v1",
+    "price": "7.35",
+    "receipts": [
+     55
+    ],
+    "reversals": []
+   },
+   "params_sha256": "e5cf483b6cc2d71b6cb10a2883179d01a983f076ac20e4a8daf6a04c28d6825f",
+   "policy": "sandbox-v1",
+   "reference_v3_reward": 1,
+   "seed": 471000,
+   "signature": [
+    "V2_not_delivered",
+    1,
+    false,
+    1,
+    "none",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4710-0-v2",
+   "disputed_o9": false,
+   "expected": "release",
+   "generator": "causal/1",
+   "level": "L1",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": null,
+    "cancelled_invoices": [],
+    "delay": 240,
+    "invoice_qty": 27,
+    "other_invoices": [
+     29
+    ],
+    "physical_total": 55,
+    "po_qty": 85,
+    "policy": "sandbox-v2",
+    "price": "7.35",
+    "receipts": [
+     55
+    ],
+    "reversals": []
+   },
+   "params_sha256": "ec5944525e94d3cf4755f02663eae9a5142c4658636633fdfac2190e31175988",
+   "policy": "sandbox-v2",
+   "reference_v3_reward": 1,
+   "seed": 471000,
+   "signature": [
+    "V2_not_delivered",
+    1,
+    false,
+    1,
+    "none",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4711-0-v1",
+   "disputed_o9": false,
+   "expected": "keep_blocked",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": null,
+    "cancelled_invoices": [],
+    "delay": 240,
+    "invoice_qty": 179,
+    "other_invoices": [],
+    "physical_total": 171,
+    "po_qty": 208,
+    "policy": "sandbox-v1",
+    "price": "7.35",
+    "receipts": [
+     72,
+     40,
+     59
+    ],
+    "reversals": []
+   },
+   "params_sha256": "547d4834a3685dc0c31401d7ee0db1e576d08fcc2191a2b15ba89ffc617cf410",
+   "policy": "sandbox-v1",
+   "reference_v3_reward": 1,
+   "seed": 471100,
+   "signature": [
+    "V2_not_delivered",
+    3,
+    false,
+    0,
+    "none",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4711-0-v2",
+   "disputed_o9": false,
+   "expected": "release",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": null,
+    "cancelled_invoices": [],
+    "delay": 240,
+    "invoice_qty": 179,
+    "other_invoices": [],
+    "physical_total": 171,
+    "po_qty": 208,
+    "policy": "sandbox-v2",
+    "price": "7.35",
+    "receipts": [
+     72,
+     40,
+     59
+    ],
+    "reversals": []
+   },
+   "params_sha256": "c00e596703ce3267c02b7c4e313e55403d5a311df009a05b647e098082342b54",
+   "policy": "sandbox-v2",
+   "reference_v3_reward": 1,
+   "seed": 471100,
+   "signature": [
+    "V2_not_delivered",
+    3,
+    false,
+    0,
+    "none",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4712-0-v1",
+   "disputed_o9": false,
+   "expected": "keep_blocked",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": -80,
+    "cancelled_invoices": [
+     35
+    ],
+    "delay": 240,
+    "invoice_qty": 114,
+    "other_invoices": [],
+    "physical_total": 111,
+    "po_qty": 204,
+    "policy": "sandbox-v1",
+    "price": "31.25",
+    "receipts": [
+     45,
+     29,
+     37
+    ],
+    "reversals": []
+   },
+   "params_sha256": "4d83344400c6176f305a6d3783b7dbeb107e386e44f6f64c3c4300f8f09fa1e1",
+   "policy": "sandbox-v1",
+   "reference_v3_reward": 1,
+   "seed": 471200,
+   "signature": [
+    "V2_not_delivered",
+    3,
+    false,
+    0,
+    "after_block",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4712-0-v2",
+   "disputed_o9": false,
+   "expected": "release",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": -80,
+    "cancelled_invoices": [
+     35
+    ],
+    "delay": 240,
+    "invoice_qty": 114,
+    "other_invoices": [],
+    "physical_total": 111,
+    "po_qty": 204,
+    "policy": "sandbox-v2",
+    "price": "31.25",
+    "receipts": [
+     45,
+     29,
+     37
+    ],
+    "reversals": []
+   },
+   "params_sha256": "381deaaa0f498363596cbb1fc90848deb374a9501b1dcee887228de4d92a8d28",
+   "policy": "sandbox-v2",
+   "reference_v3_reward": 1,
+   "seed": 471200,
+   "signature": [
+    "V2_not_delivered",
+    3,
+    false,
+    0,
+    "after_block",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4713-0-v1",
+   "disputed_o9": false,
+   "expected": "keep_blocked",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": -80,
+    "cancelled_invoices": [
+     13
+    ],
+    "delay": 240,
+    "invoice_qty": 25,
+    "other_invoices": [
+     26
+    ],
+    "physical_total": 50,
+    "po_qty": 116,
+    "policy": "sandbox-v1",
+    "price": "16.75",
+    "receipts": [
+     25,
+     25
+    ],
+    "reversals": []
+   },
+   "params_sha256": "89c526e2daac78a7b3decdf3298e54ac194c88b5c86e33a0af814449dd010eb2",
+   "policy": "sandbox-v1",
+   "reference_v3_reward": 1,
+   "seed": 471300,
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    1,
+    "after_block",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4713-0-v2",
+   "disputed_o9": false,
+   "expected": "release",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": -80,
+    "cancelled_invoices": [
+     13
+    ],
+    "delay": 240,
+    "invoice_qty": 25,
+    "other_invoices": [
+     26
+    ],
+    "physical_total": 50,
+    "po_qty": 116,
+    "policy": "sandbox-v2",
+    "price": "16.75",
+    "receipts": [
+     25,
+     25
+    ],
+    "reversals": []
+   },
+   "params_sha256": "ee3ec1a01835b11a569e49a071e43c568fb6e61befc8a2bae6aa21251269524f",
+   "policy": "sandbox-v2",
+   "reference_v3_reward": 1,
+   "seed": 471300,
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    1,
+    "after_block",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4714-0-v1",
+   "disputed_o9": false,
+   "expected": "keep_blocked",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -1300,
+    "cancelled_at": -1330,
+    "cancelled_invoices": [
+     26
+    ],
+    "delay": 240,
+    "invoice_qty": 117,
+    "other_invoices": [
+     26
+    ],
+    "physical_total": 138,
+    "po_qty": 188,
+    "policy": "sandbox-v1",
+    "price": "31.25",
+    "receipts": [
+     57,
+     29,
+     52
+    ],
+    "reversals": []
+   },
+   "params_sha256": "a27b8f1f79fe8fa9e293d6461a32016870f40bd99d50684daec86a55412f5ba4",
+   "policy": "sandbox-v1",
+   "reference_v3_reward": 1,
+   "seed": 471400,
+   "signature": [
+    "V2_not_delivered",
+    3,
+    false,
+    1,
+    "before_block",
+    true,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4714-0-v2",
+   "disputed_o9": false,
+   "expected": "release",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -1300,
+    "cancelled_at": -1330,
+    "cancelled_invoices": [
+     26
+    ],
+    "delay": 240,
+    "invoice_qty": 117,
+    "other_invoices": [
+     26
+    ],
+    "physical_total": 138,
+    "po_qty": 188,
+    "policy": "sandbox-v2",
+    "price": "31.25",
+    "receipts": [
+     57,
+     29,
+     52
+    ],
+    "reversals": []
+   },
+   "params_sha256": "21f695202c488bc1d4141fc16fe433e1cc59b195ef598dd7b8b4ffcc3514bc0e",
+   "policy": "sandbox-v2",
+   "reference_v3_reward": 1,
+   "seed": 471400,
+   "signature": [
+    "V2_not_delivered",
+    3,
+    false,
+    1,
+    "before_block",
+    true,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4715-0-v1",
+   "disputed_o9": false,
+   "expected": "keep_blocked",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": -80,
+    "cancelled_invoices": [
+     31
+    ],
+    "delay": 240,
+    "invoice_qty": 45,
+    "other_invoices": [
+     15,
+     29
+    ],
+    "physical_total": 87,
+    "po_qty": 173,
+    "policy": "sandbox-v1",
+    "price": "12.50",
+    "receipts": [
+     87
+    ],
+    "reversals": []
+   },
+   "params_sha256": "754b5868d77fd0dbe0a973a766755b0097fedd3d63449f135b97d4c2ce719e21",
+   "policy": "sandbox-v1",
+   "reference_v3_reward": 1,
+   "seed": 471500,
+   "signature": [
+    "V2_not_delivered",
+    1,
+    false,
+    2,
+    "after_block",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4715-0-v2",
+   "disputed_o9": false,
+   "expected": "release",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": -80,
+    "cancelled_invoices": [
+     31
+    ],
+    "delay": 240,
+    "invoice_qty": 45,
+    "other_invoices": [
+     15,
+     29
+    ],
+    "physical_total": 87,
+    "po_qty": 173,
+    "policy": "sandbox-v2",
+    "price": "12.50",
+    "receipts": [
+     87
+    ],
+    "reversals": []
+   },
+   "params_sha256": "4b9e9dc079adf4db4c7dd650eeb35a3b54b057e2c19762ff44fbd26b09271ad3",
+   "policy": "sandbox-v2",
+   "reference_v3_reward": 1,
+   "seed": 471500,
+   "signature": [
+    "V2_not_delivered",
+    1,
+    false,
+    2,
+    "after_block",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4716-0-v1",
+   "disputed_o9": false,
+   "expected": "keep_blocked",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": -190,
+    "cancelled_invoices": [
+     16
+    ],
+    "delay": 240,
+    "invoice_qty": 87,
+    "other_invoices": [
+     18
+    ],
+    "physical_total": 104,
+    "po_qty": 137,
+    "policy": "sandbox-v1",
+    "price": "9.99",
+    "receipts": [
+     84,
+     20
+    ],
+    "reversals": []
+   },
+   "params_sha256": "26ce0df84eea17e57bda17bf4f6fc988b4b895e496d3e1963958a464c76f958f",
+   "policy": "sandbox-v1",
+   "reference_v3_reward": 1,
+   "seed": 471600,
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    1,
+    "before_block",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4716-0-v2",
+   "disputed_o9": false,
+   "expected": "release",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": -190,
+    "cancelled_invoices": [
+     16
+    ],
+    "delay": 240,
+    "invoice_qty": 87,
+    "other_invoices": [
+     18
+    ],
+    "physical_total": 104,
+    "po_qty": 137,
+    "policy": "sandbox-v2",
+    "price": "9.99",
+    "receipts": [
+     84,
+     20
+    ],
+    "reversals": []
+   },
+   "params_sha256": "de228aee6d37519b396a348f75136a6be35b3aef402a33012661a17672066dea",
+   "policy": "sandbox-v2",
+   "reference_v3_reward": 1,
+   "seed": 471600,
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    1,
+    "before_block",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4717-0-v1",
+   "disputed_o9": false,
+   "expected": "keep_blocked",
+   "generator": "causal/1",
+   "level": "L1",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": null,
+    "cancelled_invoices": [],
+    "delay": 240,
+    "invoice_qty": 73,
+    "other_invoices": [
+     22
+    ],
+    "physical_total": 93,
+    "po_qty": 116,
+    "policy": "sandbox-v1",
+    "price": "7.35",
+    "receipts": [
+     59,
+     34
+    ],
+    "reversals": []
+   },
+   "params_sha256": "072bcde64efd79659345a4d35f617ea3ce8398e1b432b7b57ac2ed7d447a52a9",
+   "policy": "sandbox-v1",
+   "reference_v3_reward": 1,
+   "seed": 471700,
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    1,
+    "none",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4717-0-v2",
+   "disputed_o9": false,
+   "expected": "release",
+   "generator": "causal/1",
+   "level": "L1",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": null,
+    "cancelled_invoices": [],
+    "delay": 240,
+    "invoice_qty": 73,
+    "other_invoices": [
+     22
+    ],
+    "physical_total": 93,
+    "po_qty": 116,
+    "policy": "sandbox-v2",
+    "price": "7.35",
+    "receipts": [
+     59,
+     34
+    ],
+    "reversals": []
+   },
+   "params_sha256": "db2e35499f32fea3096ecf697d00adf2ac9a6e2c0dd553f9f258874249d69a67",
+   "policy": "sandbox-v2",
+   "reference_v3_reward": 1,
+   "seed": 471700,
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    1,
+    "none",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4718-0-v1",
+   "disputed_o9": false,
+   "expected": "keep_blocked",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": -190,
+    "cancelled_invoices": [
+     37
+    ],
+    "delay": 240,
+    "invoice_qty": 133,
+    "other_invoices": [
+     11
+    ],
+    "physical_total": 141,
+    "po_qty": 226,
+    "policy": "sandbox-v1",
+    "price": "20.00",
+    "receipts": [
+     63,
+     41,
+     37
+    ],
+    "reversals": []
+   },
+   "params_sha256": "37c50f39b71734016540dbf27d92f7d36d55af5124c7ffc80ec88adc4fcd5102",
+   "policy": "sandbox-v1",
+   "reference_v3_reward": 1,
+   "seed": 471800,
+   "signature": [
+    "V2_not_delivered",
+    3,
+    false,
+    1,
+    "before_block",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4718-0-v2",
+   "disputed_o9": false,
+   "expected": "release",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": -190,
+    "cancelled_invoices": [
+     37
+    ],
+    "delay": 240,
+    "invoice_qty": 133,
+    "other_invoices": [
+     11
+    ],
+    "physical_total": 141,
+    "po_qty": 226,
+    "policy": "sandbox-v2",
+    "price": "20.00",
+    "receipts": [
+     63,
+     41,
+     37
+    ],
+    "reversals": []
+   },
+   "params_sha256": "a5a6f571ebc2e9eafaf5a31f6350eb2f9322d105bf5a92a7fcab31f2683ae03d",
+   "policy": "sandbox-v2",
+   "reference_v3_reward": 1,
+   "seed": 471800,
+   "signature": [
+    "V2_not_delivered",
+    3,
+    false,
+    1,
+    "before_block",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4719-0-v1",
+   "disputed_o9": false,
+   "expected": "keep_blocked",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": -80,
+    "cancelled_invoices": [
+     36
+    ],
+    "delay": 240,
+    "invoice_qty": 128,
+    "other_invoices": [],
+    "physical_total": 124,
+    "po_qty": 194,
+    "policy": "sandbox-v1",
+    "price": "31.25",
+    "receipts": [
+     35,
+     89
+    ],
+    "reversals": []
+   },
+   "params_sha256": "6f809ba697b9c253bcd32ab200ccc8160f67513d014a11196edfa99207bb482c",
+   "policy": "sandbox-v1",
+   "reference_v3_reward": 1,
+   "seed": 471900,
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    0,
+    "after_block",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PS4719-0-v2",
+   "disputed_o9": false,
+   "expected": "release",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": -80,
+    "cancelled_invoices": [
+     36
+    ],
+    "delay": 240,
+    "invoice_qty": 128,
+    "other_invoices": [],
+    "physical_total": 124,
+    "po_qty": 194,
+    "policy": "sandbox-v2",
+    "price": "31.25",
+    "receipts": [
+     35,
+     89
+    ],
+    "reversals": []
+   },
+   "params_sha256": "e895583094cd6935684efdcece26f97359cbcbdf0edd58545b02ecf53a330e67",
+   "policy": "sandbox-v2",
+   "reference_v3_reward": 1,
+   "seed": 471900,
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    0,
+    "after_block",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PB4800-0-at_limit-v1",
+   "disputed_o9": false,
+   "expected": "keep_blocked",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": -190,
+    "cancelled_invoices": [
+     16
+    ],
+    "delay": 240,
+    "invoice_qty": 43,
+    "other_invoices": [
+     7,
+     5
+    ],
+    "physical_total": 53,
+    "po_qty": 107,
+    "policy": "sandbox-v1",
+    "price": "20.00",
+    "receipts": [
+     37,
+     16
+    ],
+    "reversals": []
+   },
+   "params_sha256": "827751386159dbff20efdc30ccc98b7c235586f1f7a35aa68b4068bbe21aa623",
+   "policy": "sandbox-v1",
+   "reference_v3_reward": 1,
+   "seed": 480000,
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    2,
+    "before_block",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PB4800-0-at_limit-v2",
+   "disputed_o9": false,
+   "expected": "release",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": -190,
+    "cancelled_invoices": [
+     16
+    ],
+    "delay": 240,
+    "invoice_qty": 43,
+    "other_invoices": [
+     7,
+     5
+    ],
+    "physical_total": 53,
+    "po_qty": 107,
+    "policy": "sandbox-v2",
+    "price": "20.00",
+    "receipts": [
+     37,
+     16
+    ],
+    "reversals": []
+   },
+   "params_sha256": "3372529f12378f34868016eb74a13c0e1c734d22fa1eff542b166390aef26a06",
+   "policy": "sandbox-v2",
+   "reference_v3_reward": 1,
+   "seed": 480000,
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    2,
+    "before_block",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PB4800-0-one_over-v1",
+   "disputed_o9": false,
+   "expected": "keep_blocked",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": -190,
+    "cancelled_invoices": [
+     16
+    ],
+    "delay": 240,
+    "invoice_qty": 44,
+    "other_invoices": [
+     7,
+     5
+    ],
+    "physical_total": 53,
+    "po_qty": 108,
+    "policy": "sandbox-v1",
+    "price": "20.00",
+    "receipts": [
+     37,
+     16
+    ],
+    "reversals": []
+   },
+   "params_sha256": "eeb2b2f888511ee0c2fea96081b4658df4b934d8a2abf490d698c63d57fb8095",
+   "policy": "sandbox-v1",
+   "reference_v3_reward": 1,
+   "seed": 480000,
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    2,
+    "before_block",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  },
+  {
+   "case_id": "PB4800-0-one_over-v2",
+   "disputed_o9": false,
+   "expected": "keep_blocked",
+   "generator": "causal/1",
+   "level": "L3",
+   "params": {
+    "blocked_at": -160,
+    "cancelled_at": -190,
+    "cancelled_invoices": [
+     16
+    ],
+    "delay": 240,
+    "invoice_qty": 44,
+    "other_invoices": [
+     7,
+     5
+    ],
+    "physical_total": 53,
+    "po_qty": 108,
+    "policy": "sandbox-v2",
+    "price": "20.00",
+    "receipts": [
+     37,
+     16
+    ],
+    "reversals": []
+   },
+   "params_sha256": "9ff24f0a233ae80610a1b89c78813644f13d8bc09c633cfcae4d7622a3b7fcf9",
+   "policy": "sandbox-v2",
+   "reference_v3_reward": 1,
+   "seed": 480000,
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    2,
+    "before_block",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "variant": "V2_not_delivered"
+  }
+ ],
+ "manifest": "policy_shift/candidate/provisional-D4"
+}

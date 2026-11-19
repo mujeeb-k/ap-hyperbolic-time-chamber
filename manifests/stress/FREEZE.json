@@ -1,0 +1,52 @@
+{
+ "freeze": "stress/1",
+ "design": "docs/FOLLOWUP_PREREG.md \u00a74, step 7, with its amendments after red-team rounds 16 and 17. The user read the 10 cases of the recorded draw (seed 61106) and found them realistic, correctly labelled and solvable (user, 2026-11-09). Nothing has been evaluated on the set.",
+ "files": {
+  "messiness.json": "15962810d70324cf536bc7dfebe7b7af3651d1335d7897074d3eb358d6d5476c",
+  "build_summary.json": "52335e642a2c348494533a6bd3d84258e9e601fc8a28de28e68ba754a0a32ef6"
+ },
+ "versions": {
+  "stress": {
+   "src/ap_sim/stress/__init__.py": "12db9cb74b51ab818e59217f466b6ed0b09fdc2641e3b75a89c9a3679d2b631e",
+   "src/ap_sim/stress/messiness.py": "12ff1e8b50f5506e22a465bc518dc9361d448bbadd81a89375df3299e8adc2d3"
+  }
+ },
+ "depends_on": {
+  "manifests/v2/FREEZE.json": "d17ac59ae138f9561d7c551275a90b5b2c12fde9c16b15676ef3fbd010b8e19c",
+  "manifests/g8/FREEZE.json": "8024f3e0880558ecc1f65d5d89f56c60635d690371c1f55d88c309ebd52a0e86"
+ },
+ "reading_draw": {
+  "seed": 61106,
+  "cases": [
+   "stress-V1-14",
+   "stress-V1-18",
+   "stress-V2-16",
+   "stress-V3a-8",
+   "stress-V3b-2",
+   "stress-V3b-6",
+   "stress-V4-5",
+   "stress-V4-7",
+   "stress-V5-15",
+   "stress-V5-3"
+  ]
+ },
+ "checks_sha256 (runs/stress/checks, git-ignored)": {
+  "runs/stress/checks/baselines.json": "6c470a3f6cc56e894631bb1724df7076d4d6cc4156051087f3efcc18b69bad4c",
+  "runs/stress/checks/keys.json": "465d3a6ef4b06ca091a698a98536f6ac0bf16f94c5e2786f2e607103e92b0f4a",
+  "runs/stress/checks/leakage.json": "2f646ffc98b0331509a69aca489848b1a364a7032ea44262d7d5dc4b2d0ab2f6",
+  "runs/stress/checks/reachability.json": "5f04fdb3991404dd7ba4eaa4853aefd9a4ead16aa7de7758b8c8b7a2f4540cd0",
+  "runs/stress/checks/reference.json": "7fba7161150ebb2c72745ad23d0f0c6f9c318db999cdb3bbf17bf6357d95e319",
+  "runs/stress/checks/scope.json": "ad0f98a2262ba567a2596c397dfd6aebc856e4834d6f031ebb6456331c759cc0",
+  "runs/stress/checks/verifier_compare.json": "f6118bb7eeaf7887ddf198bcd14daf7283c7436752e00b8b69352dfd2b09034f",
+  "runs/stress/checks/verifier_stress.json": "ceb2d7ef946a6885c4f8e678089835efa5d40804808c2e73c5c0f7de0bec18ec"
+ },
+ "red_team": {
+  "round 16": "scripts/redteam/round16/findings/REPORT.md",
+  "round 17": "scripts/redteam/round17/findings/REPORT.md"
+ },
+ "not_frozen_here": {
+  "manifests/stress/SPEC.md": "the description, with its known properties and limitations; wording may still change",
+  "scripts/stress/*.py, scripts/independent_verifier_stress.py": "build, validation and reading tools; the evaluation does not run them",
+  "runs/stress/explore10.html, read10.html": "reading aids, git-ignored"
+ }
+}

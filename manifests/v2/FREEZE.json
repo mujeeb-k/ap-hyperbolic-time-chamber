@@ -1,0 +1,102 @@
+{
+ "freeze": "v2-phase2",
+ "design": "docs/V2.md, Phase 2 approved (2026-10-30)",
+ "generator": "causal/2",
+ "random_stream": "causal/1",
+ "generator_commit": "1d6f9ad453f3c6dbac98adc65839bf6542be58f7",
+ "files": {
+  "sft.json": "5513ded467c528a01f1017d2243287183d48f5814745e4fda7939f153b4221c6",
+  "rl.json": "49df18674be6c6fb4903b599070673997e9287a76adf75afc602b0f2dff796e9",
+  "dev.json": "1537cb38768cbd427d35bd9a92f2e431e442ec74933361d472d875eb891ae4b1",
+  "regression.json": "aa6c96ab135b72c754a27f8c6908ef05ff4c8ec537a898af007baf44131c5484",
+  "test.json": "d5a4d8bc3531df0733f41e62d30ec516fe67141268038ffbce00b6f54f4e2e62",
+  "test_reserve.json": "a960f396e253c8899c57d04e42cf2a6cf1158937485e57327c8981d64735f0da",
+  "v6.json": "f447007c8422e20e12b87e058cd71f6d3a7d25289d8a88f832a30f3831ddd75f",
+  "policy_shift.json": "7a3ff6e979d0f6f45c4014b7b7c69cf8aaf9b5644aaad7aa0ccb6e521b9b395b",
+  "build_summary.json": "445dc4606c4ac3588291f4461d620b8e1afb750fa12d49c56b999f90bbd020fa"
+ },
+ "cases": {
+  "sft": 300,
+  "rl": 480,
+  "dev": 60,
+  "regression": 40,
+  "test": 200,
+  "test_reserve": 100,
+  "v6": 100,
+  "policy_shift": 44
+ },
+ "versions": {
+  "policy": {
+   "docs/POLICY.md": "b74fc8f7bbb36f0457c6a9e149e84a98f4b5d71ccd6697ec8581df9a10901309"
+  },
+  "surfaces/4": {
+   "src/ap_sim/app/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "src/ap_sim/app/catalog.py": "9eb18e9e5526ba29329b53942eb2269a85982fca8887def11099e3ca8086e407",
+   "src/ap_sim/app/controls.py": "fded1abd240884c619243b191dffc825cf64da52632b8899a4caa67dc8197930",
+   "src/ap_sim/app/limits.py": "689ee3789e1a6b64db245c885a31e3498a26808982f429a9c99a6065cbcba730",
+   "src/ap_sim/app/manual.py": "3e4b2c00f1aff1a7c2b9c338a60b48a76b515c6d42a7c2ae180c611b29a324ee",
+   "src/ap_sim/app/render.py": "37fb6fcfd56e8db9ab71cbe189240d0bc6cfceca8c18b309702fb11117b960ca",
+   "src/ap_sim/app/server.py": "9aed6c75eb38ad8ea71b33e645f21c7064a3f247625c89d52bc7bad7aab148e8",
+   "src/ap_sim/app/session.py": "659c05bd348738920837aae469f31ec1d81147f71b240e998f9fe52e2cdff010",
+   "src/ap_sim/app/viewmodel.py": "d74c2ce10521d7f0292809b55fe9888e28aee905e72572c63a211960d13152b1",
+   "src/ap_sim/interfaces/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "src/ap_sim/interfaces/browser.py": "96ce680d7ee9869dcb00c5da4e97a2f39634a833d8dd244d6d45cd81db727114",
+   "src/ap_sim/interfaces/canonical.py": "d79297a3cd24db6f25ab8038ed676ba8b0595018ed14c926e2c9c34ac4f16195",
+   "src/ap_sim/interfaces/structured.py": "b32d8fc706fed4c25076054d1a12cb819b01a328cb8b302296d31ceda470abd1",
+   "src/ap_sim/interfaces/tools.py": "6b3220c60f7f758e5b372809a8adc834dc93e5c3a3bed0351bc47e597175e198",
+   "src/ap_sim/domain/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "src/ap_sim/domain/calculations.py": "3cebd7335c7e6288dc05fd82970791538900f22b3d963b535bcfb6062919a480",
+   "src/ap_sim/domain/policy.py": "26765176a994aa277c245114094b521bad9d52a9bdbc8c125624339680a393cc",
+   "src/ap_sim/domain/records.py": "74105d8f50de028bef4f74f9905effe542abbe27d8cb4e4a5e37875ed72bef38",
+   "src/ap_sim/domain/report.py": "60c809a445ffba3aec0ddff0d793748b36f5f289a4d0767847e73462ed13b75a",
+   "src/ap_sim/domain/rules.py": "f12b14fb96f5dfdae5fe27c911daea3976fd86543355592da0e3cdb305e4a847",
+   "src/ap_sim/domain/store.py": "bf8aa487db8f85d1cce814112eae46082ee9afb3023f0123d99b246e4e0a88ae"
+  },
+  "instructions/5": "c07f13105d050f242238e58170c40118c7a52df5fb1d76aa56d8de31ebcc691c",
+  "g7": {
+   "src/ap_sim/grader/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "src/ap_sim/grader/arithmetic.py": "56d8cb76f8ebf1efa66c6a08244ee4333a913b60daae1b0d9b145fde1d94ce8f",
+   "src/ap_sim/grader/grader.py": "52bdf26bd455871ed639306e0c62f66ddd8a03c6661fee3c03a0b5092d366bf4"
+  },
+  "reference/5": {
+   "src/ap_sim/agents/reference.py": "cf0add6e9e56526024105eae8567444ee68aba5a83039397888fc3ea405c0681"
+  },
+  "generator": {
+   "src/ap_sim/generator/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "src/ap_sim/generator/causal.py": "eda6537cf2e668b43f68a246b2bf97cc4cc05c7e749a959b8e49a712825709ce",
+   "src/ap_sim/generator/fixtures.py": "59ec48bbff2317738a6df60627ff10bc4d7c92aa89446bb422b70b39f4884242",
+   "src/ap_sim/generator/ladder.py": "15f80f88add9c79a5e2d2a5fe948a7636b7ca0c9b0d76cfa37ab3f9e67d44de5",
+   "src/ap_sim/generator/manifests.py": "ef001e16826b505816fd5e110b6eb305e1eb6345e548500e523e9e25d47d265b",
+   "src/ap_sim/generator/policy_shift.py": "1f4081c4831a3f937891ebafb66cfe41ace349eac0c4822149e445e821dda22e",
+   "src/ap_sim/generator/splits.py": "916cea317199db33e621e4328eb92717bc74ab4ce5740d75303fab635903b07f"
+  },
+  "engine": {
+   "src/ap_sim/engine/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "src/ap_sim/engine/engine.py": "8f141099686d1340ab8727f160bc42909e30072c51532a734558c8b52e628ff4",
+   "src/ap_sim/events/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "src/ap_sim/events/clock.py": "48297d42109c68ba7d9d37a17acec513b610621d04b4ad5d45402923c2161fd6",
+   "src/ap_sim/events/scheduler.py": "4739e641737393958f7982e7d15fdc93d0f32fded840b6de9cb2db79d362a0c7",
+   "src/ap_sim/events/world.py": "fa7e2671938ee65c6f669428e1a36cd771d71a2165e43f2c67c97c0067c7cc56"
+  }
+ },
+ "checks_sha256 (runs/phase2/checks, git-ignored)": {
+  "scope": "57aba1a60a4fd93921e42ea116da4863c6a0b4469de426354ac1f2465967b92c",
+  "reference": "36c1dd869430956a7e71044291cef7ecf12b4a4b524aa043f14cb9d844a3f695",
+  "verifier": "e980d47d1f712b408da7c5183188af4169f5afd377220e0f6e6273583acf9d50",
+  "reachability": "66d8566ab25bfee782990c6f8cbf827b820e1ac7bdfde3ebdfab92a4ef24b672",
+  "leakage": "248e34abf7a470a8d05ac4219066d63514c0ec89e96f0db567b140ff7c82e6d1",
+  "leakage_followup": "020267099befa5d6f42824a96d669749946eeaa71e370b44af97d9d31778d6b0",
+  "leakage_followup2": "0c0cdfe835bc8fcc537bcc7a989e44ea430e37cd10303b96b07a36752c9faa7b",
+  "baselines": "c971ee270679e64a3ac526dc2a85f90a991480e71e6ab36e07ec89106d1b107c"
+ },
+ "amendments": [
+  {
+   "date": "2026-10-31",
+   "file": "src/ap_sim/interfaces/tools.py",
+   "group": "surfaces/4",
+   "previous_sha256": "2b0d5a287aaf1d3112f0d5d7408e716ea3cee4f4c2b953a8bd89b1b1821885dc",
+   "sha256": "6b3220c60f7f758e5b372809a8adc834dc93e5c3a3bed0351bc47e597175e198",
+   "reason": "Gate 3 round 4, rulings 1-4 (user, 2026-10-31; a pre-data fix): the observation cap (SIZE_LIMIT) is raised above the enumerated maximum observation (scripts/phase3/observation_bound.py), an observation over the cap is truncated with a visible notice instead of raising, and each step is recorded before its page is rendered. No split changes; every observation reference/5 and Claude's 30 Gate 1A transcripts receive is byte-identical (scripts/phase3/round5_checks.py)."
+  }
+ ]
+}

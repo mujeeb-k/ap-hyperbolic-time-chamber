@@ -1,0 +1,4 @@
+{
+ "about": "Substitute settings for the Claude reference run. If the pinned claude-sonnet-5-5 had been unavailable, the substitute model's settings and prices ($/MTok: input, output, cache_write, cache_read) would have been recorded here before any substitute run. claude_row.py refuses any model without a recorded price before sending a request. No substitute was used.",
+ "substitutes": {}
+}

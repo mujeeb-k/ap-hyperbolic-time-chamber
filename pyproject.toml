@@ -1,0 +1,47 @@
+[project]
+name = "ap-sim"
+version = "0.1.0"
+description = "AP receipt-investigation environment (simulator, surfaces, grader, reference agent)"
+requires-python = "==3.12.*"
+dependencies = [
+    "pydantic==2.14.1",
+    "playwright==1.64.0",
+    # Declared directly: the environment's tests and audits import them. numpy is at the version vLLM 0.30.0
+    # accepts (numba pins numpy < 2.5).
+    "numpy==2.3.5",
+    "transformers==5.20.2",
+]
+
+[dependency-groups]
+dev = [
+    "hypothesis==6.170.14",   # added 2026-10-31 for the property-based fuzz test over FinishReportV2
+    "pytest==9.1.1",
+]
+# Training stack. Same versions on the Mac (CPU checks) and the Linux GPU box. vLLM is the generation backend
+# for training and every comparison (chosen 2026-10-30): Linux only; 0.30.0 tested on an A100 SXM, which
+# needs setuptools 80.10.2 (numpy 2.3.5 is declared above).
+# Live tracking of runs from a local machine only (added 2026-11-04). The GPU machines install only --group train, and
+# training never imports this group.
+tracking = [
+    "wandb==0.30.0",
+]
+train = [
+    "torch==2.13.0",
+    "transformers==5.20.2",
+    "trl==1.16.0",
+    "peft==0.21.2",
+    "accelerate==1.15.0",
+    "vllm==0.30.0; sys_platform == 'linux'",
+    "setuptools==80.10.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ap_sim"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["browser: needs headless Chromium (Playwright)", "train: needs the train dependency group (torch, TRL)"]

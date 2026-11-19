@@ -1,0 +1,40 @@
+# Secrets and environments
+.env
+.env.*
+*.pem
+*.key
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Model weights, adapters, checkpoints
+*.safetensors
+*.bin
+*.gguf
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+adapters/
+outputs/
+hf_cache/
+
+# Experiment tracking and bulk trajectories
+wandb/
+mlruns/
+trackio/
+trajectories/
+runs/
+*.jsonl.gz
+
+# Tooling
+.pytest_cache/
+.hypothesis/
+.ipynb_checkpoints/
+.DS_Store
+playwright-report/
+test-results/
+
+# manifests/ is intentionally NOT ignored: frozen manifests are committed.

@@ -1,0 +1,5 @@
+tag: v2-preregistration
+tag object (git sha-1): 2e1093e327826676833643ff03e01c772a9ce416
+commit (git sha-1): 1f691b0c83fb387689c396ba6649ce84390315e6
+tree (git sha-1): f2f3f0d23d32dc1e5e9c2005a86770f53d796d6f
+tree as tar (sha-256, git version 2.39.5 (Apple Git-154)): 466fde500e66b7e2d3c0777d8b5f28274ea22c0bcbd890fabe217cd66f5c6bde

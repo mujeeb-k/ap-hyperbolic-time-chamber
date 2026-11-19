@@ -1,0 +1,12 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+The data and documents in this repository are licensed under the Creative Commons Attribution 4.0 International
+License. This covers manifests/, data/, docs/ and preregistration_proof/PLAN_V2.md.
+
+The full legal code is at https://creativecommons.org/licenses/by/4.0/legalcode
+A summary is at https://creativecommons.org/licenses/by/4.0/
+
+Attribution: cite the paper "Right Actions, Incomplete Evidence: Post-Training a Small Language Model in a Stateful
+Accounts Payable Environment" and link to this repository.
+
+The code in this repository is licensed separately, under the Apache License 2.0 (see LICENSE).

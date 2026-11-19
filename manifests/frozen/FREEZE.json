@@ -1,0 +1,28 @@
+{
+ "freeze": "freeze-1",
+ "commit_before": "46edffe94a2b5a784b2e465b8abe0aa179b3a89d",
+ "schema": "surfaces/3",
+ "grader": "g6",
+ "instructions": "instructions/4",
+ "policy_default": "sandbox-v1",
+ "ladder": "ladder/2",
+ "generator": "causal/1",
+ "files": {
+  "manifests/frozen/compositional.json": "c37994a1d702299c7ba1ba5215f7b9b84269c852901e6c77353cf1a023af86a1",
+  "manifests/frozen/iid_test.json": "3e7411a170b524e8d10bcc7497a59104775e411276b30d5b482d7d4ba7b8cd7f",
+  "manifests/frozen/pilot_sets.json": "5085153fa9d923ff9f8fb4b2613a96dab617fa4fb6269cce540478b351161bda",
+  "manifests/frozen/sft_demos_v4.sha256": "f2a380b846bdb21748aed638900bbc319679db7d713131a50a4c799b8c859821",
+  "manifests/frozen/train_pool.json": "6e6f420d9c9ce2236b9928a928e9a04d46b85c3f4bd3293bfbc21e20d748d59b",
+  "manifests/frozen/validation.json": "9f2e39f0b2174182b9fba15e7dc75e6b6a8a6d3ed7ccc5fe34af7cd589befea5"
+ },
+ "final_tests_change_detection": {
+  "iid_test": "3e7411a170b524e8d10bcc7497a59104775e411276b30d5b482d7d4ba7b8cd7f",
+  "compositional": "c37994a1d702299c7ba1ba5215f7b9b84269c852901e6c77353cf1a023af86a1",
+  "policy_shift": "3d8b3325e5185ae25236819719e5a86c400c10329be75a8dfbcc87d63d3230d8"
+ },
+ "policy_shift_addendum": "frozen separately (DECISIONS P50): out of training, readiness checks and checkpoint selection; never revised on model performance",
+ "blind_review": {
+  "judgments_initial_sha256": "c8658d5cc300b38e98e789d27aa7cc3946e835c7762925a78b0ef9d38d6964d7",
+  "adjudication_sha256": "e253af93f1ceed4add2dcdf4285cf1b83a8ca0b3e1b65cded238aa8aefc869a4"
+ }
+}

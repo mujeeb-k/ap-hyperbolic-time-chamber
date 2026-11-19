@@ -1,0 +1,266 @@
+{
+ "generator_commit": "1d6f9ad453f3c6dbac98adc65839bf6542be58f7",
+ "earlier_cases_by_source": {
+  "frozen:compositional": 60,
+  "frozen:iid_test": 120,
+  "frozen:train_pool": 296,
+  "frozen:validation": 60,
+  "frozen:policy_shift": 44,
+  "fresh_1000": 1000,
+  "fresh_1000_regenerated": 1000,
+  "dev_cases": 55,
+  "boundary": 16
+ },
+ "collisions_redrawn": {
+  "test": {},
+  "test_reserve": {},
+  "v6": {},
+  "policy_shift": {},
+  "dev": {},
+  "regression": {},
+  "rl": {},
+  "sft": {}
+ },
+ "sizes": {
+  "test": 200,
+  "test_reserve": 100,
+  "v6": 100,
+  "policy_shift": 44,
+  "dev": 60,
+  "regression": 40,
+  "rl": 480,
+  "sft": 300
+ },
+ "mix": {
+  "test": {
+   "group": {
+    "V5": 40,
+    "V2": 36,
+    "V4": 44,
+    "V3b": 20,
+    "V1": 40,
+    "V3a": 20
+   },
+   "expected": {
+    "release": 100,
+    "keep_blocked": 56,
+    "pending": 44
+   },
+   "discrepancy_type": {
+    "none": 40,
+    "receipt_coverage_gap": 160
+   },
+   "policy": {
+    "sandbox-v1": 200
+   },
+   "delay": {
+    "None": 28,
+    "240": 44,
+    "2880": 31,
+    "1920": 44,
+    "720": 53
+   },
+   "gap_1": 15
+  },
+  "test_reserve": {
+   "group": {
+    "V4": 22,
+    "V3b": 10,
+    "V5": 20,
+    "V2": 18,
+    "V1": 20,
+    "V3a": 10
+   },
+   "expected": {
+    "pending": 22,
+    "keep_blocked": 28,
+    "release": 50
+   },
+   "discrepancy_type": {
+    "receipt_coverage_gap": 80,
+    "none": 20
+   },
+   "policy": {
+    "sandbox-v1": 100
+   },
+   "delay": {
+    "2880": 14,
+    "1920": 22,
+    "720": 25,
+    "240": 26,
+    "None": 13
+   },
+   "gap_1": 7
+  },
+  "v6": {
+   "group": {
+    "V1": 30,
+    "V2": 20,
+    "V3a": 10,
+    "V3b": 10,
+    "V4": 30
+   },
+   "expected": {
+    "release": 40,
+    "keep_blocked": 30,
+    "pending": 30
+   },
+   "discrepancy_type": {
+    "receipt_coverage_gap": 100
+   },
+   "policy": {
+    "sandbox-v1": 100
+   },
+   "delay": {
+    "240": 26,
+    "720": 24,
+    "1920": 20,
+    "2880": 15,
+    "None": 15
+   },
+   "gap_1": 10
+  },
+  "policy_shift": {
+   "group": {
+    "PS": 40,
+    "PB": 4
+   },
+   "expected": {
+    "keep_blocked": 23,
+    "release": 21
+   },
+   "discrepancy_type": {
+    "receipt_coverage_gap": 23,
+    "none": 21
+   },
+   "policy": {
+    "sandbox-v1": 22,
+    "sandbox-v2": 22
+   },
+   "delay": {
+    "240": 44
+   },
+   "gap_1": 16
+  },
+  "dev": {
+   "group": {
+    "V1": 12,
+    "V2": 11,
+    "V3a": 6,
+    "V3b": 6,
+    "V4": 13,
+    "V5": 12
+   },
+   "expected": {
+    "release": 30,
+    "keep_blocked": 17,
+    "pending": 13
+   },
+   "discrepancy_type": {
+    "receipt_coverage_gap": 48,
+    "none": 12
+   },
+   "policy": {
+    "sandbox-v1": 60
+   },
+   "delay": {
+    "240": 14,
+    "720": 17,
+    "1920": 14,
+    "2880": 9,
+    "None": 6
+   },
+   "gap_1": 3
+  },
+  "regression": {
+   "group": {
+    "V1": 8,
+    "V2": 7,
+    "V3a": 4,
+    "V3b": 4,
+    "V4": 9,
+    "V5": 8
+   },
+   "expected": {
+    "release": 20,
+    "keep_blocked": 11,
+    "pending": 9
+   },
+   "discrepancy_type": {
+    "receipt_coverage_gap": 32,
+    "none": 8
+   },
+   "policy": {
+    "sandbox-v1": 40
+   },
+   "delay": {
+    "240": 10,
+    "720": 9,
+    "1920": 9,
+    "2880": 7,
+    "None": 5
+   },
+   "gap_1": 0
+  },
+  "rl": {
+   "group": {
+    "V5": 96,
+    "V4": 106,
+    "V1": 96,
+    "V2": 86,
+    "V3b": 48,
+    "V3a": 48
+   },
+   "expected": {
+    "release": 240,
+    "pending": 106,
+    "keep_blocked": 134
+   },
+   "discrepancy_type": {
+    "none": 96,
+    "receipt_coverage_gap": 384
+   },
+   "policy": {
+    "sandbox-v1": 480
+   },
+   "delay": {
+    "1920": 116,
+    "2880": 68,
+    "720": 121,
+    "240": 111,
+    "None": 64
+   },
+   "gap_1": 35
+  },
+  "sft": {
+   "group": {
+    "V1": 60,
+    "V2": 54,
+    "V3a": 30,
+    "V3b": 30,
+    "V4": 66,
+    "V5": 60
+   },
+   "expected": {
+    "release": 150,
+    "keep_blocked": 84,
+    "pending": 66
+   },
+   "discrepancy_type": {
+    "receipt_coverage_gap": 240,
+    "none": 60
+   },
+   "policy": {
+    "sandbox-v1": 300
+   },
+   "delay": {
+    "240": 71,
+    "720": 79,
+    "1920": 68,
+    "2880": 43,
+    "None": 39
+   },
+   "gap_1": 23
+  }
+ }
+}

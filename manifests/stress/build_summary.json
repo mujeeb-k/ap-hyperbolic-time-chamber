@@ -1,0 +1,1075 @@
+{
+ "generator": "stress/2",
+ "generator_sha256": "12ff1e8b50f5506e22a465bc518dc9361d448bbadd81a89375df3299e8adc2d3",
+ "generator_commit": "b7b2f7be0a911dc12dcad5dc7e7ccaa303ec2da7",
+ "uncommitted_src_note": "src/ is not clean at build time (other agents' edits; src/ap_sim/stress/ is new); the frozen generator, engine, graders, reference agent and surfaces are checked by hash instead",
+ "frozen_versions": {
+  "files_checked": 44,
+  "mismatches": []
+ },
+ "tokenizer": {
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554"
+ },
+ "limits": {
+  "tool_calls": 40,
+  "completion_tokens": 28354,
+  "context_tokens": 40094
+ },
+ "existing_cases_by_split": {
+  "sft": 300,
+  "rl": 480,
+  "dev": 60,
+  "regression": 40,
+  "test": 200,
+  "test_reserve": 100,
+  "v6": 100,
+  "policy_shift": 44,
+  "forgetting_l1": 40
+ },
+ "earlier_cases_by_source": {
+  "frozen:compositional": 60,
+  "frozen:iid_test": 120,
+  "frozen:train_pool": 296,
+  "frozen:validation": 60,
+  "frozen:policy_shift": 44,
+  "fresh_1000": 1000,
+  "fresh_1000_regenerated": 1000,
+  "dev_cases": 55,
+  "boundary": 16
+ },
+ "draws": 101,
+ "accepted": 100,
+ "redraws": {
+  "seed: policy_shift": 1
+ },
+ "withdrawals": [],
+ "withdrawal_count": 0,
+ "replacements": [
+  {
+   "case_id": "stress-V1-15",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples; its slot's combination is swapped by stress.DESIGN_SWAPS",
+   "old_params_sha256": "eab47c3e0594b1032fd58bd9d4d4dfc91984e4170239a17e5097e05dec307661",
+   "new_params_sha256": "e25f8cebc1d2808b25bf8c53ece35425a2b9d6b0d787981ba299e1b15048697d",
+   "old_resamples": 1,
+   "new_resamples": 5
+  },
+  {
+   "case_id": "stress-V1-17",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+   "old_params_sha256": "cd4e2f95dc8b7b31824c1e905591ed596a5225d9ff0eb4562c5da837b9b7f4cd",
+   "new_params_sha256": "a5c55c975ed0d78f23fdbaf6e114252e7d417d9f4816103f2beb541bb1d6b717",
+   "old_resamples": 0,
+   "new_resamples": 3
+  },
+  {
+   "case_id": "stress-V1-19",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+   "old_params_sha256": "436c3a32a20e321253e83378de564d6422931b228251314f6c6a6be6c8bde44e",
+   "new_params_sha256": "3d42391f2c7f0a6470fd0c7f464a14cfac6fd5221f183b6a149cba9c0bd331e3",
+   "old_resamples": 1,
+   "new_resamples": 2
+  },
+  {
+   "case_id": "stress-V1-2",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+   "old_params_sha256": "f3c3b3a95549aa46a117ff3734065d8f7c0713f0976e0fdcc0ca0f58d6671142",
+   "new_params_sha256": "c71a7956c94deb10143ad44684fdce07af248b6f9e103a7f8cbbb19dcbd0aeaf",
+   "old_resamples": 0,
+   "new_resamples": 3
+  },
+  {
+   "case_id": "stress-V1-7",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+   "old_params_sha256": "5a67b7e863d51e872123e7db23e26f5b48ca9a79dd591d501e08039d375b47d6",
+   "new_params_sha256": "5de5b55e980ddcf5d4d709ce9e0648723a7e80383da2a433b61a13221b69e733",
+   "old_resamples": 0,
+   "new_resamples": 0
+  },
+  {
+   "case_id": "stress-V1-9",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+   "old_params_sha256": "d46d241032f5f93fba1f7bf75a6cd359c64b467b253f45115e84a76e43d5d941",
+   "new_params_sha256": "0715ce48c5860ffae05643720fb33787180ac666c057a191c7e3a7b331fe4c73",
+   "old_resamples": 0,
+   "new_resamples": 4
+  },
+  {
+   "case_id": "stress-V2-1",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+   "old_params_sha256": "2cab612f7367fd1138cdd0f27cb2a8d0830ad8c5aac30041e28837eec7d2536c",
+   "new_params_sha256": "03048a87c08d10d6c93853d100698759825fcc95b89389880778d2012215d8b6",
+   "old_resamples": 1,
+   "new_resamples": 3
+  },
+  {
+   "case_id": "stress-V2-10",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+   "old_params_sha256": "1c99f6c0d305a04f75be31b1b6c7af01d3d435d02a88fd56269e8fe1c1d43b22",
+   "new_params_sha256": "ac76efe80ba94001d810165f133de8a7fe7386a27e95286c994852be5966ea1a",
+   "old_resamples": 2,
+   "new_resamples": 6
+  },
+  {
+   "case_id": "stress-V2-11",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+   "old_params_sha256": "07c2d76cd12f46063ea1622bbc233ba543dec2d44f1261b5bb67c9a0712d01c6",
+   "new_params_sha256": "85c89c248b4b8de8fcf0ddfe3c19ca4368a903a960a733c95dd3969cc5292eee",
+   "old_resamples": 0,
+   "new_resamples": 1
+  },
+  {
+   "case_id": "stress-V2-13",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+   "old_params_sha256": "7dbb5fe50824c1338dd57f4f4a6f264ea556344c4e1cc8bb1852e6de0bc9e02b",
+   "new_params_sha256": "fdc3f258c8225476fa4029619c40ded3fca935f453c6ff0a1417b403514d3051",
+   "old_resamples": 1,
+   "new_resamples": 4
+  },
+  {
+   "case_id": "stress-V2-16",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+   "old_params_sha256": "7fa4e226eeab96446b05b2c172433dd4c12f2bf5f02e1eeaf9bc20e68aadb232",
+   "new_params_sha256": "68ae1e16863b4667f564eba45bbc526c26ede54fee1b8473986e209cc64ad213",
+   "old_resamples": 3,
+   "new_resamples": 26
+  },
+  {
+   "case_id": "stress-V2-17",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+   "old_params_sha256": "6b989459f962fc2d451dc188bebc99515ea2b17ac8bcd5987ff2ce82e5cabf09",
+   "new_params_sha256": "2ea51cb47ccfeebbcebf37b7a64a792e4754369a45670bf0dcc82ff850488b40",
+   "old_resamples": 0,
+   "new_resamples": 2
+  },
+  {
+   "case_id": "stress-V2-3",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples; its slot's combination is swapped by stress.DESIGN_SWAPS",
+   "old_params_sha256": "dc535693098919e5a5629bea9ca60c583d31482edd1e81d1f21833040faeffbc",
+   "new_params_sha256": "5d2075dd2a6e5a21dd6555be4e87aac1fee8586fabea0f84af2eb5038566a841",
+   "old_resamples": 1,
+   "new_resamples": 1
+  },
+  {
+   "case_id": "stress-V2-8",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+   "old_params_sha256": "856c4574878ddd92e0fd7085040791a268498a8c6491d7d918b2c8884c06dc11",
+   "new_params_sha256": "75fa6d40b3b11f911886a008c1523a5c44d1d70f93fad7fd30f452bc63dff4ed",
+   "old_resamples": 0,
+   "new_resamples": 7
+  },
+  {
+   "case_id": "stress-V3a-2",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+   "old_params_sha256": "4b0b39e3333b3a2638dec938d39ea756eff0152872b7f4d1b799d7cba8ecc157",
+   "new_params_sha256": "68d8d869fb53fd22b4427dd97c06451ba81c50c833d95c7fd521940931e7ccbd",
+   "old_resamples": 0,
+   "new_resamples": 3
+  },
+  {
+   "case_id": "stress-V3a-5",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+   "old_params_sha256": "ddf03a21dae97c0e2156553361aa048885e85d17d83ac3689f82122a52ec5d5b",
+   "new_params_sha256": "037f37f97e9286518894cb7a1bd1af74ec81d4d425904796924fdb7933c4e8d5",
+   "old_resamples": 0,
+   "new_resamples": 6
+  },
+  {
+   "case_id": "stress-V3a-7",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+   "old_params_sha256": "8ba0c2ada2140f7ea682ace18d814a5d223fb932cec1bf8c0b1797a3a049d94a",
+   "new_params_sha256": "0b8a6e20accbe3c88561050a5969b21a20ccec65d615b193d1064756c4834db6",
+   "old_resamples": 1,
+   "new_resamples": 2
+  },
+  {
+   "case_id": "stress-V3a-9",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+   "old_params_sha256": "eb55948b65b4ee9b85500bb704648e210f2d1bd7018ca349b1fa5f74d12420b2",
+   "new_params_sha256": "8df8c3f107519bf36f8c4333072a85c6cef555f07a4a70e24d417c9ec0a808fc",
+   "old_resamples": 0,
+   "new_resamples": 0
+  },
+  {
+   "case_id": "stress-V3b-2",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+   "old_params_sha256": "f5c9b00b95fb0781f5d4704fdade4d5f5742d1c99dfd6749b5c2d00df7fc0fc1",
+   "new_params_sha256": "31fba197638e240b47f85f8006894da6a09cee234af409cae037fd316672f87f",
+   "old_resamples": 0,
+   "new_resamples": 0
+  },
+  {
+   "case_id": "stress-V3b-7",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+   "old_params_sha256": "44f9ba8cee71507528a438e9c66527050bca9946ca8688f6b250c93b7616ba7f",
+   "new_params_sha256": "598515bf0ce7e60834deca8cebec0cb96169be33cc7bff0ef7fc2a14fb41ac0f",
+   "old_resamples": 1,
+   "new_resamples": 13
+  },
+  {
+   "case_id": "stress-V3b-9",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+   "old_params_sha256": "119d92880ee7419eb0e8fe5c4ebf266620ea3df6c520db40e2a5a0d7ec0ef826",
+   "new_params_sha256": "c73eff28bfd307377fb7836f66863046a79081c5b09d170e1939d7abcc0decbe",
+   "old_resamples": 0,
+   "new_resamples": 5
+  },
+  {
+   "case_id": "stress-V4-11",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples; its slot's combination is swapped by stress.DESIGN_SWAPS",
+   "old_params_sha256": "02ec65a524d352165fb37ee735480cf5a89788c7b08788a6c983ddfbcb397446",
+   "new_params_sha256": "fda45153110df314bd5df2ba871c3b7c83677181ec644d3e0198c966e50d84a3",
+   "old_resamples": 0,
+   "new_resamples": 10
+  },
+  {
+   "case_id": "stress-V4-13",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples; its slot's combination is swapped by stress.DESIGN_SWAPS",
+   "old_params_sha256": "362a3446157b9a380341a46f273faebded4d5437fc49860a3bca33d47df70cb6",
+   "new_params_sha256": "905da1e407c577a482e925dc08b4235a6fdc0d2d22dff6adf1436146097dc8bf",
+   "old_resamples": 0,
+   "new_resamples": 7
+  },
+  {
+   "case_id": "stress-V4-15",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+   "old_params_sha256": "608393c237dea691a3d2205a98ea37527c0c487b58817d4d1286340f86009a47",
+   "new_params_sha256": "7df4d6e97709ee743777535787ec7123857e1094e0f9f4c4b1f387141470b293",
+   "old_resamples": 0,
+   "new_resamples": 0
+  },
+  {
+   "case_id": "stress-V4-17",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+   "old_params_sha256": "d583dbb55661ffbc990efeacc8001b4e16867dec9b1dffb590f3d0a8d89c4c8d",
+   "new_params_sha256": "0e51e1c5ee8d3f6652e166c04bade8ab737ce89ec039900f3c120196b84fbce4",
+   "old_resamples": 0,
+   "new_resamples": 3
+  },
+  {
+   "case_id": "stress-V4-19",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+   "old_params_sha256": "a8182821fb05c9c5aa3c625f96fb59602e352b1f15562c03ffeec9830ecb0e26",
+   "new_params_sha256": "3d674a0b38f50ceae20d744279841a340437f3d1ec743171dcb6e20a9631bb5e",
+   "old_resamples": 0,
+   "new_resamples": 5
+  },
+  {
+   "case_id": "stress-V4-21",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+   "old_params_sha256": "aad0a902e4da4182a6340d385b53ec616aba936c5da8a5547f5847b8c3b756d5",
+   "new_params_sha256": "720b308974a053f31eb8a78301480440073d378d7b556b0354f6f6c24a6af279",
+   "old_resamples": 2,
+   "new_resamples": 4
+  },
+  {
+   "case_id": "stress-V4-5",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+   "old_params_sha256": "bc0c33a4786ad38fa4eea3a23976a55d8c043bf295e6dd01a1416494c22a85ea",
+   "new_params_sha256": "5849ada1d5d31f36b745d185911d04197ba6603ee5f50d3e7d01cd151adcc26d",
+   "old_resamples": 0,
+   "new_resamples": 0
+  },
+  {
+   "case_id": "stress-V4-8",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+   "old_params_sha256": "bdb04a9cc69949d86997cf732009070d889cbea339bdff81cca9e8df510e77d7",
+   "new_params_sha256": "5a1646ab83a5398f633f870dc2fb45f4490dc737358ef81326a729ae88c779d4",
+   "old_resamples": 1,
+   "new_resamples": 6
+  },
+  {
+   "case_id": "stress-V5-12",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples; its slot's combination is swapped by stress.DESIGN_SWAPS",
+   "old_params_sha256": "3bbff233bbe2d096efa069b1f9d7cf25406cf624bb2643bc0cea4e0ce98a3a45",
+   "new_params_sha256": "1bf19806a25c2ec84ef98d2505f0221be05602f3fa6b4c17863b260091cf7c68",
+   "old_resamples": 0,
+   "new_resamples": 7
+  },
+  {
+   "case_id": "stress-V5-15",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+   "old_params_sha256": "b1018fa71e3f53d95c8d7106562e6aef59362fd95e3c2b347b93d10db8c367d5",
+   "new_params_sha256": "62aaf11a079f2e6e89bc8031a372d1c3243d2f44ae2395393d994e7bf6e49d9b",
+   "old_resamples": 0,
+   "new_resamples": 35
+  },
+  {
+   "case_id": "stress-V5-17",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+   "old_params_sha256": "29648106e75b5e77d34af71cf90a00e325215fba2b040c0c6e7712afd01000f1",
+   "new_params_sha256": "6840effaa50c3cde283b4fee6a01e098709e5da4853d24f8a933eace25e11c8b",
+   "old_resamples": 0,
+   "new_resamples": 4
+  },
+  {
+   "case_id": "stress-V5-18",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples; its slot's combination is swapped by stress.DESIGN_SWAPS",
+   "old_params_sha256": "12699b60feda40ba1f1482e8736d0c93c270246766e6d5b270851e8c527df3ed",
+   "new_params_sha256": "39b1bb664f5a343b52ea94465e9779eb32b3084c0d7b3c6eda27cdd61ebe1aca",
+   "old_resamples": 0,
+   "new_resamples": 15
+  },
+  {
+   "case_id": "stress-V5-2",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples; its slot's combination is swapped by stress.DESIGN_SWAPS",
+   "old_params_sha256": "5825f615e7254bd65cb10d74fce0f45531cbf103360eb58f5c1c735d93690a54",
+   "new_params_sha256": "728c939409598f948dae258aaf27ac4bcf069b05e58a1b2502ad3783ed5a687a",
+   "old_resamples": 0,
+   "new_resamples": 10
+  },
+  {
+   "case_id": "stress-V5-5",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+   "old_params_sha256": "3bcb58cdb915532ebfeb0c3244c798b9a6da024f04e1033b916ce94501814aa8",
+   "new_params_sha256": "56973473a4d517507f99be487f56bf1f2c717464adc948d408bd2fc6eb5497a8",
+   "old_resamples": 1,
+   "new_resamples": 0
+  },
+  {
+   "case_id": "stress-V5-8",
+   "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples; its slot's combination is swapped by stress.DESIGN_SWAPS",
+   "old_params_sha256": "9c0f620314553f6de08e18df0840724020031d8e8b69976919f0730703688013",
+   "new_params_sha256": "141cfe80262484e2600ca08e8cb0b0d44f2db1091f2841b2c260ba1848e05857",
+   "old_resamples": 0,
+   "new_resamples": 2
+  }
+ ],
+ "entries_byte_identical_to_previous_manifest": 100,
+ "draws_per_stratum": {
+  "V1": 21,
+  "V2": 18,
+  "V3a": 10,
+  "V3b": 10,
+  "V4": 22,
+  "V5": 20
+ },
+ "mix": {
+  "variant": {
+   "V2_not_delivered": 18,
+   "V1_delivered_unrecorded": 20,
+   "V3b_late_not_delivered": 10,
+   "V4_pending": 22,
+   "V3a_late_delivered": 10,
+   "V5_stale_covered": 20
+  },
+  "group": {
+   "V2": 18,
+   "V1": 20,
+   "V3b": 10,
+   "V4": 22,
+   "V3a": 10,
+   "V5": 20
+  },
+  "expected": {
+   "keep_blocked": 28,
+   "release": 50,
+   "pending": 22
+  },
+  "discrepancy_type": {
+   "receipt_coverage_gap": 80,
+   "none": 20
+  },
+  "delay": {
+   "240": 23,
+   "1920": 22,
+   "2880": 11,
+   "720": 27,
+   "None": 17
+  },
+  "receipts": {
+   "1": 57,
+   "2": 5,
+   "3": 9,
+   "4": 5,
+   "5": 24
+  },
+  "cancelled_invoices": {
+   "0": 12,
+   "1": 45,
+   "2": 29,
+   "3": 14
+  },
+  "other_invoices": {
+   "0": 1,
+   "1": 5,
+   "2": 29,
+   "3": 29,
+   "4": 31,
+   "5": 4,
+   "6": 1
+  },
+  "format": {
+   "frozen (fixtures.build)": 13,
+   "timed": 87
+  },
+  "format_by_cell": {
+   "M1": {
+    "timed": 4,
+    "frozen": 3
+   },
+   "M1+M2": {
+    "timed": 12
+   },
+   "M1+M3": {
+    "timed": 12
+   },
+   "M1+M4": {
+    "timed": 9,
+    "frozen": 3
+   },
+   "M2": {
+    "timed": 7
+   },
+   "M2+M3": {
+    "timed": 12
+   },
+   "M2+M4": {
+    "timed": 12
+   },
+   "M3": {
+    "timed": 7
+   },
+   "M3+M4": {
+    "timed": 12
+   },
+   "M4": {
+    "frozen": 7
+   }
+  },
+  "stale_receipt": 21,
+  "gap_1": 7
+ },
+ "complications": {
+  "single": {
+   "M1": 43,
+   "M2": 43,
+   "M3": 43,
+   "M4": 43
+  },
+  "pairs": {
+   "M1+M2": 12,
+   "M1+M3": 12,
+   "M1+M4": 12,
+   "M2+M3": 12,
+   "M2+M4": 12,
+   "M3+M4": 12
+  },
+  "cells": {
+   "M1": 7,
+   "M1+M2": 12,
+   "M1+M3": 12,
+   "M1+M4": 12,
+   "M2": 7,
+   "M2+M3": 12,
+   "M2+M4": 12,
+   "M3": 7,
+   "M3+M4": 12,
+   "M4": 7
+  },
+  "by_type": {
+   "V1": {
+    "M1": 11,
+    "M2": 7,
+    "M3": 8,
+    "M4": 9
+   },
+   "V2": {
+    "M1": 6,
+    "M2": 8,
+    "M3": 9,
+    "M4": 8
+   },
+   "V3a": {
+    "M1": 4,
+    "M2": 4,
+    "M3": 4,
+    "M4": 4
+   },
+   "V3b": {
+    "M1": 4,
+    "M2": 4,
+    "M3": 4,
+    "M4": 4
+   },
+   "V4": {
+    "M1": 9,
+    "M2": 9,
+    "M3": 10,
+    "M4": 11
+   },
+   "V5": {
+    "M1": 9,
+    "M2": 11,
+    "M3": 8,
+    "M4": 7
+   }
+  }
+ },
+ "allocation": {
+  "V1": {
+   "M1": 2,
+   "M2": 1,
+   "M3": 1,
+   "M4": 1,
+   "M1+M2": 3,
+   "M1+M3": 3,
+   "M1+M4": 3,
+   "M2+M3": 2,
+   "M2+M4": 2,
+   "M3+M4": 2
+  },
+  "V2": {
+   "M1": 1,
+   "M2": 1,
+   "M3": 1,
+   "M4": 1,
+   "M1+M2": 2,
+   "M1+M3": 2,
+   "M1+M4": 2,
+   "M2+M3": 3,
+   "M2+M4": 2,
+   "M3+M4": 3
+  },
+  "V3a": {
+   "M1": 1,
+   "M2": 1,
+   "M3": 1,
+   "M4": 1,
+   "M1+M2": 1,
+   "M1+M3": 1,
+   "M1+M4": 1,
+   "M2+M3": 1,
+   "M2+M4": 1,
+   "M3+M4": 1
+  },
+  "V3b": {
+   "M1": 1,
+   "M2": 1,
+   "M3": 1,
+   "M4": 1,
+   "M1+M2": 1,
+   "M1+M3": 1,
+   "M1+M4": 1,
+   "M2+M3": 1,
+   "M2+M4": 1,
+   "M3+M4": 1
+  },
+  "V4": {
+   "M1": 1,
+   "M2": 1,
+   "M3": 1,
+   "M4": 1,
+   "M1+M2": 3,
+   "M1+M3": 3,
+   "M1+M4": 3,
+   "M2+M3": 3,
+   "M2+M4": 3,
+   "M3+M4": 3
+  },
+  "V5": {
+   "M1": 1,
+   "M2": 2,
+   "M3": 2,
+   "M4": 2,
+   "M1+M2": 2,
+   "M1+M3": 2,
+   "M1+M4": 2,
+   "M2+M3": 2,
+   "M2+M4": 3,
+   "M3+M4": 2
+  }
+ },
+ "design_swaps": [
+  [
+   [
+    "V5",
+    2
+   ],
+   [
+    "V4",
+    11
+   ]
+  ],
+  [
+   [
+    "V5",
+    12
+   ],
+   [
+    "V2",
+    3
+   ]
+  ],
+  [
+   [
+    "V5",
+    8
+   ],
+   [
+    "V4",
+    13
+   ]
+  ],
+  [
+   [
+    "V5",
+    18
+   ],
+   [
+    "V1",
+    14
+   ]
+  ]
+ ],
+ "allocation_after_swaps": {
+  "V1": {
+   "M1": 2,
+   "M2": 1,
+   "M3": 1,
+   "M4": 1,
+   "M1+M2": 3,
+   "M1+M3": 3,
+   "M1+M4": 3,
+   "M2+M3": 1,
+   "M2+M4": 2,
+   "M3+M4": 3
+  },
+  "V2": {
+   "M1": 1,
+   "M2": 1,
+   "M3": 2,
+   "M4": 1,
+   "M1+M2": 2,
+   "M1+M3": 1,
+   "M1+M4": 2,
+   "M2+M3": 3,
+   "M2+M4": 2,
+   "M3+M4": 3
+  },
+  "V3a": {
+   "M1": 1,
+   "M2": 1,
+   "M3": 1,
+   "M4": 1,
+   "M1+M2": 1,
+   "M1+M3": 1,
+   "M1+M4": 1,
+   "M2+M3": 1,
+   "M2+M4": 1,
+   "M3+M4": 1
+  },
+  "V3b": {
+   "M1": 1,
+   "M2": 1,
+   "M3": 1,
+   "M4": 1,
+   "M1+M2": 1,
+   "M1+M3": 1,
+   "M1+M4": 1,
+   "M2+M3": 1,
+   "M2+M4": 1,
+   "M3+M4": 1
+  },
+  "V4": {
+   "M1": 1,
+   "M2": 1,
+   "M3": 2,
+   "M4": 1,
+   "M1+M2": 3,
+   "M1+M3": 2,
+   "M1+M4": 3,
+   "M2+M3": 2,
+   "M2+M4": 3,
+   "M3+M4": 4
+  },
+  "V5": {
+   "M1": 1,
+   "M2": 2,
+   "M3": 0,
+   "M4": 2,
+   "M1+M2": 2,
+   "M1+M3": 4,
+   "M1+M4": 2,
+   "M2+M3": 4,
+   "M2+M4": 3,
+   "M3+M4": 0
+  }
+ },
+ "checks_note": "validate.py scope recomputes labels with the same derive(), so it shows determinism, not correctness; the correctness evidence is the independent verifier (scripts/independent_verifier_stress.py) and red-team round 16's independent recompute",
+ "reference": {
+  "g7_reward_1": 100,
+  "g8_reward_1": 100,
+  "largest": {
+   "tool_calls": 22,
+   "completion_tokens": 14609,
+   "context_tokens": 20483
+  }
+ },
+ "seconds": 9.2,
+ "replacement_history": [
+  {
+   "round": "spacing rule (user, 2026-11-06)",
+   "against": "the first validated build",
+   "replacements": [
+    {
+     "case_id": "stress-V1-0",
+     "reason": "spacing rule (user, 2026-11-06): a receipt at -1600 and a cancellation at -1595 were 5 minutes apart (SPEC.md section 3 rule 5); the generator now enforces the rule, so this seed resamples",
+     "old_params_sha256": "1c9751327ce2b135f6c85b55c0aead03cf7d6523434cd76adb72a3f2159a986c",
+     "new_params_sha256": "c00665ea12a0a2a23c635be5d74d714693ff550a7af61f86d57bb2d35ede3246",
+     "old_resamples": 0,
+     "new_resamples": 1
+    },
+    {
+     "case_id": "stress-V2-12",
+     "reason": "spacing rule (user, 2026-11-06): a cancellation at -410 and a receipt at -400 were 10 minutes apart (SPEC.md section 3 rule 5); the generator now enforces the rule, so this seed resamples",
+     "old_params_sha256": "b15763a7f2cadf6c3c8fc0989f0588399a601839e23f0a70a6896c49337927ae",
+     "new_params_sha256": "d646ee68aae92f2b59a85be22a578a1f81b7770806a501950d3121784567d6db",
+     "old_resamples": 0,
+     "new_resamples": 1
+    }
+   ]
+  },
+  {
+   "round": "M3 re-issue (user, 2026-11-06)",
+   "against": "the spacing-rule build",
+   "replacements": [
+    {
+     "case_id": "stress-V1-15",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples; its slot's combination is swapped by stress.DESIGN_SWAPS",
+     "old_params_sha256": "eab47c3e0594b1032fd58bd9d4d4dfc91984e4170239a17e5097e05dec307661",
+     "new_params_sha256": "e25f8cebc1d2808b25bf8c53ece35425a2b9d6b0d787981ba299e1b15048697d",
+     "old_resamples": 1,
+     "new_resamples": 5
+    },
+    {
+     "case_id": "stress-V1-17",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+     "old_params_sha256": "cd4e2f95dc8b7b31824c1e905591ed596a5225d9ff0eb4562c5da837b9b7f4cd",
+     "new_params_sha256": "a5c55c975ed0d78f23fdbaf6e114252e7d417d9f4816103f2beb541bb1d6b717",
+     "old_resamples": 0,
+     "new_resamples": 3
+    },
+    {
+     "case_id": "stress-V1-19",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+     "old_params_sha256": "436c3a32a20e321253e83378de564d6422931b228251314f6c6a6be6c8bde44e",
+     "new_params_sha256": "3d42391f2c7f0a6470fd0c7f464a14cfac6fd5221f183b6a149cba9c0bd331e3",
+     "old_resamples": 1,
+     "new_resamples": 2
+    },
+    {
+     "case_id": "stress-V1-2",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+     "old_params_sha256": "f3c3b3a95549aa46a117ff3734065d8f7c0713f0976e0fdcc0ca0f58d6671142",
+     "new_params_sha256": "c71a7956c94deb10143ad44684fdce07af248b6f9e103a7f8cbbb19dcbd0aeaf",
+     "old_resamples": 0,
+     "new_resamples": 3
+    },
+    {
+     "case_id": "stress-V1-7",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+     "old_params_sha256": "5a67b7e863d51e872123e7db23e26f5b48ca9a79dd591d501e08039d375b47d6",
+     "new_params_sha256": "5de5b55e980ddcf5d4d709ce9e0648723a7e80383da2a433b61a13221b69e733",
+     "old_resamples": 0,
+     "new_resamples": 0
+    },
+    {
+     "case_id": "stress-V1-9",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+     "old_params_sha256": "d46d241032f5f93fba1f7bf75a6cd359c64b467b253f45115e84a76e43d5d941",
+     "new_params_sha256": "0715ce48c5860ffae05643720fb33787180ac666c057a191c7e3a7b331fe4c73",
+     "old_resamples": 0,
+     "new_resamples": 4
+    },
+    {
+     "case_id": "stress-V2-1",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+     "old_params_sha256": "2cab612f7367fd1138cdd0f27cb2a8d0830ad8c5aac30041e28837eec7d2536c",
+     "new_params_sha256": "03048a87c08d10d6c93853d100698759825fcc95b89389880778d2012215d8b6",
+     "old_resamples": 1,
+     "new_resamples": 3
+    },
+    {
+     "case_id": "stress-V2-10",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+     "old_params_sha256": "1c99f6c0d305a04f75be31b1b6c7af01d3d435d02a88fd56269e8fe1c1d43b22",
+     "new_params_sha256": "ac76efe80ba94001d810165f133de8a7fe7386a27e95286c994852be5966ea1a",
+     "old_resamples": 2,
+     "new_resamples": 6
+    },
+    {
+     "case_id": "stress-V2-11",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+     "old_params_sha256": "07c2d76cd12f46063ea1622bbc233ba543dec2d44f1261b5bb67c9a0712d01c6",
+     "new_params_sha256": "85c89c248b4b8de8fcf0ddfe3c19ca4368a903a960a733c95dd3969cc5292eee",
+     "old_resamples": 0,
+     "new_resamples": 1
+    },
+    {
+     "case_id": "stress-V2-13",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+     "old_params_sha256": "7dbb5fe50824c1338dd57f4f4a6f264ea556344c4e1cc8bb1852e6de0bc9e02b",
+     "new_params_sha256": "fdc3f258c8225476fa4029619c40ded3fca935f453c6ff0a1417b403514d3051",
+     "old_resamples": 1,
+     "new_resamples": 4
+    },
+    {
+     "case_id": "stress-V2-16",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+     "old_params_sha256": "7fa4e226eeab96446b05b2c172433dd4c12f2bf5f02e1eeaf9bc20e68aadb232",
+     "new_params_sha256": "68ae1e16863b4667f564eba45bbc526c26ede54fee1b8473986e209cc64ad213",
+     "old_resamples": 3,
+     "new_resamples": 26
+    },
+    {
+     "case_id": "stress-V2-17",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+     "old_params_sha256": "6b989459f962fc2d451dc188bebc99515ea2b17ac8bcd5987ff2ce82e5cabf09",
+     "new_params_sha256": "2ea51cb47ccfeebbcebf37b7a64a792e4754369a45670bf0dcc82ff850488b40",
+     "old_resamples": 0,
+     "new_resamples": 2
+    },
+    {
+     "case_id": "stress-V2-3",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples; its slot's combination is swapped by stress.DESIGN_SWAPS",
+     "old_params_sha256": "dc535693098919e5a5629bea9ca60c583d31482edd1e81d1f21833040faeffbc",
+     "new_params_sha256": "5d2075dd2a6e5a21dd6555be4e87aac1fee8586fabea0f84af2eb5038566a841",
+     "old_resamples": 1,
+     "new_resamples": 1
+    },
+    {
+     "case_id": "stress-V2-8",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+     "old_params_sha256": "856c4574878ddd92e0fd7085040791a268498a8c6491d7d918b2c8884c06dc11",
+     "new_params_sha256": "75fa6d40b3b11f911886a008c1523a5c44d1d70f93fad7fd30f452bc63dff4ed",
+     "old_resamples": 0,
+     "new_resamples": 7
+    },
+    {
+     "case_id": "stress-V3a-2",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+     "old_params_sha256": "4b0b39e3333b3a2638dec938d39ea756eff0152872b7f4d1b799d7cba8ecc157",
+     "new_params_sha256": "68d8d869fb53fd22b4427dd97c06451ba81c50c833d95c7fd521940931e7ccbd",
+     "old_resamples": 0,
+     "new_resamples": 3
+    },
+    {
+     "case_id": "stress-V3a-5",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+     "old_params_sha256": "ddf03a21dae97c0e2156553361aa048885e85d17d83ac3689f82122a52ec5d5b",
+     "new_params_sha256": "037f37f97e9286518894cb7a1bd1af74ec81d4d425904796924fdb7933c4e8d5",
+     "old_resamples": 0,
+     "new_resamples": 6
+    },
+    {
+     "case_id": "stress-V3a-7",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+     "old_params_sha256": "8ba0c2ada2140f7ea682ace18d814a5d223fb932cec1bf8c0b1797a3a049d94a",
+     "new_params_sha256": "0b8a6e20accbe3c88561050a5969b21a20ccec65d615b193d1064756c4834db6",
+     "old_resamples": 1,
+     "new_resamples": 2
+    },
+    {
+     "case_id": "stress-V3a-9",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+     "old_params_sha256": "eb55948b65b4ee9b85500bb704648e210f2d1bd7018ca349b1fa5f74d12420b2",
+     "new_params_sha256": "8df8c3f107519bf36f8c4333072a85c6cef555f07a4a70e24d417c9ec0a808fc",
+     "old_resamples": 0,
+     "new_resamples": 0
+    },
+    {
+     "case_id": "stress-V3b-2",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+     "old_params_sha256": "f5c9b00b95fb0781f5d4704fdade4d5f5742d1c99dfd6749b5c2d00df7fc0fc1",
+     "new_params_sha256": "31fba197638e240b47f85f8006894da6a09cee234af409cae037fd316672f87f",
+     "old_resamples": 0,
+     "new_resamples": 0
+    },
+    {
+     "case_id": "stress-V3b-7",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+     "old_params_sha256": "44f9ba8cee71507528a438e9c66527050bca9946ca8688f6b250c93b7616ba7f",
+     "new_params_sha256": "598515bf0ce7e60834deca8cebec0cb96169be33cc7bff0ef7fc2a14fb41ac0f",
+     "old_resamples": 1,
+     "new_resamples": 13
+    },
+    {
+     "case_id": "stress-V3b-9",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+     "old_params_sha256": "119d92880ee7419eb0e8fe5c4ebf266620ea3df6c520db40e2a5a0d7ec0ef826",
+     "new_params_sha256": "c73eff28bfd307377fb7836f66863046a79081c5b09d170e1939d7abcc0decbe",
+     "old_resamples": 0,
+     "new_resamples": 5
+    },
+    {
+     "case_id": "stress-V4-11",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples; its slot's combination is swapped by stress.DESIGN_SWAPS",
+     "old_params_sha256": "02ec65a524d352165fb37ee735480cf5a89788c7b08788a6c983ddfbcb397446",
+     "new_params_sha256": "fda45153110df314bd5df2ba871c3b7c83677181ec644d3e0198c966e50d84a3",
+     "old_resamples": 0,
+     "new_resamples": 10
+    },
+    {
+     "case_id": "stress-V4-13",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples; its slot's combination is swapped by stress.DESIGN_SWAPS",
+     "old_params_sha256": "362a3446157b9a380341a46f273faebded4d5437fc49860a3bca33d47df70cb6",
+     "new_params_sha256": "905da1e407c577a482e925dc08b4235a6fdc0d2d22dff6adf1436146097dc8bf",
+     "old_resamples": 0,
+     "new_resamples": 7
+    },
+    {
+     "case_id": "stress-V4-15",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+     "old_params_sha256": "608393c237dea691a3d2205a98ea37527c0c487b58817d4d1286340f86009a47",
+     "new_params_sha256": "7df4d6e97709ee743777535787ec7123857e1094e0f9f4c4b1f387141470b293",
+     "old_resamples": 0,
+     "new_resamples": 0
+    },
+    {
+     "case_id": "stress-V4-17",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+     "old_params_sha256": "d583dbb55661ffbc990efeacc8001b4e16867dec9b1dffb590f3d0a8d89c4c8d",
+     "new_params_sha256": "0e51e1c5ee8d3f6652e166c04bade8ab737ce89ec039900f3c120196b84fbce4",
+     "old_resamples": 0,
+     "new_resamples": 3
+    },
+    {
+     "case_id": "stress-V4-19",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+     "old_params_sha256": "a8182821fb05c9c5aa3c625f96fb59602e352b1f15562c03ffeec9830ecb0e26",
+     "new_params_sha256": "3d674a0b38f50ceae20d744279841a340437f3d1ec743171dcb6e20a9631bb5e",
+     "old_resamples": 0,
+     "new_resamples": 5
+    },
+    {
+     "case_id": "stress-V4-21",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+     "old_params_sha256": "aad0a902e4da4182a6340d385b53ec616aba936c5da8a5547f5847b8c3b756d5",
+     "new_params_sha256": "720b308974a053f31eb8a78301480440073d378d7b556b0354f6f6c24a6af279",
+     "old_resamples": 2,
+     "new_resamples": 4
+    },
+    {
+     "case_id": "stress-V4-5",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+     "old_params_sha256": "bc0c33a4786ad38fa4eea3a23976a55d8c043bf295e6dd01a1416494c22a85ea",
+     "new_params_sha256": "5849ada1d5d31f36b745d185911d04197ba6603ee5f50d3e7d01cd151adcc26d",
+     "old_resamples": 0,
+     "new_resamples": 0
+    },
+    {
+     "case_id": "stress-V4-8",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+     "old_params_sha256": "bdb04a9cc69949d86997cf732009070d889cbea339bdff81cca9e8df510e77d7",
+     "new_params_sha256": "5a1646ab83a5398f633f870dc2fb45f4490dc737358ef81326a729ae88c779d4",
+     "old_resamples": 1,
+     "new_resamples": 6
+    },
+    {
+     "case_id": "stress-V5-12",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples; its slot's combination is swapped by stress.DESIGN_SWAPS",
+     "old_params_sha256": "3bbff233bbe2d096efa069b1f9d7cf25406cf624bb2643bc0cea4e0ce98a3a45",
+     "new_params_sha256": "1bf19806a25c2ec84ef98d2505f0221be05602f3fa6b4c17863b260091cf7c68",
+     "old_resamples": 0,
+     "new_resamples": 7
+    },
+    {
+     "case_id": "stress-V5-15",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+     "old_params_sha256": "b1018fa71e3f53d95c8d7106562e6aef59362fd95e3c2b347b93d10db8c367d5",
+     "new_params_sha256": "62aaf11a079f2e6e89bc8031a372d1c3243d2f44ae2395393d994e7bf6e49d9b",
+     "old_resamples": 0,
+     "new_resamples": 35
+    },
+    {
+     "case_id": "stress-V5-17",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+     "old_params_sha256": "29648106e75b5e77d34af71cf90a00e325215fba2b040c0c6e7712afd01000f1",
+     "new_params_sha256": "6840effaa50c3cde283b4fee6a01e098709e5da4853d24f8a933eace25e11c8b",
+     "old_resamples": 0,
+     "new_resamples": 4
+    },
+    {
+     "case_id": "stress-V5-18",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples; its slot's combination is swapped by stress.DESIGN_SWAPS",
+     "old_params_sha256": "12699b60feda40ba1f1482e8736d0c93c270246766e6d5b270851e8c527df3ed",
+     "new_params_sha256": "39b1bb664f5a343b52ea94465e9779eb32b3084c0d7b3c6eda27cdd61ebe1aca",
+     "old_resamples": 0,
+     "new_resamples": 15
+    },
+    {
+     "case_id": "stress-V5-2",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples; its slot's combination is swapped by stress.DESIGN_SWAPS",
+     "old_params_sha256": "5825f615e7254bd65cb10d74fce0f45531cbf103360eb58f5c1c735d93690a54",
+     "new_params_sha256": "728c939409598f948dae258aaf27ac4bcf069b05e58a1b2502ad3783ed5a687a",
+     "old_resamples": 0,
+     "new_resamples": 10
+    },
+    {
+     "case_id": "stress-V5-5",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples",
+     "old_params_sha256": "3bcb58cdb915532ebfeb0c3244c798b9a6da024f04e1033b916ce94501814aa8",
+     "new_params_sha256": "56973473a4d517507f99be487f56bf1f2c717464adc948d408bd2fc6eb5497a8",
+     "old_resamples": 1,
+     "new_resamples": 0
+    },
+    {
+     "case_id": "stress-V5-8",
+     "reason": "M3 re-issue (user, 2026-11-06; red-team round 16 finding 5): the re-issue was posted while the original was still active; the generator now posts every re-issue after its original's cancellation (M3 is always timed), so this seed resamples; its slot's combination is swapped by stress.DESIGN_SWAPS",
+     "old_params_sha256": "9c0f620314553f6de08e18df0840724020031d8e8b69976919f0730703688013",
+     "new_params_sha256": "141cfe80262484e2600ca08e8cb0b0d44f2db1091f2841b2c260ba1848e05857",
+     "old_resamples": 0,
+     "new_resamples": 2
+    }
+   ]
+  },
+  {
+   "round": "red-team round 17, fixes 3 and 4 (user, 2026-11-06)",
+   "against": "the M3 re-issue build",
+   "replacements": [],
+   "note": "the loader applies the 20-minute spacing to frozen-format cases too; the page test is extended. A rebuild with the changed generator (sha256 12ff1e8b...) reproduces all 100 entries byte for byte; only generator_sha256 and generator_commit in the manifest header changed"
+  }
+ ],
+ "entries_byte_identical_to_first_validated_build": 62,
+ "changed_since_first_validated_build": [
+  "stress-V1-0",
+  "stress-V1-15",
+  "stress-V1-17",
+  "stress-V1-19",
+  "stress-V1-2",
+  "stress-V1-7",
+  "stress-V1-9",
+  "stress-V2-1",
+  "stress-V2-10",
+  "stress-V2-11",
+  "stress-V2-12",
+  "stress-V2-13",
+  "stress-V2-16",
+  "stress-V2-17",
+  "stress-V2-3",
+  "stress-V2-8",
+  "stress-V3a-2",
+  "stress-V3a-5",
+  "stress-V3a-7",
+  "stress-V3a-9",
+  "stress-V3b-2",
+  "stress-V3b-7",
+  "stress-V3b-9",
+  "stress-V4-11",
+  "stress-V4-13",
+  "stress-V4-15",
+  "stress-V4-17",
+  "stress-V4-19",
+  "stress-V4-21",
+  "stress-V4-5",
+  "stress-V4-8",
+  "stress-V5-12",
+  "stress-V5-15",
+  "stress-V5-17",
+  "stress-V5-18",
+  "stress-V5-2",
+  "stress-V5-5",
+  "stress-V5-8"
+ ]
+}

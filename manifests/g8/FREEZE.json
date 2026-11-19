@@ -1,0 +1,34 @@
+{
+ "freeze": "g8",
+ "design": "docs/V2.md, 2026-10-31: the Gate 3 rulings, rounds 1-5 (a pre-data amendment: the grader becomes stricter before any model output; round 5: invalid Unicode in arguments is a rejection, an accepted finish is finish even when TRL drops its result)",
+ "files": {},
+ "versions": {
+  "g8": {
+   "src/ap_sim/grading/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "src/ap_sim/grading/g8.py": "83e5d2cd5b72a7c7d22d67cca815f160b57c28696d586fa7b74580b76b2d599e"
+  },
+  "reward": {
+   "src/ap_sim/training/rewards.py": "b99f7b46b36fada793faee94826ef0b0b3e7aa30f631fe2245c1d23e01eae55b",
+   "src/ap_sim/training/environment.py": "6daf1f48e5f17aea488593afbe1e125c182c3f17acee0093a6255a7d85eac43e"
+  },
+  "evaluation_harness": {
+   "scripts/strong_model_check.py": "c4921be74c23c8a7bd7b5a235cc41ce02d78c7f7faca62af193a1a7434c8eb28"
+  }
+ },
+ "v2_freeze_sha256": "d17ac59ae138f9561d7c551275a90b5b2c12fde9c16b15676ef3fbd010b8e19c",
+ "forgetting_l1_freeze_sha256": "871ba2e7416e4f13b051fe2fc8e181bbadfa6f6ef2ed3543a0b593cb8b8a5214",
+ "checks_sha256 (runs/phase3/g8, git-ignored)": {
+  "reference": "eaddd908840648b9a640dc37733f5cea799eb05b0c1da35db1d836934138e6e5",
+  "stored": "be4b47b18d87c73359029953b3f8e71d6498fb227cf3f6533cdef2da902e8993",
+  "dev": "5826767e26e4680609a74bf8ee7470ea1f7c1531de09da253b820fe810447ebf",
+  "source_id_stored": "f49f3934b352889692e28d1f7a9fb8ca39c7145f63e513432e050bfdb6902dd9",
+  "source_id_zoo": "98294a563bef7ca67f21ec4667e6cebbf1a1ca62c20a04b9ea48008d3a26b39c",
+  "source_id_reference": "88f6b1734e959f6ecce127c89dfb76aabbd1e9906d222d601ad91354fc5dc6a6",
+  "reference_behaviour": "fb6ccae77c120f9ee5e57e36429f752a7024d5cb69f569efcc7d8354d1d10f94",
+  "observation_bound": "dd2dfb543c2cd2a6aa764621297115f956ae8ecbcf878715cfe80ff017188109",
+  "observation_tokens": "c3f90045d2c8bd918528885eefe57bf6a8ee2f7bdf40b12874e5d7b4789b1657",
+  "observations_baseline": "83938da33b01556355dc3c7ceecd2694728bd962fe5d2719d9befd0e39bc29fd",
+  "observations_after": "a5510851a07a0d769e85df3551b8264e7fe7f18234fcdfb28b9bf3033557999b",
+  "constant_bounds": "ddcf52bc9ed78c5f5bea06eab674da26e423541c9fe89c93798e3c405a2f536c"
+ }
+}

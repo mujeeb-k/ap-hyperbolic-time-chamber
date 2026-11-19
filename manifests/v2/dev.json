@@ -1,0 +1,3441 @@
+{
+ "split": "dev",
+ "design": "docs/V2.md, Phase 2 approved (2026-10-30)",
+ "generator": "causal/2",
+ "random_stream": "causal/1",
+ "generator_commit": "1d6f9ad453f3c6dbac98adc65839bf6542be58f7",
+ "grader": "g7",
+ "seed_base": 11300000,
+ "order_seed": null,
+ "collisions_redrawn": {},
+ "cases": 60,
+ "entries": [
+  {
+   "case_id": "dev-V1-0",
+   "split": "dev",
+   "seed": 11300000,
+   "force": {
+    "reversal": false,
+    "gap": 5,
+    "delay": "early",
+    "unrecorded": "equal"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V1",
+   "variant": "V1_delivered_unrecorded",
+   "signature": [
+    "V1_delivered_unrecorded",
+    2,
+    false,
+    0,
+    "after_block",
+    false,
+    "gap>0",
+    "equal",
+    "early"
+   ],
+   "level": "L3",
+   "delay": 240,
+   "expected": "release",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "3468.75",
+   "currency": "EUR",
+   "keys": {
+    "exact": "7f0a2f1a4951ad4844c699206e9e8b525ea2aa41b7e586cecf88e5b9c585de8f",
+    "near": "b265004f00ee419f726796495f59239957c654a8efce29944e7b143b74bf6f4d",
+    "group": "0ee3007bcbec6d929449fc19ca55abcb2840b4c2142040275909e48728ce1ce0"
+   },
+   "params": {
+    "po_qty": 163,
+    "price": "31.25",
+    "receipts": [
+     79,
+     27
+    ],
+    "other_invoices": [],
+    "invoice_qty": 111,
+    "physical_total": 111,
+    "delay": 240,
+    "cancelled_invoices": [
+     13
+    ],
+    "blocked_at": -160,
+    "cancelled_at": -80,
+    "reversals": []
+   },
+   "params_sha256": "b265004f00ee419f726796495f59239957c654a8efce29944e7b143b74bf6f4d",
+   "position": 0
+  },
+  {
+   "case_id": "dev-V1-1",
+   "split": "dev",
+   "seed": 11300001,
+   "force": {
+    "reversal": false,
+    "gap": 11,
+    "delay": "early",
+    "unrecorded": "above"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V1",
+   "variant": "V1_delivered_unrecorded",
+   "signature": [
+    "V1_delivered_unrecorded",
+    2,
+    false,
+    0,
+    "after_block",
+    false,
+    "gap>0",
+    "above",
+    "early"
+   ],
+   "level": "L3",
+   "delay": 240,
+   "expected": "release",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "2668.00",
+   "currency": "EUR",
+   "keys": {
+    "exact": "0ac6aff1255922d0d6c5df8b3f10136a8df81c79f50f7e95254a70e547e70490",
+    "near": "5e114ad0b4f788d0259699ea93f520075a2869418fb7a0bb652fdf653f5d6408",
+    "group": "675fbbf676cf98da8a6f9e7d882b929c604f21c264fb033dd82a4a03174d1c87"
+   },
+   "params": {
+    "po_qty": 216,
+    "price": "18.40",
+    "receipts": [
+     71,
+     63
+    ],
+    "other_invoices": [],
+    "invoice_qty": 145,
+    "physical_total": 155,
+    "delay": 240,
+    "cancelled_invoices": [
+     18
+    ],
+    "blocked_at": -160,
+    "cancelled_at": -80,
+    "reversals": []
+   },
+   "params_sha256": "5e114ad0b4f788d0259699ea93f520075a2869418fb7a0bb652fdf653f5d6408",
+   "position": 1
+  },
+  {
+   "case_id": "dev-V1-2",
+   "split": "dev",
+   "seed": 11300002,
+   "force": {
+    "reversal": false,
+    "gap": 17,
+    "delay": "mid",
+    "unrecorded": "equal"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V1",
+   "variant": "V1_delivered_unrecorded",
+   "signature": [
+    "V1_delivered_unrecorded",
+    3,
+    false,
+    2,
+    "none",
+    true,
+    "gap>0",
+    "equal",
+    "mid"
+   ],
+   "level": "L3",
+   "delay": 720,
+   "expected": "release",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "2747.00",
+   "currency": "EUR",
+   "keys": {
+    "exact": "f0dbd13acfae7cc4a53c0a06d6c3c8cc76e8d162e7a7ab304b3d6c8f26c4ba68",
+    "near": "76f6db6cd699a8bd423189d13dce2b30531c91847e65974b8f35286c6bce5d7d",
+    "group": "0f260f52b1c5ac0ddb85a1f5e3466b59f5d1958540671fa6cef6277d4df3d5af"
+   },
+   "params": {
+    "po_qty": 216,
+    "price": "16.75",
+    "receipts": [
+     66,
+     62,
+     59
+    ],
+    "other_invoices": [
+     30,
+     10
+    ],
+    "invoice_qty": 164,
+    "physical_total": 204,
+    "delay": 720,
+    "cancelled_invoices": [],
+    "blocked_at": -1300,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "76f6db6cd699a8bd423189d13dce2b30531c91847e65974b8f35286c6bce5d7d",
+   "position": 2
+  },
+  {
+   "case_id": "dev-V1-3",
+   "split": "dev",
+   "seed": 11300003,
+   "force": {
+    "reversal": false,
+    "gap": 10,
+    "delay": "mid",
+    "unrecorded": "above"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V1",
+   "variant": "V1_delivered_unrecorded",
+   "signature": [
+    "V1_delivered_unrecorded",
+    2,
+    false,
+    0,
+    "none",
+    false,
+    "gap>0",
+    "above",
+    "mid"
+   ],
+   "level": "L3",
+   "delay": 720,
+   "expected": "release",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "1859.25",
+   "currency": "EUR",
+   "keys": {
+    "exact": "48fbded884ee32055f072e7d5060de51cb1cd9bd3b51c0414e846a010e410147",
+    "near": "047835c9faf23bf6031437e7f524522c725863423854e2341a8b0695efaf6d4a",
+    "group": "269b80e1627eda392ed9ffe5143c2d552a2c547b26b3e2e6b02e33db40669bd2"
+   },
+   "params": {
+    "po_qty": 165,
+    "price": "16.75",
+    "receipts": [
+     27,
+     74
+    ],
+    "other_invoices": [],
+    "invoice_qty": 111,
+    "physical_total": 121,
+    "delay": 720,
+    "cancelled_invoices": [],
+    "blocked_at": -160,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "047835c9faf23bf6031437e7f524522c725863423854e2341a8b0695efaf6d4a",
+   "position": 3
+  },
+  {
+   "case_id": "dev-V1-4",
+   "split": "dev",
+   "seed": 11300004,
+   "force": {
+    "reversal": false,
+    "gap": 4,
+    "delay": "early",
+    "unrecorded": "equal"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V1",
+   "variant": "V1_delivered_unrecorded",
+   "signature": [
+    "V1_delivered_unrecorded",
+    1,
+    false,
+    1,
+    "after_block",
+    false,
+    "gap>0",
+    "equal",
+    "early"
+   ],
+   "level": "L3",
+   "delay": 240,
+   "expected": "release",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "921.25",
+   "currency": "EUR",
+   "keys": {
+    "exact": "1936b5482d27313f9fade7566b48d3e10ab43b6afba5b32e4767f5eb092aa926",
+    "near": "1a51362a8895d8327cb7c9c3e89183bf6af075f8c11d0033f6c70ed09a73900d",
+    "group": "f26b61e1ed24f18f8ec21e2b02a6748242cfa7d48d81c6690aaa5c018211625f"
+   },
+   "params": {
+    "po_qty": 133,
+    "price": "16.75",
+    "receipts": [
+     81
+    ],
+    "other_invoices": [
+     30
+    ],
+    "invoice_qty": 55,
+    "physical_total": 85,
+    "delay": 240,
+    "cancelled_invoices": [
+     10
+    ],
+    "blocked_at": -160,
+    "cancelled_at": -80,
+    "reversals": []
+   },
+   "params_sha256": "1a51362a8895d8327cb7c9c3e89183bf6af075f8c11d0033f6c70ed09a73900d",
+   "position": 4
+  },
+  {
+   "case_id": "dev-V1-5",
+   "split": "dev",
+   "seed": 11300005,
+   "force": {
+    "reversal": false,
+    "gap": 15,
+    "delay": "early",
+    "unrecorded": "above"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V1",
+   "variant": "V1_delivered_unrecorded",
+   "signature": [
+    "V1_delivered_unrecorded",
+    3,
+    false,
+    2,
+    "none",
+    false,
+    "gap>0",
+    "above",
+    "early"
+   ],
+   "level": "L3",
+   "delay": 240,
+   "expected": "release",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "7650.00",
+   "currency": "EUR",
+   "keys": {
+    "exact": "e9fb483ae32b41b0f6c46b0b6dba6bdeac39ac08ab315ce08b36fe8945322211",
+    "near": "c74eee7dbd2c72d734ae2f8a6773a6fb732ef7d88ff3db8e2f79752be0d67d63",
+    "group": "9e1a2656c376ec9754a24c3cb380933d18227e5a1351f7a585b3a74f3f326c8f"
+   },
+   "params": {
+    "po_qty": 223,
+    "price": "45.00",
+    "receipts": [
+     63,
+     89,
+     30
+    ],
+    "other_invoices": [
+     8,
+     19
+    ],
+    "invoice_qty": 170,
+    "physical_total": 207,
+    "delay": 240,
+    "cancelled_invoices": [],
+    "blocked_at": -160,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "c74eee7dbd2c72d734ae2f8a6773a6fb732ef7d88ff3db8e2f79752be0d67d63",
+   "position": 5
+  },
+  {
+   "case_id": "dev-V1-6",
+   "split": "dev",
+   "seed": 11300006,
+   "force": {
+    "reversal": false,
+    "gap": 5,
+    "delay": "mid",
+    "unrecorded": "equal"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V1",
+   "variant": "V1_delivered_unrecorded",
+   "signature": [
+    "V1_delivered_unrecorded",
+    1,
+    false,
+    1,
+    "after_block",
+    false,
+    "gap>0",
+    "equal",
+    "mid"
+   ],
+   "level": "L3",
+   "delay": 720,
+   "expected": "release",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "276.00",
+   "currency": "EUR",
+   "keys": {
+    "exact": "c59ba6cd10844fd6d44ea7dc8717259e00a0046c01cef048eed6f815a329c83a",
+    "near": "af610598b04ca43f1a3b1ff95f2c8eae463e2b6caff9940c9f8008dfa910a661",
+    "group": "6d28ac4c5aa0001b4d66e59dd77442c9fd56d3969c8f6f9193579f3acd18d95f"
+   },
+   "params": {
+    "po_qty": 95,
+    "price": "18.40",
+    "receipts": [
+     31
+    ],
+    "other_invoices": [
+     21
+    ],
+    "invoice_qty": 15,
+    "physical_total": 36,
+    "delay": 720,
+    "cancelled_invoices": [
+     35
+    ],
+    "blocked_at": -160,
+    "cancelled_at": -80,
+    "reversals": []
+   },
+   "params_sha256": "af610598b04ca43f1a3b1ff95f2c8eae463e2b6caff9940c9f8008dfa910a661",
+   "position": 6
+  },
+  {
+   "case_id": "dev-V1-7",
+   "split": "dev",
+   "seed": 11300007,
+   "force": {
+    "reversal": false,
+    "gap": 15,
+    "delay": "mid",
+    "unrecorded": "above"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V1",
+   "variant": "V1_delivered_unrecorded",
+   "signature": [
+    "V1_delivered_unrecorded",
+    1,
+    false,
+    1,
+    "none",
+    false,
+    "gap>0",
+    "above",
+    "mid"
+   ],
+   "level": "L3",
+   "delay": 720,
+   "expected": "release",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "1187.50",
+   "currency": "EUR",
+   "keys": {
+    "exact": "c25823ac75b4d5045c37321f1a08fc13d5caa52d258add14fc179d95dd8d9d54",
+    "near": "e65ea257c135f3f5524a0ce1b4dcdd77df7a216af51dbcddd3513d17aa373d25",
+    "group": "c237e97a6ba026a22ca99f6d7dfd40d5dd324f29d9838030d06370162367cc3b"
+   },
+   "params": {
+    "po_qty": 76,
+    "price": "31.25",
+    "receipts": [
+     30
+    ],
+    "other_invoices": [
+     7
+    ],
+    "invoice_qty": 38,
+    "physical_total": 54,
+    "delay": 720,
+    "cancelled_invoices": [],
+    "blocked_at": -160,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "e65ea257c135f3f5524a0ce1b4dcdd77df7a216af51dbcddd3513d17aa373d25",
+   "position": 7
+  },
+  {
+   "case_id": "dev-V1-8",
+   "split": "dev",
+   "seed": 11300008,
+   "force": {
+    "reversal": false,
+    "gap": 21,
+    "delay": "early",
+    "unrecorded": "equal"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V1",
+   "variant": "V1_delivered_unrecorded",
+   "signature": [
+    "V1_delivered_unrecorded",
+    1,
+    false,
+    0,
+    "none",
+    false,
+    "gap>0",
+    "equal",
+    "early"
+   ],
+   "level": "L3",
+   "delay": 240,
+   "expected": "release",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "3465.00",
+   "currency": "EUR",
+   "keys": {
+    "exact": "4c02d16f721e8a96b869f94e62429d2c670f26d60edd899008db2ba17671f7b6",
+    "near": "556060deb0f6a0f4fea145f69507cfd99cc350ac007dc13b2fbe74748621ce9c",
+    "group": "f5722c8d95978bebcde896901f5f978383655d11a94713306da69c597ccdd0f1"
+   },
+   "params": {
+    "po_qty": 119,
+    "price": "45.00",
+    "receipts": [
+     56
+    ],
+    "other_invoices": [],
+    "invoice_qty": 77,
+    "physical_total": 77,
+    "delay": 240,
+    "cancelled_invoices": [],
+    "blocked_at": -160,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "556060deb0f6a0f4fea145f69507cfd99cc350ac007dc13b2fbe74748621ce9c",
+   "position": 8
+  },
+  {
+   "case_id": "dev-V1-9",
+   "split": "dev",
+   "seed": 11300009,
+   "force": {
+    "reversal": false,
+    "gap": 1,
+    "delay": "early",
+    "unrecorded": "above"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V1",
+   "variant": "V1_delivered_unrecorded",
+   "signature": [
+    "V1_delivered_unrecorded",
+    2,
+    false,
+    0,
+    "none",
+    false,
+    "gap>0",
+    "above",
+    "early"
+   ],
+   "level": "L3",
+   "delay": 240,
+   "expected": "release",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "1792.25",
+   "currency": "EUR",
+   "keys": {
+    "exact": "3f292d8f49f3f6ea2116d1afb9848cb602b14721a128043dac652700ba676e2e",
+    "near": "873171fba5ff38e74a5163cc7ef9efc9c19faad03f875a5644105aab4214245c",
+    "group": "dd7b68725745a9b2e8a264ef4234ad5940b1564b48693ddcb5ad30fc6c582711"
+   },
+   "params": {
+    "po_qty": 156,
+    "price": "16.75",
+    "receipts": [
+     78,
+     28
+    ],
+    "other_invoices": [],
+    "invoice_qty": 107,
+    "physical_total": 110,
+    "delay": 240,
+    "cancelled_invoices": [],
+    "blocked_at": -160,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "873171fba5ff38e74a5163cc7ef9efc9c19faad03f875a5644105aab4214245c",
+   "position": 9
+  },
+  {
+   "case_id": "dev-V1-10",
+   "split": "dev",
+   "seed": 11300010,
+   "force": {
+    "reversal": false,
+    "gap": 20,
+    "delay": "mid",
+    "unrecorded": "equal"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V1",
+   "variant": "V1_delivered_unrecorded",
+   "signature": [
+    "V1_delivered_unrecorded",
+    2,
+    false,
+    2,
+    "none",
+    true,
+    "gap>0",
+    "equal",
+    "mid"
+   ],
+   "level": "L3",
+   "delay": 720,
+   "expected": "release",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "301.35",
+   "currency": "EUR",
+   "keys": {
+    "exact": "c161d3d720bf8e68c9444d9fe9c16857cfde2d460a52b64e90223711493884c7",
+    "near": "015f708917077c2febeaf5e4fc56f2070dd733cb9f77f0d2e0abecd693c84acf",
+    "group": "da4e8c5ef1d3008fa74e5979d3f9a304894b5a8e849b475f259787199b9f3659"
+   },
+   "params": {
+    "po_qty": 93,
+    "price": "7.35",
+    "receipts": [
+     37,
+     26
+    ],
+    "other_invoices": [
+     27,
+     15
+    ],
+    "invoice_qty": 41,
+    "physical_total": 83,
+    "delay": 720,
+    "cancelled_invoices": [],
+    "blocked_at": -1700,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "015f708917077c2febeaf5e4fc56f2070dd733cb9f77f0d2e0abecd693c84acf",
+   "position": 10
+  },
+  {
+   "case_id": "dev-V1-11",
+   "split": "dev",
+   "seed": 11300011,
+   "force": {
+    "reversal": false,
+    "gap": 7,
+    "delay": "mid",
+    "unrecorded": "above"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V1",
+   "variant": "V1_delivered_unrecorded",
+   "signature": [
+    "V1_delivered_unrecorded",
+    2,
+    false,
+    2,
+    "after_block",
+    true,
+    "gap>0",
+    "above",
+    "mid"
+   ],
+   "level": "L3",
+   "delay": 720,
+   "expected": "release",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "399.60",
+   "currency": "EUR",
+   "keys": {
+    "exact": "b3d1e9a3144a8818f96d9ac970bc8bab5ed17be1ec5dbba40f9b5209a4a0bb4d",
+    "near": "d6bb81110a513dd87cdfaad537c0dc9e0041596cac7568c7effc1cccdfb9e5f8",
+    "group": "81c775e5d4021bbc802bf8a45d2b84495c348f732a356a9c9a49b7c7609f8e73"
+   },
+   "params": {
+    "po_qty": 112,
+    "price": "9.99",
+    "receipts": [
+     35,
+     41
+    ],
+    "other_invoices": [
+     22,
+     21
+    ],
+    "invoice_qty": 40,
+    "physical_total": 84,
+    "delay": 720,
+    "cancelled_invoices": [
+     14
+    ],
+    "blocked_at": -1700,
+    "cancelled_at": -80,
+    "reversals": []
+   },
+   "params_sha256": "d6bb81110a513dd87cdfaad537c0dc9e0041596cac7568c7effc1cccdfb9e5f8",
+   "position": 11
+  },
+  {
+   "case_id": "dev-V2-0",
+   "split": "dev",
+   "seed": 11310000,
+   "force": {
+    "reversal": false,
+    "gap": 25,
+    "delay": "early",
+    "unrecorded": "zero"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V2",
+   "variant": "V2_not_delivered",
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    1,
+    "before_block",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "level": "L3",
+   "delay": 240,
+   "expected": "keep_blocked",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "639.36",
+   "currency": "EUR",
+   "keys": {
+    "exact": "10d1218c4530431248ee8dafa6412137c717bbd0cdd194204bc02674e1cbb8ad",
+    "near": "8e5eef7b82af929696ce258b100b565098d3cfa037a8742882ab123e3bf0f765",
+    "group": "d40536d98b1f9b76c902578d38c92aa22253daf6f51b581a24b4ce780807ad78"
+   },
+   "params": {
+    "po_qty": 115,
+    "price": "9.99",
+    "receipts": [
+     19,
+     31
+    ],
+    "other_invoices": [
+     11
+    ],
+    "invoice_qty": 64,
+    "physical_total": 50,
+    "delay": 240,
+    "cancelled_invoices": [
+     15
+    ],
+    "blocked_at": -160,
+    "cancelled_at": -190,
+    "reversals": []
+   },
+   "params_sha256": "8e5eef7b82af929696ce258b100b565098d3cfa037a8742882ab123e3bf0f765",
+   "position": 12
+  },
+  {
+   "case_id": "dev-V2-1",
+   "split": "dev",
+   "seed": 11310001,
+   "force": {
+    "reversal": false,
+    "gap": 22,
+    "delay": "mid",
+    "unrecorded": "zero"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V2",
+   "variant": "V2_not_delivered",
+   "signature": [
+    "V2_not_delivered",
+    3,
+    false,
+    2,
+    "none",
+    true,
+    "gap>0",
+    "zero",
+    "mid"
+   ],
+   "level": "L3",
+   "delay": 720,
+   "expected": "keep_blocked",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "744.00",
+   "currency": "EUR",
+   "keys": {
+    "exact": "bb697d0827c5f1ff48ad4aadf0731f06b0a441b3dd7024a3c3b147c9aa47e2e8",
+    "near": "eebb88a35382ed5703a14fd2da8a482c1b0633de999e0b73fa3eed5448384782",
+    "group": "ebcce438774ba817198a56176807d361dee265113fd0efd26fef1f0de85ab967"
+   },
+   "params": {
+    "po_qty": 229,
+    "price": "4.80",
+    "receipts": [
+     43,
+     47,
+     80
+    ],
+    "other_invoices": [
+     7,
+     30
+    ],
+    "invoice_qty": 155,
+    "physical_total": 170,
+    "delay": 720,
+    "cancelled_invoices": [],
+    "blocked_at": -1300,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "eebb88a35382ed5703a14fd2da8a482c1b0633de999e0b73fa3eed5448384782",
+   "position": 13
+  },
+  {
+   "case_id": "dev-V2-2",
+   "split": "dev",
+   "seed": 11310002,
+   "force": {
+    "reversal": false,
+    "gap": 9,
+    "delay": "early",
+    "unrecorded": "zero"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V2",
+   "variant": "V2_not_delivered",
+   "signature": [
+    "V2_not_delivered",
+    3,
+    false,
+    1,
+    "none",
+    true,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "level": "L3",
+   "delay": 240,
+   "expected": "keep_blocked",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "3500.00",
+   "currency": "EUR",
+   "keys": {
+    "exact": "cce92db93404981bcb832ef618154e134a00135f6a7095939fb517246e0e0ae6",
+    "near": "9c28f62d2b9627ee68a0573f0a8d0a45fc7e4dde8cff494de77660d7dc539127",
+    "group": "5734144d6dea77b1c6f582e19fdf27329c9f92f8e3e70ffa6ea326c0e53b04ba"
+   },
+   "params": {
+    "po_qty": 164,
+    "price": "31.25",
+    "receipts": [
+     51,
+     23,
+     48
+    ],
+    "other_invoices": [
+     19
+    ],
+    "invoice_qty": 112,
+    "physical_total": 122,
+    "delay": 240,
+    "cancelled_invoices": [],
+    "blocked_at": -1300,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "9c28f62d2b9627ee68a0573f0a8d0a45fc7e4dde8cff494de77660d7dc539127",
+   "position": 14
+  },
+  {
+   "case_id": "dev-V2-3",
+   "split": "dev",
+   "seed": 11310003,
+   "force": {
+    "reversal": false,
+    "gap": 5,
+    "delay": "mid",
+    "unrecorded": "zero"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V2",
+   "variant": "V2_not_delivered",
+   "signature": [
+    "V2_not_delivered",
+    3,
+    false,
+    1,
+    "none",
+    false,
+    "gap>0",
+    "zero",
+    "mid"
+   ],
+   "level": "L3",
+   "delay": 720,
+   "expected": "keep_blocked",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "5687.50",
+   "currency": "EUR",
+   "keys": {
+    "exact": "22daca3764d6651cb9a3a3a8c40470164f991b67c9d60415b99a83827ef5cb36",
+    "near": "d0584b0b9fc5d5f665d59d9061cc6c507efb2187fb3cb25d8a5956be6c854b3e",
+    "group": "3f08157ba05dd48e6217daceb5eff9377cdaa6c000507746588140957b6fff11"
+   },
+   "params": {
+    "po_qty": 226,
+    "price": "31.25",
+    "receipts": [
+     70,
+     23,
+     90
+    ],
+    "other_invoices": [
+     6
+    ],
+    "invoice_qty": 182,
+    "physical_total": 183,
+    "delay": 720,
+    "cancelled_invoices": [],
+    "blocked_at": -160,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "d0584b0b9fc5d5f665d59d9061cc6c507efb2187fb3cb25d8a5956be6c854b3e",
+   "position": 15
+  },
+  {
+   "case_id": "dev-V2-4",
+   "split": "dev",
+   "seed": 11310004,
+   "force": {
+    "reversal": false,
+    "gap": 12,
+    "delay": "early",
+    "unrecorded": "zero"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V2",
+   "variant": "V2_not_delivered",
+   "signature": [
+    "V2_not_delivered",
+    3,
+    false,
+    0,
+    "after_block",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "level": "L3",
+   "delay": 240,
+   "expected": "keep_blocked",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "1975.00",
+   "currency": "EUR",
+   "keys": {
+    "exact": "ae8e5edeb0ab1f0951e151881ea08e1f063f5c1d449ab565209d2d8eaf94323d",
+    "near": "46d7cb889b535140d44efc0fb880369c43c6cd2cd73fe73d9426a620c300ee3e",
+    "group": "2b02d6f3b30371a2bf419367a811520d25f7e4572da27918b7b7fe2a69f3f21f"
+   },
+   "params": {
+    "po_qty": 219,
+    "price": "12.50",
+    "receipts": [
+     65,
+     18,
+     63
+    ],
+    "other_invoices": [],
+    "invoice_qty": 158,
+    "physical_total": 146,
+    "delay": 240,
+    "cancelled_invoices": [
+     28
+    ],
+    "blocked_at": -160,
+    "cancelled_at": -80,
+    "reversals": []
+   },
+   "params_sha256": "46d7cb889b535140d44efc0fb880369c43c6cd2cd73fe73d9426a620c300ee3e",
+   "position": 16
+  },
+  {
+   "case_id": "dev-V2-5",
+   "split": "dev",
+   "seed": 11310005,
+   "force": {
+    "reversal": false,
+    "gap": 6,
+    "delay": "mid",
+    "unrecorded": "zero"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V2",
+   "variant": "V2_not_delivered",
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    0,
+    "none",
+    false,
+    "gap>0",
+    "zero",
+    "mid"
+   ],
+   "level": "L3",
+   "delay": 720,
+   "expected": "keep_blocked",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "2484.00",
+   "currency": "EUR",
+   "keys": {
+    "exact": "e22e3f8d10573b45389535e53a844ee349928492b9d2bb3eecea2d60c29ff359",
+    "near": "58ddbea10dd5bbefd3f0b2664b6f68d69e9063bcf788ccbad1d112e5c5a84cbc",
+    "group": "c42d4f72df740138dc2ac8d27c9c0393718cd4bfb29f8480e6c8c713f3561be6"
+   },
+   "params": {
+    "po_qty": 176,
+    "price": "18.40",
+    "receipts": [
+     63,
+     66
+    ],
+    "other_invoices": [],
+    "invoice_qty": 135,
+    "physical_total": 129,
+    "delay": 720,
+    "cancelled_invoices": [],
+    "blocked_at": -160,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "58ddbea10dd5bbefd3f0b2664b6f68d69e9063bcf788ccbad1d112e5c5a84cbc",
+   "position": 17
+  },
+  {
+   "case_id": "dev-V2-6",
+   "split": "dev",
+   "seed": 11310006,
+   "force": {
+    "reversal": false,
+    "gap": 7,
+    "delay": "early",
+    "unrecorded": "zero"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V2",
+   "variant": "V2_not_delivered",
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    0,
+    "none",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "level": "L1",
+   "delay": 240,
+   "expected": "keep_blocked",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "5490.00",
+   "currency": "EUR",
+   "keys": {
+    "exact": "9ae209713bfe5b967e04de71c43fad7ede59cbc1c02e8d8091d170382f89887b",
+    "near": "fd52c3b35c160db68d4a18dcd0122ac21737dd285c94555b10f2bd746f479043",
+    "group": "017dc2df83af049a015c70617f42b1a669aa6fb4c4839524bff79bed8fd4003a"
+   },
+   "params": {
+    "po_qty": 155,
+    "price": "45.00",
+    "receipts": [
+     89,
+     26
+    ],
+    "other_invoices": [],
+    "invoice_qty": 122,
+    "physical_total": 115,
+    "delay": 240,
+    "cancelled_invoices": [],
+    "blocked_at": -160,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "fd52c3b35c160db68d4a18dcd0122ac21737dd285c94555b10f2bd746f479043",
+   "position": 18
+  },
+  {
+   "case_id": "dev-V2-7",
+   "split": "dev",
+   "seed": 11310007,
+   "force": {
+    "reversal": false,
+    "gap": 5,
+    "delay": "mid",
+    "unrecorded": "zero"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V2",
+   "variant": "V2_not_delivered",
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    1,
+    "none",
+    false,
+    "gap>0",
+    "zero",
+    "mid"
+   ],
+   "level": "L3",
+   "delay": 720,
+   "expected": "keep_blocked",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "921.25",
+   "currency": "EUR",
+   "keys": {
+    "exact": "d7c24fac9e90e793e576aa280aeedd581760a375f696647e6b39b106ab159488",
+    "near": "8b0c585310f94ce05b3c9b387c8c2b3121ea89dad8603b58345e6436d20a2223",
+    "group": "e2c6de495ec21a21f3809bb7e82fe1f1c55da096ab59d6d9947654ce40c0286b"
+   },
+   "params": {
+    "po_qty": 104,
+    "price": "16.75",
+    "receipts": [
+     39,
+     30
+    ],
+    "other_invoices": [
+     19
+    ],
+    "invoice_qty": 55,
+    "physical_total": 69,
+    "delay": 720,
+    "cancelled_invoices": [],
+    "blocked_at": -160,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "8b0c585310f94ce05b3c9b387c8c2b3121ea89dad8603b58345e6436d20a2223",
+   "position": 19
+  },
+  {
+   "case_id": "dev-V2-8",
+   "split": "dev",
+   "seed": 11310008,
+   "force": {
+    "reversal": false,
+    "gap": 2,
+    "delay": "early",
+    "unrecorded": "zero"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V2",
+   "variant": "V2_not_delivered",
+   "signature": [
+    "V2_not_delivered",
+    3,
+    false,
+    0,
+    "after_block",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "level": "L3",
+   "delay": 240,
+   "expected": "keep_blocked",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "6812.50",
+   "currency": "EUR",
+   "keys": {
+    "exact": "bc9b7a12abb4fe41b67b7c410bbb68eaa3e4ad635434f2c0b16db7db6a5834de",
+    "near": "bd28d86fb046de137a2dadcb32ac1e89d524c967a6b82c2abcffb4d9b698772a",
+    "group": "9b48773ab694422878ac5564f8dd84d07fe81a59913e4522b747e9df5918be2b"
+   },
+   "params": {
+    "po_qty": 311,
+    "price": "31.25",
+    "receipts": [
+     87,
+     39,
+     90
+    ],
+    "other_invoices": [],
+    "invoice_qty": 218,
+    "physical_total": 216,
+    "delay": 240,
+    "cancelled_invoices": [
+     37
+    ],
+    "blocked_at": -160,
+    "cancelled_at": -80,
+    "reversals": []
+   },
+   "params_sha256": "bd28d86fb046de137a2dadcb32ac1e89d524c967a6b82c2abcffb4d9b698772a",
+   "position": 20
+  },
+  {
+   "case_id": "dev-V2-9",
+   "split": "dev",
+   "seed": 11310009,
+   "force": {
+    "reversal": false,
+    "gap": 1,
+    "delay": "mid",
+    "unrecorded": "zero"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V2",
+   "variant": "V2_not_delivered",
+   "signature": [
+    "V2_not_delivered",
+    3,
+    false,
+    2,
+    "after_block",
+    false,
+    "gap>0",
+    "zero",
+    "mid"
+   ],
+   "level": "L3",
+   "delay": 720,
+   "expected": "keep_blocked",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "869.13",
+   "currency": "EUR",
+   "keys": {
+    "exact": "2023f24f42d92694966d68f531d726fe0a11991e793b788a3bfc79ab087067f7",
+    "near": "b3e436323cd31dd639348d9d4b02323733deefaec80b9f10589deaa572d5c81b",
+    "group": "3349cc8dea65893dcf067dcebb2405fb84cdccda6b0d8b91bd0487f8a993352a"
+   },
+   "params": {
+    "po_qty": 169,
+    "price": "9.99",
+    "receipts": [
+     60,
+     19,
+     45
+    ],
+    "other_invoices": [
+     29,
+     9
+    ],
+    "invoice_qty": 87,
+    "physical_total": 124,
+    "delay": 720,
+    "cancelled_invoices": [
+     20
+    ],
+    "blocked_at": -160,
+    "cancelled_at": -80,
+    "reversals": []
+   },
+   "params_sha256": "b3e436323cd31dd639348d9d4b02323733deefaec80b9f10589deaa572d5c81b",
+   "position": 21
+  },
+  {
+   "case_id": "dev-V2-10",
+   "split": "dev",
+   "seed": 11310010,
+   "force": {
+    "reversal": false,
+    "gap": 17,
+    "delay": "early",
+    "unrecorded": "zero"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V2",
+   "variant": "V2_not_delivered",
+   "signature": [
+    "V2_not_delivered",
+    2,
+    false,
+    1,
+    "none",
+    false,
+    "gap>0",
+    "zero",
+    "early"
+   ],
+   "level": "L1",
+   "delay": 240,
+   "expected": "keep_blocked",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "2261.25",
+   "currency": "EUR",
+   "keys": {
+    "exact": "3750f0944cb304035e38ac523c8e39d2c1b53d5a4bcdcebdffa59a9087f8b789",
+    "near": "9abf7acc8cdce4d809bdbe0500529b4caf1597c4072c6d8370591a71329f69ec",
+    "group": "8ffc62b5e727aab226021b90b058d3e173ea5e116ad9bf3ca4d88bdc3e654805"
+   },
+   "params": {
+    "po_qty": 193,
+    "price": "16.75",
+    "receipts": [
+     89,
+     55
+    ],
+    "other_invoices": [
+     26
+    ],
+    "invoice_qty": 135,
+    "physical_total": 144,
+    "delay": 240,
+    "cancelled_invoices": [],
+    "blocked_at": -160,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "9abf7acc8cdce4d809bdbe0500529b4caf1597c4072c6d8370591a71329f69ec",
+   "position": 22
+  },
+  {
+   "case_id": "dev-V3a-0",
+   "split": "dev",
+   "seed": 11320000,
+   "force": {
+    "reversal": false,
+    "gap": 15,
+    "delay": "late",
+    "unrecorded": "equal"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V3a",
+   "variant": "V3a_late_delivered",
+   "signature": [
+    "V3a_late_delivered",
+    2,
+    false,
+    0,
+    "none",
+    false,
+    "gap>0",
+    "equal",
+    "late"
+   ],
+   "level": "L3",
+   "delay": 1920,
+   "expected": "release",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "1131.90",
+   "currency": "EUR",
+   "keys": {
+    "exact": "094ae915dcf4632654082502578fcd5e7a70ddbbf87a8a326d580d3125f30427",
+    "near": "797fc70034eedbe972e2c50ce5b3d096c6a3d65fece60e422cbcde9d364e6f99",
+    "group": "b50c3cf488568e2a0cac3a9be7700cf616d3c4f5dd34d31d514de762f888e598"
+   },
+   "params": {
+    "po_qty": 197,
+    "price": "7.35",
+    "receipts": [
+     54,
+     85
+    ],
+    "other_invoices": [],
+    "invoice_qty": 154,
+    "physical_total": 154,
+    "delay": 1920,
+    "cancelled_invoices": [],
+    "blocked_at": -160,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "797fc70034eedbe972e2c50ce5b3d096c6a3d65fece60e422cbcde9d364e6f99",
+   "position": 23
+  },
+  {
+   "case_id": "dev-V3a-1",
+   "split": "dev",
+   "seed": 11320001,
+   "force": {
+    "reversal": false,
+    "gap": 20,
+    "delay": "late",
+    "unrecorded": "above"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V3a",
+   "variant": "V3a_late_delivered",
+   "signature": [
+    "V3a_late_delivered",
+    2,
+    false,
+    0,
+    "after_block",
+    false,
+    "gap>0",
+    "above",
+    "late"
+   ],
+   "level": "L3",
+   "delay": 1920,
+   "expected": "release",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "2345.00",
+   "currency": "EUR",
+   "keys": {
+    "exact": "b7edda40a5ce149f2059997bca598468754372cf0e7f3ed2c3c0c79a433bcba7",
+    "near": "c9beacdb3973e594f5cacf8b79dc31bb12139ea43c4385182ab794d6ed92c7cc",
+    "group": "c4511afe7cd82987ba9dcde4e475b0f2047cff0a1253b719dc12964b8c26a52f"
+   },
+   "params": {
+    "po_qty": 191,
+    "price": "16.75",
+    "receipts": [
+     57,
+     63
+    ],
+    "other_invoices": [],
+    "invoice_qty": 140,
+    "physical_total": 146,
+    "delay": 1920,
+    "cancelled_invoices": [
+     30
+    ],
+    "blocked_at": -160,
+    "cancelled_at": -80,
+    "reversals": []
+   },
+   "params_sha256": "c9beacdb3973e594f5cacf8b79dc31bb12139ea43c4385182ab794d6ed92c7cc",
+   "position": 24
+  },
+  {
+   "case_id": "dev-V3a-2",
+   "split": "dev",
+   "seed": 11320002,
+   "force": {
+    "reversal": false,
+    "gap": 25,
+    "delay": "late",
+    "unrecorded": "equal"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V3a",
+   "variant": "V3a_late_delivered",
+   "signature": [
+    "V3a_late_delivered",
+    1,
+    false,
+    0,
+    "none",
+    false,
+    "gap>0",
+    "equal",
+    "late"
+   ],
+   "level": "L3",
+   "delay": 1920,
+   "expected": "release",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "1098.90",
+   "currency": "EUR",
+   "keys": {
+    "exact": "e27fca8e32c3ca594b67ac5cd5c8b07dc6086f6fe51ae72dd5fd1a38f797e65a",
+    "near": "dc011153efc19e887f9c791a7fc5ac33c2a5fc73043ab13d7cf89b77d8bf1a29",
+    "group": "2e0c6c46e4d2d1a364dcdc32616d5f5fdf0953e7819633030fad01bbe4bee418"
+   },
+   "params": {
+    "po_qty": 132,
+    "price": "9.99",
+    "receipts": [
+     85
+    ],
+    "other_invoices": [],
+    "invoice_qty": 110,
+    "physical_total": 110,
+    "delay": 1920,
+    "cancelled_invoices": [],
+    "blocked_at": -160,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "dc011153efc19e887f9c791a7fc5ac33c2a5fc73043ab13d7cf89b77d8bf1a29",
+   "position": 25
+  },
+  {
+   "case_id": "dev-V3a-3",
+   "split": "dev",
+   "seed": 11320003,
+   "force": {
+    "reversal": false,
+    "gap": 24,
+    "delay": "late",
+    "unrecorded": "above"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V3a",
+   "variant": "V3a_late_delivered",
+   "signature": [
+    "V3a_late_delivered",
+    2,
+    false,
+    0,
+    "after_block",
+    false,
+    "gap>0",
+    "above",
+    "late"
+   ],
+   "level": "L3",
+   "delay": 1920,
+   "expected": "release",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "1168.65",
+   "currency": "EUR",
+   "keys": {
+    "exact": "fb3c87bd4b3f2da715430011132cf82bcae401e6b4fc865ecd0242116e344ada",
+    "near": "f00195b21c0b5c3c64cc46d2656710a1b2efca8b06360508d08395f37ff9d60a",
+    "group": "b43cedb36805cd55a095fe1cd297f0aad1ede623e5fd8566d4fe7d52399f9c24"
+   },
+   "params": {
+    "po_qty": 198,
+    "price": "7.35",
+    "receipts": [
+     87,
+     48
+    ],
+    "other_invoices": [],
+    "invoice_qty": 159,
+    "physical_total": 165,
+    "delay": 1920,
+    "cancelled_invoices": [
+     14
+    ],
+    "blocked_at": -160,
+    "cancelled_at": -80,
+    "reversals": []
+   },
+   "params_sha256": "f00195b21c0b5c3c64cc46d2656710a1b2efca8b06360508d08395f37ff9d60a",
+   "position": 26
+  },
+  {
+   "case_id": "dev-V3a-4",
+   "split": "dev",
+   "seed": 11320004,
+   "force": {
+    "reversal": false,
+    "gap": 7,
+    "delay": "late",
+    "unrecorded": "equal"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V3a",
+   "variant": "V3a_late_delivered",
+   "signature": [
+    "V3a_late_delivered",
+    3,
+    false,
+    0,
+    "none",
+    true,
+    "gap>0",
+    "equal",
+    "late"
+   ],
+   "level": "L3",
+   "delay": 1920,
+   "expected": "release",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "2833.60",
+   "currency": "EUR",
+   "keys": {
+    "exact": "8c5957c90d22e7381065feefa0feb08b0b806878d76b5cff2a5e714f147cb7c1",
+    "near": "33085bb3e5d69e9ebeb935fbfc2e851314ce177d3dd1d470567b31b45d77c080",
+    "group": "1279f53823c4ea0016461318cebe196e510d1d43d50fb8eb8ed774904deb89fa"
+   },
+   "params": {
+    "po_qty": 207,
+    "price": "18.40",
+    "receipts": [
+     29,
+     48,
+     70
+    ],
+    "other_invoices": [],
+    "invoice_qty": 154,
+    "physical_total": 154,
+    "delay": 1920,
+    "cancelled_invoices": [],
+    "blocked_at": -1300,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "33085bb3e5d69e9ebeb935fbfc2e851314ce177d3dd1d470567b31b45d77c080",
+   "position": 27
+  },
+  {
+   "case_id": "dev-V3a-5",
+   "split": "dev",
+   "seed": 11320005,
+   "force": {
+    "reversal": false,
+    "gap": 23,
+    "delay": "late",
+    "unrecorded": "above"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V3a",
+   "variant": "V3a_late_delivered",
+   "signature": [
+    "V3a_late_delivered",
+    2,
+    false,
+    0,
+    "none",
+    false,
+    "gap>0",
+    "above",
+    "late"
+   ],
+   "level": "L3",
+   "delay": 1920,
+   "expected": "release",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "1337.50",
+   "currency": "EUR",
+   "keys": {
+    "exact": "e6e21692c2902ad800cf9004f75df4eca4680850309262a7d88e8d338935e721",
+    "near": "b10182455cbebc2485d048c9d78370db2f1f8c3b1db7b9c032f8b7b9a19ca34f",
+    "group": "6078b326e0bbff8ee098d066b3d1dbb41fec6ead0605d387bc0ca0ee7c1a264c"
+   },
+   "params": {
+    "po_qty": 169,
+    "price": "12.50",
+    "receipts": [
+     37,
+     47
+    ],
+    "other_invoices": [],
+    "invoice_qty": 107,
+    "physical_total": 111,
+    "delay": 1920,
+    "cancelled_invoices": [],
+    "blocked_at": -160,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "b10182455cbebc2485d048c9d78370db2f1f8c3b1db7b9c032f8b7b9a19ca34f",
+   "position": 28
+  },
+  {
+   "case_id": "dev-V3b-0",
+   "split": "dev",
+   "seed": 11330000,
+   "force": {
+    "reversal": false,
+    "gap": 7,
+    "delay": "late",
+    "unrecorded": "zero"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V3b",
+   "variant": "V3b_late_not_delivered",
+   "signature": [
+    "V3b_late_not_delivered",
+    1,
+    false,
+    1,
+    "none",
+    false,
+    "gap>0",
+    "zero",
+    "late"
+   ],
+   "level": "L3",
+   "delay": 1920,
+   "expected": "keep_blocked",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "335.00",
+   "currency": "EUR",
+   "keys": {
+    "exact": "e52fb850adbc0aa49830e3f99b7bdf5dcd0db1684fde4126757d95ecc72158a3",
+    "near": "5cb79aa0a7aef33760bf22823b48553ebbe1cabf5b47586ec903c88ce9e05148",
+    "group": "aa7a50a58becab5a2c1661d46f586189b643c5dfaba37c4539f6b7cc905d3ac0"
+   },
+   "params": {
+    "po_qty": 54,
+    "price": "16.75",
+    "receipts": [
+     32
+    ],
+    "other_invoices": [
+     19
+    ],
+    "invoice_qty": 20,
+    "physical_total": 32,
+    "delay": 1920,
+    "cancelled_invoices": [],
+    "blocked_at": -160,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "5cb79aa0a7aef33760bf22823b48553ebbe1cabf5b47586ec903c88ce9e05148",
+   "position": 29
+  },
+  {
+   "case_id": "dev-V3b-1",
+   "split": "dev",
+   "seed": 11330001,
+   "force": {
+    "reversal": false,
+    "gap": 3,
+    "delay": "late",
+    "unrecorded": "zero"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V3b",
+   "variant": "V3b_late_not_delivered",
+   "signature": [
+    "V3b_late_not_delivered",
+    2,
+    false,
+    1,
+    "none",
+    false,
+    "gap>0",
+    "zero",
+    "late"
+   ],
+   "level": "L3",
+   "delay": 1920,
+   "expected": "keep_blocked",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "422.40",
+   "currency": "EUR",
+   "keys": {
+    "exact": "5303906c890acb36632136049154c91a456c64fa3eb79f7d05060d523bbb0845",
+    "near": "e83ddb434392163760baca11202bb6711528f58adce594ab7473466e458ed2bf",
+    "group": "ca8df9addde4995619fc9173f88718c4a83bfac87e18da3978be9656d61fe5c1"
+   },
+   "params": {
+    "po_qty": 151,
+    "price": "4.80",
+    "receipts": [
+     24,
+     66
+    ],
+    "other_invoices": [
+     5
+    ],
+    "invoice_qty": 88,
+    "physical_total": 90,
+    "delay": 1920,
+    "cancelled_invoices": [],
+    "blocked_at": -160,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "e83ddb434392163760baca11202bb6711528f58adce594ab7473466e458ed2bf",
+   "position": 30
+  },
+  {
+   "case_id": "dev-V3b-2",
+   "split": "dev",
+   "seed": 11330002,
+   "force": {
+    "reversal": false,
+    "gap": 5,
+    "delay": "late",
+    "unrecorded": "zero"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V3b",
+   "variant": "V3b_late_not_delivered",
+   "signature": [
+    "V3b_late_not_delivered",
+    1,
+    false,
+    1,
+    "none",
+    false,
+    "gap>0",
+    "zero",
+    "late"
+   ],
+   "level": "L3",
+   "delay": 1920,
+   "expected": "keep_blocked",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "163.20",
+   "currency": "EUR",
+   "keys": {
+    "exact": "ec6dca25db0390c224ae2513734a7839fe211ff6577d28264471757bc2469aa0",
+    "near": "8d32bfa3e945b0a2434256edc9119100067f2ecb75eb2d77e27f64e485117138",
+    "group": "d593947d77381842bf7cc51ae7f60962bf0f9bd70673bb3a03bb9f98aabfa890"
+   },
+   "params": {
+    "po_qty": 122,
+    "price": "4.80",
+    "receipts": [
+     59
+    ],
+    "other_invoices": [
+     30
+    ],
+    "invoice_qty": 34,
+    "physical_total": 59,
+    "delay": 1920,
+    "cancelled_invoices": [],
+    "blocked_at": -160,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "8d32bfa3e945b0a2434256edc9119100067f2ecb75eb2d77e27f64e485117138",
+   "position": 31
+  },
+  {
+   "case_id": "dev-V3b-3",
+   "split": "dev",
+   "seed": 11330003,
+   "force": {
+    "reversal": false,
+    "gap": 25,
+    "delay": "late",
+    "unrecorded": "zero"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V3b",
+   "variant": "V3b_late_not_delivered",
+   "signature": [
+    "V3b_late_not_delivered",
+    3,
+    false,
+    2,
+    "after_block",
+    false,
+    "gap>0",
+    "zero",
+    "late"
+   ],
+   "level": "L3",
+   "delay": 1920,
+   "expected": "keep_blocked",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "2087.50",
+   "currency": "EUR",
+   "keys": {
+    "exact": "9cf5797f34698a5886858eb59c546202a4c4c61eac16b58b0682760eb20deb20",
+    "near": "21be4fa7e80d39fbc306f71feca658ccd8366494b994ef4b000aebc30a59b480",
+    "group": "4b411625f22727d13bbcf936f45447f244b661897c612408d1bb217d5b962454"
+   },
+   "params": {
+    "po_qty": 276,
+    "price": "12.50",
+    "receipts": [
+     19,
+     80,
+     79
+    ],
+    "other_invoices": [
+     30,
+     6
+    ],
+    "invoice_qty": 167,
+    "physical_total": 178,
+    "delay": 1920,
+    "cancelled_invoices": [
+     33
+    ],
+    "blocked_at": -160,
+    "cancelled_at": -80,
+    "reversals": []
+   },
+   "params_sha256": "21be4fa7e80d39fbc306f71feca658ccd8366494b994ef4b000aebc30a59b480",
+   "position": 32
+  },
+  {
+   "case_id": "dev-V3b-4",
+   "split": "dev",
+   "seed": 11330004,
+   "force": {
+    "reversal": false,
+    "gap": 8,
+    "delay": "late",
+    "unrecorded": "zero"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V3b",
+   "variant": "V3b_late_not_delivered",
+   "signature": [
+    "V3b_late_not_delivered",
+    2,
+    false,
+    0,
+    "before_block",
+    false,
+    "gap>0",
+    "zero",
+    "late"
+   ],
+   "level": "L3",
+   "delay": 1920,
+   "expected": "keep_blocked",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "2970.00",
+   "currency": "EUR",
+   "keys": {
+    "exact": "66fad5ae5b3085f4b9ec4f57444038cd65ef436859ce9f2bbe46c5f38b00567f",
+    "near": "a7f1ee89b0bb0fde2afb692414fc331585d5ee938c00165af3a0e7224b7f891f",
+    "group": "1659347a23aa4f42a14438f20a1018de95d63e803b974b01dd041c9df08f6c8e"
+   },
+   "params": {
+    "po_qty": 137,
+    "price": "45.00",
+    "receipts": [
+     32,
+     26
+    ],
+    "other_invoices": [],
+    "invoice_qty": 66,
+    "physical_total": 58,
+    "delay": 1920,
+    "cancelled_invoices": [
+     25
+    ],
+    "blocked_at": -160,
+    "cancelled_at": -190,
+    "reversals": []
+   },
+   "params_sha256": "a7f1ee89b0bb0fde2afb692414fc331585d5ee938c00165af3a0e7224b7f891f",
+   "position": 33
+  },
+  {
+   "case_id": "dev-V3b-5",
+   "split": "dev",
+   "seed": 11330005,
+   "force": {
+    "reversal": false,
+    "gap": 2,
+    "delay": "late",
+    "unrecorded": "zero"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V3b",
+   "variant": "V3b_late_not_delivered",
+   "signature": [
+    "V3b_late_not_delivered",
+    3,
+    false,
+    1,
+    "none",
+    true,
+    "gap>0",
+    "zero",
+    "late"
+   ],
+   "level": "L3",
+   "delay": 1920,
+   "expected": "keep_blocked",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "3968.75",
+   "currency": "EUR",
+   "keys": {
+    "exact": "288fbf52b5bdef865c57914d722ed900878f47517af3ad68a3bd5510e131ba98",
+    "near": "5c102e2b87dc3ecaa5580d76a29b864c14d35d3a8b0e9c06d233f5d249c260d9",
+    "group": "42dbdb503d6eea53fece1efce28fe77f7f9034c82c4ae563f5170fe6fc714927"
+   },
+   "params": {
+    "po_qty": 192,
+    "price": "31.25",
+    "receipts": [
+     39,
+     64,
+     31
+    ],
+    "other_invoices": [
+     9
+    ],
+    "invoice_qty": 127,
+    "physical_total": 134,
+    "delay": 1920,
+    "cancelled_invoices": [],
+    "blocked_at": -1300,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "5c102e2b87dc3ecaa5580d76a29b864c14d35d3a8b0e9c06d233f5d249c260d9",
+   "position": 34
+  },
+  {
+   "case_id": "dev-V4-0",
+   "split": "dev",
+   "seed": 11340000,
+   "force": {
+    "reversal": false,
+    "gap": 22,
+    "delay": "beyond",
+    "unrecorded": "above"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V4",
+   "variant": "V4_pending",
+   "signature": [
+    "V4_pending",
+    1,
+    false,
+    0,
+    "none",
+    false,
+    "gap>0",
+    "above",
+    "beyond"
+   ],
+   "level": "L3",
+   "delay": 2880,
+   "expected": "pending",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "1125.00",
+   "currency": "EUR",
+   "keys": {
+    "exact": "2d10cbbf67a46a8de15142564213bd26fd6683f716e703f8e9fa39f93f2f3320",
+    "near": "af6a4a9f7d24a675697952f82b1c04f6321ee81b32736145910a177f7487e88b",
+    "group": "8bfb93708183569def0f09e973d4bcce3b2f1344b525cdcb674daf0d9bef9253"
+   },
+   "params": {
+    "po_qty": 125,
+    "price": "12.50",
+    "receipts": [
+     68
+    ],
+    "other_invoices": [],
+    "invoice_qty": 90,
+    "physical_total": 99,
+    "delay": 2880,
+    "cancelled_invoices": [],
+    "blocked_at": -160,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "af6a4a9f7d24a675697952f82b1c04f6321ee81b32736145910a177f7487e88b",
+   "position": 35
+  },
+  {
+   "case_id": "dev-V4-1",
+   "split": "dev",
+   "seed": 11340001,
+   "force": {
+    "reversal": false,
+    "gap": 6,
+    "delay": "never",
+    "unrecorded": "zero"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V4",
+   "variant": "V4_pending",
+   "signature": [
+    "V4_pending",
+    2,
+    false,
+    0,
+    "none",
+    false,
+    "gap>0",
+    "zero",
+    "never"
+   ],
+   "level": "L3",
+   "delay": null,
+   "expected": "pending",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "1809.00",
+   "currency": "EUR",
+   "keys": {
+    "exact": "b14e21bdc10d11e19c62b0de7bd0b49e84fd7b199a2de6e0fef17bb1353ad6e9",
+    "near": "1a641c68583cf46ffe3f7d937b949b7fb9aeb6bb8eb5d61a13496a0f62803f2b",
+    "group": "6ff4fb77a0f13b032419ccb78427051258079b8b92d2be379074c8c82c3be665"
+   },
+   "params": {
+    "po_qty": 160,
+    "price": "16.75",
+    "receipts": [
+     69,
+     33
+    ],
+    "other_invoices": [],
+    "invoice_qty": 108,
+    "physical_total": 102,
+    "delay": null,
+    "cancelled_invoices": [],
+    "blocked_at": -160,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "1a641c68583cf46ffe3f7d937b949b7fb9aeb6bb8eb5d61a13496a0f62803f2b",
+   "position": 36
+  },
+  {
+   "case_id": "dev-V4-2",
+   "split": "dev",
+   "seed": 11340002,
+   "force": {
+    "reversal": false,
+    "gap": 22,
+    "delay": "beyond",
+    "unrecorded": "zero"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V4",
+   "variant": "V4_pending",
+   "signature": [
+    "V4_pending",
+    2,
+    false,
+    0,
+    "before_block",
+    false,
+    "gap>0",
+    "zero",
+    "beyond"
+   ],
+   "level": "L3",
+   "delay": 2880,
+   "expected": "pending",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "3500.00",
+   "currency": "EUR",
+   "keys": {
+    "exact": "87fea3d2b3e6229f2858d869b1637e12f698e5b6e69e54b9522a9f7a26be361a",
+    "near": "10fac7c499da631831439127cff60ec47f93bfe3a83559fd40aab9820dce5ae0",
+    "group": "5f24f667b75b60855b685fa1cda6a0da44911adc1594c69f2afb22d301f49eba"
+   },
+   "params": {
+    "po_qty": 225,
+    "price": "20.00",
+    "receipts": [
+     88,
+     65
+    ],
+    "other_invoices": [],
+    "invoice_qty": 175,
+    "physical_total": 153,
+    "delay": 2880,
+    "cancelled_invoices": [
+     29
+    ],
+    "blocked_at": -160,
+    "cancelled_at": -190,
+    "reversals": []
+   },
+   "params_sha256": "10fac7c499da631831439127cff60ec47f93bfe3a83559fd40aab9820dce5ae0",
+   "position": 37
+  },
+  {
+   "case_id": "dev-V4-3",
+   "split": "dev",
+   "seed": 11340003,
+   "force": {
+    "reversal": false,
+    "gap": 14,
+    "delay": "never",
+    "unrecorded": "above"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V4",
+   "variant": "V4_pending",
+   "signature": [
+    "V4_pending",
+    1,
+    false,
+    0,
+    "after_block",
+    false,
+    "gap>0",
+    "above",
+    "never"
+   ],
+   "level": "L3",
+   "delay": null,
+   "expected": "pending",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "632.10",
+   "currency": "EUR",
+   "keys": {
+    "exact": "043e1122d9d7b6b230f2ed479c3befddcd71ace6103ed6bfd834e97eaa583182",
+    "near": "d569497fe6760d510e5d7501a5711d8599234a2aa96189e3c741a41320c0bf47",
+    "group": "7ac3b45d7c5bce72b28887ce6d727d6e473aed7dc6df45146c067aef9240d97d"
+   },
+   "params": {
+    "po_qty": 130,
+    "price": "7.35",
+    "receipts": [
+     72
+    ],
+    "other_invoices": [],
+    "invoice_qty": 86,
+    "physical_total": 90,
+    "delay": null,
+    "cancelled_invoices": [
+     27
+    ],
+    "blocked_at": -160,
+    "cancelled_at": -80,
+    "reversals": []
+   },
+   "params_sha256": "d569497fe6760d510e5d7501a5711d8599234a2aa96189e3c741a41320c0bf47",
+   "position": 38
+  },
+  {
+   "case_id": "dev-V4-4",
+   "split": "dev",
+   "seed": 11340004,
+   "force": {
+    "reversal": false,
+    "gap": 13,
+    "delay": "beyond",
+    "unrecorded": "equal"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V4",
+   "variant": "V4_pending",
+   "signature": [
+    "V4_pending",
+    3,
+    false,
+    0,
+    "none",
+    true,
+    "gap>0",
+    "equal",
+    "beyond"
+   ],
+   "level": "L3",
+   "delay": 2880,
+   "expected": "pending",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "3128.00",
+   "currency": "EUR",
+   "keys": {
+    "exact": "4ae3fea32d070c601dae6d5419ac7580bef03a9af5abec94e2d01dccbaf61e1d",
+    "near": "39964b6fbdf793191c7ca609bfbd21b74d6bdc1c67d27a2ece48628295811a1d",
+    "group": "4caa3859bb88c0b11b9a1e3d44b94fbedf44c2f8e72cd6e549e0ba7233ed8ba7"
+   },
+   "params": {
+    "po_qty": 181,
+    "price": "18.40",
+    "receipts": [
+     50,
+     78,
+     29
+    ],
+    "other_invoices": [],
+    "invoice_qty": 170,
+    "physical_total": 170,
+    "delay": 2880,
+    "cancelled_invoices": [],
+    "blocked_at": -1300,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "39964b6fbdf793191c7ca609bfbd21b74d6bdc1c67d27a2ece48628295811a1d",
+   "position": 39
+  },
+  {
+   "case_id": "dev-V4-5",
+   "split": "dev",
+   "seed": 11340005,
+   "force": {
+    "reversal": false,
+    "gap": 14,
+    "delay": "never",
+    "unrecorded": "equal"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V4",
+   "variant": "V4_pending",
+   "signature": [
+    "V4_pending",
+    3,
+    false,
+    0,
+    "after_block",
+    false,
+    "gap>0",
+    "equal",
+    "never"
+   ],
+   "level": "L3",
+   "delay": null,
+   "expected": "pending",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "2825.00",
+   "currency": "EUR",
+   "keys": {
+    "exact": "23306824a00b1ff2b0aa77607b70a4fe6fb2d20167f358ed7b74eee974f73a14",
+    "near": "e113fac17532ea20395c905521ed3cb1b9d053af79ed449f9a233cee2aa43e4e",
+    "group": "40664584375596c07f7bd5f696328be7ee6503b5e945407fa23941b8785ff36f"
+   },
+   "params": {
+    "po_qty": 287,
+    "price": "12.50",
+    "receipts": [
+     71,
+     52,
+     89
+    ],
+    "other_invoices": [],
+    "invoice_qty": 226,
+    "physical_total": 226,
+    "delay": null,
+    "cancelled_invoices": [
+     33
+    ],
+    "blocked_at": -160,
+    "cancelled_at": -80,
+    "reversals": []
+   },
+   "params_sha256": "e113fac17532ea20395c905521ed3cb1b9d053af79ed449f9a233cee2aa43e4e",
+   "position": 40
+  },
+  {
+   "case_id": "dev-V4-6",
+   "split": "dev",
+   "seed": 11340006,
+   "force": {
+    "reversal": false,
+    "gap": 19,
+    "delay": "beyond",
+    "unrecorded": "above"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V4",
+   "variant": "V4_pending",
+   "signature": [
+    "V4_pending",
+    3,
+    false,
+    2,
+    "none",
+    true,
+    "gap>0",
+    "above",
+    "beyond"
+   ],
+   "level": "L3",
+   "delay": 2880,
+   "expected": "pending",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "1368.63",
+   "currency": "EUR",
+   "keys": {
+    "exact": "b1f0605c9b4acdeab6df9866b4cf86be89e4d05749462c15c1422d5618ec3119",
+    "near": "a21ff831375afd1b5fd6dce9eb25468fb80285120cd56f18b5cfa14540404bde",
+    "group": "ace447cc68a02b7dc16b267c481615558a6fee76846c6f33162c094f687e0588"
+   },
+   "params": {
+    "po_qty": 219,
+    "price": "9.99",
+    "receipts": [
+     16,
+     68,
+     74
+    ],
+    "other_invoices": [
+     14,
+     26
+    ],
+    "invoice_qty": 137,
+    "physical_total": 183,
+    "delay": 2880,
+    "cancelled_invoices": [],
+    "blocked_at": -1300,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "a21ff831375afd1b5fd6dce9eb25468fb80285120cd56f18b5cfa14540404bde",
+   "position": 41
+  },
+  {
+   "case_id": "dev-V4-7",
+   "split": "dev",
+   "seed": 11340007,
+   "force": {
+    "reversal": false,
+    "gap": 3,
+    "delay": "never",
+    "unrecorded": "above"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V4",
+   "variant": "V4_pending",
+   "signature": [
+    "V4_pending",
+    2,
+    false,
+    0,
+    "none",
+    false,
+    "gap>0",
+    "above",
+    "never"
+   ],
+   "level": "L3",
+   "delay": null,
+   "expected": "pending",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "602.70",
+   "currency": "EUR",
+   "keys": {
+    "exact": "d2d75a881a4fa7ea6df5275fafae1349cfb65050671297a0ff52bbec2fd187d7",
+    "near": "35b08ea2458c23b2e1eb6c8e266a2ed4521f969774c0282790ded8aebd343cbb",
+    "group": "279f6619d71232cd3a327200fcb0620277eb525ec215bbebe51c702f67d33eae"
+   },
+   "params": {
+    "po_qty": 111,
+    "price": "7.35",
+    "receipts": [
+     25,
+     54
+    ],
+    "other_invoices": [],
+    "invoice_qty": 82,
+    "physical_total": 92,
+    "delay": null,
+    "cancelled_invoices": [],
+    "blocked_at": -160,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "35b08ea2458c23b2e1eb6c8e266a2ed4521f969774c0282790ded8aebd343cbb",
+   "position": 42
+  },
+  {
+   "case_id": "dev-V4-8",
+   "split": "dev",
+   "seed": 11340008,
+   "force": {
+    "reversal": false,
+    "gap": 25,
+    "delay": "beyond",
+    "unrecorded": "zero"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V4",
+   "variant": "V4_pending",
+   "signature": [
+    "V4_pending",
+    3,
+    false,
+    2,
+    "none",
+    false,
+    "gap>0",
+    "zero",
+    "beyond"
+   ],
+   "level": "L3",
+   "delay": 2880,
+   "expected": "pending",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "1691.75",
+   "currency": "EUR",
+   "keys": {
+    "exact": "b8bb6c3a9704a8e276f2831ec45c525aff31ee724293410968e549fbd9953a9a",
+    "near": "6aefb66eeca369fe30f6ced0b40978f21e3f782593f056299f7332db50e4fc81",
+    "group": "11ce01c96df798fe968f01bbfb88035eceac0782b827887088d598130d98c756"
+   },
+   "params": {
+    "po_qty": 179,
+    "price": "16.75",
+    "receipts": [
+     19,
+     29,
+     55
+    ],
+    "other_invoices": [
+     21,
+     6
+    ],
+    "invoice_qty": 101,
+    "physical_total": 103,
+    "delay": 2880,
+    "cancelled_invoices": [],
+    "blocked_at": -160,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "6aefb66eeca369fe30f6ced0b40978f21e3f782593f056299f7332db50e4fc81",
+   "position": 43
+  },
+  {
+   "case_id": "dev-V4-9",
+   "split": "dev",
+   "seed": 11340009,
+   "force": {
+    "reversal": false,
+    "gap": 1,
+    "delay": "never",
+    "unrecorded": "equal"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V4",
+   "variant": "V4_pending",
+   "signature": [
+    "V4_pending",
+    2,
+    false,
+    1,
+    "before_block",
+    false,
+    "gap>0",
+    "equal",
+    "never"
+   ],
+   "level": "L3",
+   "delay": null,
+   "expected": "pending",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "1748.00",
+   "currency": "EUR",
+   "keys": {
+    "exact": "0ccfd132a6ca3c1f7df583c30e76f415b3f6e23559a99ce3b15e21976a089a39",
+    "near": "05c2d7eb876d88de2fedf191a855b680b260d9b68d4b13902293621a03a58a95",
+    "group": "116ee6caf9392262b8db52e646bc7a53eefffb24a444d4793899df64c1cfd1a0"
+   },
+   "params": {
+    "po_qty": 194,
+    "price": "18.40",
+    "receipts": [
+     40,
+     66
+    ],
+    "other_invoices": [
+     12
+    ],
+    "invoice_qty": 95,
+    "physical_total": 107,
+    "delay": null,
+    "cancelled_invoices": [
+     38
+    ],
+    "blocked_at": -160,
+    "cancelled_at": -190,
+    "reversals": []
+   },
+   "params_sha256": "05c2d7eb876d88de2fedf191a855b680b260d9b68d4b13902293621a03a58a95",
+   "position": 44
+  },
+  {
+   "case_id": "dev-V4-10",
+   "split": "dev",
+   "seed": 11340010,
+   "force": {
+    "reversal": false,
+    "gap": 18,
+    "delay": "beyond",
+    "unrecorded": "equal"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V4",
+   "variant": "V4_pending",
+   "signature": [
+    "V4_pending",
+    1,
+    false,
+    0,
+    "before_block",
+    false,
+    "gap>0",
+    "equal",
+    "beyond"
+   ],
+   "level": "L3",
+   "delay": 2880,
+   "expected": "pending",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "3510.00",
+   "currency": "EUR",
+   "keys": {
+    "exact": "cbf48641a2db1186520841de93059548a24d917ec6882b893c4d5a58c15c2d2c",
+    "near": "2227f06bf496766052411e61a772ec44b4491c05519a4bdee19578cc3ee89661",
+    "group": "bf52a4ffbf09ac78aa1ea24e35d1ee5b7df54dd259690c258fd119d09e706652"
+   },
+   "params": {
+    "po_qty": 113,
+    "price": "45.00",
+    "receipts": [
+     60
+    ],
+    "other_invoices": [],
+    "invoice_qty": 78,
+    "physical_total": 78,
+    "delay": 2880,
+    "cancelled_invoices": [
+     24
+    ],
+    "blocked_at": -160,
+    "cancelled_at": -190,
+    "reversals": []
+   },
+   "params_sha256": "2227f06bf496766052411e61a772ec44b4491c05519a4bdee19578cc3ee89661",
+   "position": 45
+  },
+  {
+   "case_id": "dev-V4-11",
+   "split": "dev",
+   "seed": 11340011,
+   "force": {
+    "reversal": false,
+    "gap": 5,
+    "delay": "never",
+    "unrecorded": "zero"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V4",
+   "variant": "V4_pending",
+   "signature": [
+    "V4_pending",
+    3,
+    false,
+    0,
+    "after_block",
+    false,
+    "gap>0",
+    "zero",
+    "never"
+   ],
+   "level": "L3",
+   "delay": null,
+   "expected": "pending",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "4968.75",
+   "currency": "EUR",
+   "keys": {
+    "exact": "6193b31b8f8353281057bc9f8b8d85f616889572a4955a87accb2ae7676ef842",
+    "near": "829d982bb68b5fac59c8aa844811aaeb521be6173d868ba265a8d387cefff83d",
+    "group": "50f9b1130e2543c9ab977bd94047fbc04bba881bddf423b0e9d2519f2cc865aa"
+   },
+   "params": {
+    "po_qty": 220,
+    "price": "31.25",
+    "receipts": [
+     48,
+     66,
+     40
+    ],
+    "other_invoices": [],
+    "invoice_qty": 159,
+    "physical_total": 154,
+    "delay": null,
+    "cancelled_invoices": [
+     34
+    ],
+    "blocked_at": -160,
+    "cancelled_at": -80,
+    "reversals": []
+   },
+   "params_sha256": "829d982bb68b5fac59c8aa844811aaeb521be6173d868ba265a8d387cefff83d",
+   "position": 46
+  },
+  {
+   "case_id": "dev-V4-12",
+   "split": "dev",
+   "seed": 11340012,
+   "force": {
+    "reversal": false,
+    "gap": 18,
+    "delay": "beyond",
+    "unrecorded": "above"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V4",
+   "variant": "V4_pending",
+   "signature": [
+    "V4_pending",
+    3,
+    false,
+    0,
+    "none",
+    false,
+    "gap>0",
+    "above",
+    "beyond"
+   ],
+   "level": "L3",
+   "delay": 2880,
+   "expected": "pending",
+   "discrepancy_type": "receipt_coverage_gap",
+   "amount": "3500.00",
+   "currency": "EUR",
+   "keys": {
+    "exact": "7b795c21aa3d92f86c8658e2bc50d80f029bf0f15a2bafd459426a9078e2c368",
+    "near": "93d8d08936959be067bca476769a824842ec5693f456b84008ed524d57b7e63b",
+    "group": "511459a59b7204243e0baa21c6b8594ae0247eded462e58abd92a8ca52d5ef22"
+   },
+   "params": {
+    "po_qty": 212,
+    "price": "20.00",
+    "receipts": [
+     79,
+     25,
+     53
+    ],
+    "other_invoices": [],
+    "invoice_qty": 175,
+    "physical_total": 182,
+    "delay": 2880,
+    "cancelled_invoices": [],
+    "blocked_at": -160,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "93d8d08936959be067bca476769a824842ec5693f456b84008ed524d57b7e63b",
+   "position": 47
+  },
+  {
+   "case_id": "dev-V5-0",
+   "split": "dev",
+   "seed": 11350000,
+   "force": {
+    "reversal": false,
+    "gap": 0,
+    "stale_receipt": true,
+    "n_receipts": 2
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V5",
+   "variant": "V5_stale_covered",
+   "signature": [
+    "V5_stale_covered",
+    2,
+    false,
+    0,
+    "none",
+    true,
+    "gap0",
+    "none",
+    "mid"
+   ],
+   "level": "L1",
+   "delay": 720,
+   "expected": "release",
+   "discrepancy_type": "none",
+   "amount": "2000.00",
+   "currency": "EUR",
+   "keys": {
+    "exact": "c3feafc929a78e15cb710f78b0b40fed81d9e5da191ebb671a53c3407afc0b5a",
+    "near": "90e8d73e3e5972a356026f148db35dd937426f928f6f93a0296f5f19bcb79f6e",
+    "group": "9c35590c290616b098bdcf23e3fd802119b15471626973c65c2f31acd3a784ac"
+   },
+   "params": {
+    "po_qty": 101,
+    "price": "31.25",
+    "receipts": [
+     23,
+     41
+    ],
+    "other_invoices": [],
+    "invoice_qty": 64,
+    "physical_total": 64,
+    "delay": 720,
+    "cancelled_invoices": [],
+    "blocked_at": -1700,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "90e8d73e3e5972a356026f148db35dd937426f928f6f93a0296f5f19bcb79f6e",
+   "position": 48
+  },
+  {
+   "case_id": "dev-V5-1",
+   "split": "dev",
+   "seed": 11350001,
+   "force": {
+    "reversal": false,
+    "gap": 0,
+    "stale_receipt": false,
+    "cancellation": "after_block"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V5",
+   "variant": "V5_stale_covered",
+   "signature": [
+    "V5_stale_covered",
+    3,
+    false,
+    1,
+    "after_block",
+    false,
+    "gap0",
+    "none",
+    "mid"
+   ],
+   "level": "L2",
+   "delay": 720,
+   "expected": "release",
+   "discrepancy_type": "none",
+   "amount": "1208.79",
+   "currency": "EUR",
+   "keys": {
+    "exact": "683aeea82713a7b5a0b9265200fd4eaee36cccbd53a00181f91d104031196c45",
+    "near": "7e407ca91581b00900ce2c4330589fa5cb6ac05d906bfeef6479f1d06ca74827",
+    "group": "f97638df33ba3d23a52b726a77a4566bd1c89b743750df77dc4f659fba51834b"
+   },
+   "params": {
+    "po_qty": 205,
+    "price": "9.99",
+    "receipts": [
+     25,
+     38,
+     63
+    ],
+    "other_invoices": [
+     5
+    ],
+    "invoice_qty": 121,
+    "physical_total": 126,
+    "delay": 720,
+    "cancelled_invoices": [
+     39
+    ],
+    "blocked_at": -160,
+    "cancelled_at": -80,
+    "reversals": []
+   },
+   "params_sha256": "7e407ca91581b00900ce2c4330589fa5cb6ac05d906bfeef6479f1d06ca74827",
+   "position": 49
+  },
+  {
+   "case_id": "dev-V5-2",
+   "split": "dev",
+   "seed": 11350002,
+   "force": {
+    "reversal": false,
+    "gap": 0,
+    "stale_receipt": true,
+    "n_receipts": 2
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V5",
+   "variant": "V5_stale_covered",
+   "signature": [
+    "V5_stale_covered",
+    2,
+    false,
+    2,
+    "none",
+    true,
+    "gap0",
+    "none",
+    "beyond"
+   ],
+   "level": "L2",
+   "delay": 2880,
+   "expected": "release",
+   "discrepancy_type": "none",
+   "amount": "350.40",
+   "currency": "EUR",
+   "keys": {
+    "exact": "d67b640aeb133b48698e5be7c975cf3c551155f162cf0f7f09d0b07f8c68d49f",
+    "near": "9c9c1b78e31c7b3cdc46cc289dc3db9d19175b12ff18443e136b447923b49982",
+    "group": "731a20e399fa749254c4cc6252e1847af341b9e1f0bbc48129619e4d757157fd"
+   },
+   "params": {
+    "po_qty": 124,
+    "price": "4.80",
+    "receipts": [
+     39,
+     70
+    ],
+    "other_invoices": [
+     16,
+     20
+    ],
+    "invoice_qty": 73,
+    "physical_total": 109,
+    "delay": 2880,
+    "cancelled_invoices": [],
+    "blocked_at": -1700,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "9c9c1b78e31c7b3cdc46cc289dc3db9d19175b12ff18443e136b447923b49982",
+   "position": 50
+  },
+  {
+   "case_id": "dev-V5-3",
+   "split": "dev",
+   "seed": 11350003,
+   "force": {
+    "reversal": false,
+    "gap": 0,
+    "stale_receipt": false,
+    "cancellation": "after_block"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V5",
+   "variant": "V5_stale_covered",
+   "signature": [
+    "V5_stale_covered",
+    3,
+    false,
+    0,
+    "after_block",
+    false,
+    "gap0",
+    "none",
+    "early"
+   ],
+   "level": "L2",
+   "delay": 240,
+   "expected": "release",
+   "discrepancy_type": "none",
+   "amount": "700.80",
+   "currency": "EUR",
+   "keys": {
+    "exact": "a947d37c2e120a6eceffb07ff1c42f5ca83bb9e43e40deebed681175d9187f48",
+    "near": "4fef02af7954fdf5af4fd9542ce936f7a506d2a9ee81e2ad8e6af631628ac988",
+    "group": "8e396074954cd0df01334189f3c1e3b653a46ee547f0b9783723be85bbb698cc"
+   },
+   "params": {
+    "po_qty": 199,
+    "price": "4.80",
+    "receipts": [
+     16,
+     54,
+     76
+    ],
+    "other_invoices": [],
+    "invoice_qty": 146,
+    "physical_total": 146,
+    "delay": 240,
+    "cancelled_invoices": [
+     36
+    ],
+    "blocked_at": -160,
+    "cancelled_at": -80,
+    "reversals": []
+   },
+   "params_sha256": "4fef02af7954fdf5af4fd9542ce936f7a506d2a9ee81e2ad8e6af631628ac988",
+   "position": 51
+  },
+  {
+   "case_id": "dev-V5-4",
+   "split": "dev",
+   "seed": 11350004,
+   "force": {
+    "reversal": false,
+    "gap": 0,
+    "stale_receipt": true,
+    "n_receipts": 2
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V5",
+   "variant": "V5_stale_covered",
+   "signature": [
+    "V5_stale_covered",
+    2,
+    false,
+    2,
+    "none",
+    true,
+    "gap0",
+    "none",
+    "mid"
+   ],
+   "level": "L2",
+   "delay": 720,
+   "expected": "release",
+   "discrepancy_type": "none",
+   "amount": "2250.00",
+   "currency": "EUR",
+   "keys": {
+    "exact": "2a4c7ff0bdabf9899d47408a2bfc94c19406bd04e8ddbfb1d81285e76a693938",
+    "near": "ddeff741dd48b801730af90af84bed1ca13be04e764f7a949e1c8226d96ef70b",
+    "group": "485898ab63fcf29644adcec784b2dbd39deeb2e4ba64700ea1e5f72781ccb639"
+   },
+   "params": {
+    "po_qty": 143,
+    "price": "31.25",
+    "receipts": [
+     31,
+     86
+    ],
+    "other_invoices": [
+     23,
+     22
+    ],
+    "invoice_qty": 72,
+    "physical_total": 117,
+    "delay": 720,
+    "cancelled_invoices": [],
+    "blocked_at": -1700,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "ddeff741dd48b801730af90af84bed1ca13be04e764f7a949e1c8226d96ef70b",
+   "position": 52
+  },
+  {
+   "case_id": "dev-V5-5",
+   "split": "dev",
+   "seed": 11350005,
+   "force": {
+    "reversal": false,
+    "gap": 0,
+    "stale_receipt": false,
+    "cancellation": "after_block"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V5",
+   "variant": "V5_stale_covered",
+   "signature": [
+    "V5_stale_covered",
+    1,
+    false,
+    0,
+    "after_block",
+    false,
+    "gap0",
+    "none",
+    "early"
+   ],
+   "level": "L2",
+   "delay": 240,
+   "expected": "release",
+   "discrepancy_type": "none",
+   "amount": "920.00",
+   "currency": "EUR",
+   "keys": {
+    "exact": "b3c3a576d53129a8c45448a592cbd9546a949b9583cedfabc2e6431ba5bcc7b4",
+    "near": "000c01e567df0c3ea2b57d946a172bb21fcff09214a84b9fddb1526651c5d2c7",
+    "group": "8c8ee1299056cbd0384b7a7395578155814516440bb548feb19c4774f794001a"
+   },
+   "params": {
+    "po_qty": 147,
+    "price": "18.40",
+    "receipts": [
+     50
+    ],
+    "other_invoices": [],
+    "invoice_qty": 50,
+    "physical_total": 50,
+    "delay": 240,
+    "cancelled_invoices": [
+     38
+    ],
+    "blocked_at": -160,
+    "cancelled_at": -80,
+    "reversals": []
+   },
+   "params_sha256": "000c01e567df0c3ea2b57d946a172bb21fcff09214a84b9fddb1526651c5d2c7",
+   "position": 53
+  },
+  {
+   "case_id": "dev-V5-6",
+   "split": "dev",
+   "seed": 11350006,
+   "force": {
+    "reversal": false,
+    "gap": 0,
+    "stale_receipt": true,
+    "n_receipts": 2
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V5",
+   "variant": "V5_stale_covered",
+   "signature": [
+    "V5_stale_covered",
+    2,
+    false,
+    0,
+    "none",
+    true,
+    "gap0",
+    "none",
+    "mid"
+   ],
+   "level": "L1",
+   "delay": 720,
+   "expected": "release",
+   "discrepancy_type": "none",
+   "amount": "969.03",
+   "currency": "EUR",
+   "keys": {
+    "exact": "5b456d45dfb677dd4510f49300e8dbc35bb29c5d9829310ba90b689328a59cfc",
+    "near": "ba88705c7342d68a06daff2f1295b639c08631bd683ec0d4585c383d170dfe99",
+    "group": "a0af862dfbde79886c16735f8c7c7cebba5170402257f24c816b9a50685864e1"
+   },
+   "params": {
+    "po_qty": 134,
+    "price": "9.99",
+    "receipts": [
+     71,
+     26
+    ],
+    "other_invoices": [],
+    "invoice_qty": 97,
+    "physical_total": 97,
+    "delay": 720,
+    "cancelled_invoices": [],
+    "blocked_at": -1700,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "ba88705c7342d68a06daff2f1295b639c08631bd683ec0d4585c383d170dfe99",
+   "position": 54
+  },
+  {
+   "case_id": "dev-V5-7",
+   "split": "dev",
+   "seed": 11350007,
+   "force": {
+    "reversal": false,
+    "gap": 0,
+    "stale_receipt": false,
+    "cancellation": "after_block"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V5",
+   "variant": "V5_stale_covered",
+   "signature": [
+    "V5_stale_covered",
+    1,
+    false,
+    0,
+    "after_block",
+    false,
+    "gap0",
+    "none",
+    "beyond"
+   ],
+   "level": "L2",
+   "delay": 2880,
+   "expected": "release",
+   "discrepancy_type": "none",
+   "amount": "625.00",
+   "currency": "EUR",
+   "keys": {
+    "exact": "651a624199f450a747038a45e1a3252582418c80624a9115cd4fcfb83fac8821",
+    "near": "d1bd4f1e477ced768ad4e80683bc4ed796f53c7632bca83c918ba1187e837ed8",
+    "group": "58ee2094d715d35a0873c0f39de7b7cb95de25aac6c0d463ab5e339f19e03c69"
+   },
+   "params": {
+    "po_qty": 87,
+    "price": "31.25",
+    "receipts": [
+     20
+    ],
+    "other_invoices": [],
+    "invoice_qty": 20,
+    "physical_total": 20,
+    "delay": 2880,
+    "cancelled_invoices": [
+     23
+    ],
+    "blocked_at": -160,
+    "cancelled_at": -80,
+    "reversals": []
+   },
+   "params_sha256": "d1bd4f1e477ced768ad4e80683bc4ed796f53c7632bca83c918ba1187e837ed8",
+   "position": 55
+  },
+  {
+   "case_id": "dev-V5-8",
+   "split": "dev",
+   "seed": 11350008,
+   "force": {
+    "reversal": false,
+    "gap": 0,
+    "stale_receipt": true,
+    "n_receipts": 2
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V5",
+   "variant": "V5_stale_covered",
+   "signature": [
+    "V5_stale_covered",
+    2,
+    false,
+    0,
+    "none",
+    true,
+    "gap0",
+    "none",
+    "mid"
+   ],
+   "level": "L1",
+   "delay": 720,
+   "expected": "release",
+   "discrepancy_type": "none",
+   "amount": "4005.00",
+   "currency": "EUR",
+   "keys": {
+    "exact": "04c78718621e15f23fa78d0c4d3293c180b871f7ab3d9f5296c20d624a4bb6e4",
+    "near": "64f194cd638d6df11ccad5ee9274d9538cc824886515e8afa55b23f033813221",
+    "group": "00b4ad1d5cdacb15ff7e209c1c33f03c3e30385df9bedc0d75ee2dc6036a404c"
+   },
+   "params": {
+    "po_qty": 146,
+    "price": "45.00",
+    "receipts": [
+     35,
+     54
+    ],
+    "other_invoices": [],
+    "invoice_qty": 89,
+    "physical_total": 89,
+    "delay": 720,
+    "cancelled_invoices": [],
+    "blocked_at": -1700,
+    "cancelled_at": null,
+    "reversals": []
+   },
+   "params_sha256": "64f194cd638d6df11ccad5ee9274d9538cc824886515e8afa55b23f033813221",
+   "position": 56
+  },
+  {
+   "case_id": "dev-V5-9",
+   "split": "dev",
+   "seed": 11350009,
+   "force": {
+    "reversal": false,
+    "gap": 0,
+    "stale_receipt": false,
+    "cancellation": "after_block"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V5",
+   "variant": "V5_stale_covered",
+   "signature": [
+    "V5_stale_covered",
+    2,
+    false,
+    2,
+    "after_block",
+    false,
+    "gap0",
+    "none",
+    "late"
+   ],
+   "level": "L2",
+   "delay": 1920,
+   "expected": "release",
+   "discrepancy_type": "none",
+   "amount": "169.83",
+   "currency": "EUR",
+   "keys": {
+    "exact": "6f2969c295d61918742bfed80f94ca9f8b12659a17ef34dd254ab5aa3815abc4",
+    "near": "fa5e8d8493063d90ff354b9aebd707c9aeaddf4e8949494d71bf78c9de98c4ae",
+    "group": "41bc64f27fc40c8a0b9e3b0f373709b6443a532b40005d726e1ff71873eeb15a"
+   },
+   "params": {
+    "po_qty": 112,
+    "price": "9.99",
+    "receipts": [
+     21,
+     46
+    ],
+    "other_invoices": [
+     25,
+     25
+    ],
+    "invoice_qty": 17,
+    "physical_total": 67,
+    "delay": 1920,
+    "cancelled_invoices": [
+     11
+    ],
+    "blocked_at": -160,
+    "cancelled_at": -80,
+    "reversals": []
+   },
+   "params_sha256": "fa5e8d8493063d90ff354b9aebd707c9aeaddf4e8949494d71bf78c9de98c4ae",
+   "position": 57
+  },
+  {
+   "case_id": "dev-V5-10",
+   "split": "dev",
+   "seed": 11350010,
+   "force": {
+    "reversal": false,
+    "gap": 0,
+    "stale_receipt": true,
+    "n_receipts": 2
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V5",
+   "variant": "V5_stale_covered",
+   "signature": [
+    "V5_stale_covered",
+    2,
+    false,
+    1,
+    "after_block",
+    true,
+    "gap0",
+    "none",
+    "late"
+   ],
+   "level": "L2",
+   "delay": 1920,
+   "expected": "release",
+   "discrepancy_type": "none",
+   "amount": "2312.50",
+   "currency": "EUR",
+   "keys": {
+    "exact": "e3ad455c94ed0eabe0c43e7fe941c5f2a58c306a6ee4bc9ad9331683c9df4ee0",
+    "near": "ca9bfc55604dfa270d63d6c5ae48c79f66cbf4b3106a576cd2a2ecbc967f346a",
+    "group": "1aff44ecc42e5b55a8f34013f02d69551cf1d5f824a044fe3f52ef033397cf35"
+   },
+   "params": {
+    "po_qty": 149,
+    "price": "31.25",
+    "receipts": [
+     72,
+     29
+    ],
+    "other_invoices": [
+     27
+    ],
+    "invoice_qty": 74,
+    "physical_total": 101,
+    "delay": 1920,
+    "cancelled_invoices": [
+     33
+    ],
+    "blocked_at": -1700,
+    "cancelled_at": -80,
+    "reversals": []
+   },
+   "params_sha256": "ca9bfc55604dfa270d63d6c5ae48c79f66cbf4b3106a576cd2a2ecbc967f346a",
+   "position": 58
+  },
+  {
+   "case_id": "dev-V5-11",
+   "split": "dev",
+   "seed": 11350011,
+   "force": {
+    "reversal": false,
+    "gap": 0,
+    "stale_receipt": false,
+    "cancellation": "after_block"
+   },
+   "generator": "causal/2",
+   "policy": "sandbox-v1",
+   "group": "V5",
+   "variant": "V5_stale_covered",
+   "signature": [
+    "V5_stale_covered",
+    2,
+    false,
+    1,
+    "after_block",
+    false,
+    "gap0",
+    "none",
+    "mid"
+   ],
+   "level": "L2",
+   "delay": 720,
+   "expected": "release",
+   "discrepancy_type": "none",
+   "amount": "1512.50",
+   "currency": "EUR",
+   "keys": {
+    "exact": "d3cfe9f0dbf297ce30fa3c60e7e251c8fb8ea9d59daa8cb44dd75fc5a59d9c66",
+    "near": "4624b784ad5d42297c70854e7998a828a8f815bee2c7f2afcc80054aca552b34",
+    "group": "a36e0827079b720783e9c5bad8bd270952ed8a7d11659cd0e3701447ca7f6613"
+   },
+   "params": {
+    "po_qty": 191,
+    "price": "12.50",
+    "receipts": [
+     76,
+     72
+    ],
+    "other_invoices": [
+     27
+    ],
+    "invoice_qty": 121,
+    "physical_total": 148,
+    "delay": 720,
+    "cancelled_invoices": [
+     19
+    ],
+    "blocked_at": -160,
+    "cancelled_at": -80,
+    "reversals": []
+   },
+   "params_sha256": "4624b784ad5d42297c70854e7998a828a8f815bee2c7f2afcc80054aca552b34",
+   "position": 59
+  }
+ ]
+}

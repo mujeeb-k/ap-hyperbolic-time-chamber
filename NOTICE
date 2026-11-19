@@ -1,0 +1,15 @@
+Right Actions, Incomplete Evidence: code and data release
+
+The code is licensed under the Apache License 2.0 (LICENSE). The data and documents are licensed under CC BY 4.0
+(LICENSE-DATA).
+
+Third-party terms
+
+- Base model. The evaluated 4B models were post-trained from Qwen/Qwen3-4B-Instruct-2507, which its authors release
+  under the Apache License 2.0. No weights are included in this repository.
+- Claude Sonnet 5.5 outcomes. data/outcomes.csv contains per-case outcomes of Claude Sonnet 5.5 episodes (success,
+  right final action and grader flags), not their transcripts or any text Claude generated.
+- Inkling 2 Small. No Inkling 2 Small output or per-case outcome is included.
+
+Software versions and dependencies are pinned in pyproject.toml and uv.lock. Each dependency is under its own
+licence.

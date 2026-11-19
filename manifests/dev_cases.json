@@ -1,0 +1,1108 @@
+{
+ "manifest": "dev_cases/1",
+ "note": "P28; development only; excluded from validation and test",
+ "cases": [
+  {
+   "id": "T001",
+   "split": "dev_train",
+   "workflow": "stale_receipt",
+   "seed": 5001,
+   "params": {
+    "price": "18.40",
+    "receipts": [
+     67,
+     33
+    ],
+    "other_invoices": [],
+    "invoice_qty": 83,
+    "physical_total": 100,
+    "delay": 480,
+    "blocked_at": -1800,
+    "po_qty": 124
+   }
+  },
+  {
+   "id": "T002",
+   "split": "dev_train",
+   "workflow": "stale_receipt",
+   "seed": 5002,
+   "params": {
+    "price": "12.50",
+    "receipts": [
+     30,
+     60
+    ],
+    "other_invoices": [],
+    "invoice_qty": 34,
+    "physical_total": 90,
+    "delay": 480,
+    "blocked_at": -1800,
+    "po_qty": 112
+   }
+  },
+  {
+   "id": "T003",
+   "split": "dev_train",
+   "workflow": "stale_receipt",
+   "seed": 5003,
+   "params": {
+    "price": "12.50",
+    "receipts": [
+     49,
+     55
+    ],
+    "other_invoices": [],
+    "invoice_qty": 97,
+    "physical_total": 104,
+    "delay": 480,
+    "blocked_at": -1800,
+    "po_qty": 126
+   }
+  },
+  {
+   "id": "T004",
+   "split": "dev_train",
+   "workflow": "stale_receipt",
+   "seed": 5004,
+   "params": {
+    "price": "9.99",
+    "receipts": [
+     62,
+     22
+    ],
+    "other_invoices": [
+     4
+    ],
+    "invoice_qty": 77,
+    "physical_total": 84,
+    "delay": 480,
+    "blocked_at": -1800,
+    "po_qty": 94
+   }
+  },
+  {
+   "id": "T005",
+   "split": "dev_train",
+   "workflow": "stale_receipt",
+   "seed": 5005,
+   "params": {
+    "price": "7.35",
+    "receipts": [
+     53,
+     24
+    ],
+    "other_invoices": [],
+    "invoice_qty": 69,
+    "physical_total": 77,
+    "delay": 480,
+    "blocked_at": -1800,
+    "po_qty": 90
+   }
+  },
+  {
+   "id": "T006",
+   "split": "dev_train",
+   "workflow": "stale_receipt",
+   "seed": 5006,
+   "params": {
+    "price": "4.80",
+    "receipts": [
+     83,
+     24
+    ],
+    "other_invoices": [],
+    "invoice_qty": 86,
+    "physical_total": 107,
+    "delay": 480,
+    "blocked_at": -1800,
+    "po_qty": 123
+   }
+  },
+  {
+   "id": "T007",
+   "split": "dev_train",
+   "workflow": "stale_receipt",
+   "seed": 5007,
+   "params": {
+    "price": "12.50",
+    "receipts": [
+     62,
+     47
+    ],
+    "other_invoices": [],
+    "invoice_qty": 74,
+    "physical_total": 109,
+    "delay": 480,
+    "blocked_at": -1800,
+    "po_qty": 146
+   }
+  },
+  {
+   "id": "T008",
+   "split": "dev_train",
+   "workflow": "stale_receipt",
+   "seed": 5008,
+   "params": {
+    "price": "20.00",
+    "receipts": [
+     35,
+     42
+    ],
+    "other_invoices": [
+     8
+    ],
+    "invoice_qty": 38,
+    "physical_total": 77,
+    "delay": 480,
+    "blocked_at": -1800,
+    "po_qty": 95
+   }
+  },
+  {
+   "id": "T009",
+   "split": "dev_train",
+   "workflow": "stale_receipt",
+   "seed": 5009,
+   "params": {
+    "price": "20.00",
+    "receipts": [
+     89,
+     48
+    ],
+    "other_invoices": [],
+    "invoice_qty": 94,
+    "physical_total": 137,
+    "delay": 480,
+    "blocked_at": -1800,
+    "po_qty": 170
+   }
+  },
+  {
+   "id": "T010",
+   "split": "dev_train",
+   "workflow": "stale_receipt",
+   "seed": 5010,
+   "params": {
+    "price": "7.35",
+    "receipts": [
+     49,
+     47
+    ],
+    "other_invoices": [],
+    "invoice_qty": 56,
+    "physical_total": 96,
+    "delay": 480,
+    "blocked_at": -1800,
+    "po_qty": 110
+   }
+  },
+  {
+   "id": "T011",
+   "split": "dev_train",
+   "workflow": "stale_receipt",
+   "seed": 5011,
+   "params": {
+    "price": "20.00",
+    "receipts": [
+     44,
+     51
+    ],
+    "other_invoices": [],
+    "invoice_qty": 85,
+    "physical_total": 95,
+    "delay": 480,
+    "blocked_at": -1800,
+    "po_qty": 109
+   }
+  },
+  {
+   "id": "T012",
+   "split": "dev_train",
+   "workflow": "stale_receipt",
+   "seed": 5012,
+   "params": {
+    "price": "45.00",
+    "receipts": [
+     84,
+     18
+    ],
+    "other_invoices": [],
+    "invoice_qty": 97,
+    "physical_total": 102,
+    "delay": 480,
+    "blocked_at": -1800,
+    "po_qty": 112
+   }
+  },
+  {
+   "id": "T013",
+   "split": "dev_train",
+   "workflow": "stale_receipt",
+   "seed": 5013,
+   "params": {
+    "price": "31.25",
+    "receipts": [
+     32,
+     30
+    ],
+    "other_invoices": [
+     1
+    ],
+    "invoice_qty": 38,
+    "physical_total": 62,
+    "delay": 480,
+    "blocked_at": -1800,
+    "po_qty": 91
+   }
+  },
+  {
+   "id": "T014",
+   "split": "dev_train",
+   "workflow": "stale_cancel",
+   "seed": 5014,
+   "params": {
+    "price": "45.00",
+    "receipts": [
+     62,
+     48
+    ],
+    "other_invoices": [
+     10
+    ],
+    "invoice_qty": 98,
+    "physical_total": 110,
+    "delay": 480,
+    "cancelled_invoices": [
+     26
+    ],
+    "cancelled_at": -80,
+    "po_qty": 146
+   }
+  },
+  {
+   "id": "T015",
+   "split": "dev_train",
+   "workflow": "stale_cancel",
+   "seed": 5015,
+   "params": {
+    "price": "16.75",
+    "receipts": [
+     59,
+     15
+    ],
+    "other_invoices": [
+     1
+    ],
+    "invoice_qty": 73,
+    "physical_total": 74,
+    "delay": 480,
+    "cancelled_invoices": [
+     15
+    ],
+    "cancelled_at": -80,
+    "po_qty": 117
+   }
+  },
+  {
+   "id": "T016",
+   "split": "dev_train",
+   "workflow": "stale_cancel",
+   "seed": 5016,
+   "params": {
+    "price": "4.80",
+    "receipts": [
+     88,
+     17
+    ],
+    "other_invoices": [
+     8
+    ],
+    "invoice_qty": 59,
+    "physical_total": 105,
+    "delay": 480,
+    "cancelled_invoices": [
+     39
+    ],
+    "cancelled_at": -80,
+    "po_qty": 140
+   }
+  },
+  {
+   "id": "T017",
+   "split": "dev_train",
+   "workflow": "stale_cancel",
+   "seed": 5017,
+   "params": {
+    "price": "45.00",
+    "receipts": [
+     47,
+     42
+    ],
+    "other_invoices": [],
+    "invoice_qty": 84,
+    "physical_total": 89,
+    "delay": 480,
+    "cancelled_invoices": [
+     29
+    ],
+    "cancelled_at": -80,
+    "po_qty": 144
+   }
+  },
+  {
+   "id": "T018",
+   "split": "dev_train",
+   "workflow": "stale_cancel",
+   "seed": 5018,
+   "params": {
+    "price": "12.50",
+    "receipts": [
+     74,
+     35
+    ],
+    "other_invoices": [
+     10
+    ],
+    "invoice_qty": 98,
+    "physical_total": 109,
+    "delay": 480,
+    "cancelled_invoices": [
+     34
+    ],
+    "cancelled_at": -80,
+    "po_qty": 198
+   }
+  },
+  {
+   "id": "T019",
+   "split": "dev_train",
+   "workflow": "stale_cancel",
+   "seed": 5019,
+   "params": {
+    "price": "45.00",
+    "receipts": [
+     89,
+     46
+    ],
+    "other_invoices": [
+     4
+    ],
+    "invoice_qty": 110,
+    "physical_total": 135,
+    "delay": 480,
+    "cancelled_invoices": [
+     38
+    ],
+    "cancelled_at": -80,
+    "po_qty": 182
+   }
+  },
+  {
+   "id": "T020",
+   "split": "dev_train",
+   "workflow": "stale_cancel",
+   "seed": 5020,
+   "params": {
+    "price": "45.00",
+    "receipts": [
+     90,
+     40
+    ],
+    "other_invoices": [
+     8
+    ],
+    "invoice_qty": 112,
+    "physical_total": 130,
+    "delay": 480,
+    "cancelled_invoices": [
+     33
+    ],
+    "cancelled_at": -80,
+    "po_qty": 208
+   }
+  },
+  {
+   "id": "T021",
+   "split": "dev_train",
+   "workflow": "stale_cancel",
+   "seed": 5021,
+   "params": {
+    "price": "18.40",
+    "receipts": [
+     41,
+     24
+    ],
+    "other_invoices": [
+     8
+    ],
+    "invoice_qty": 53,
+    "physical_total": 65,
+    "delay": 480,
+    "cancelled_invoices": [
+     19
+    ],
+    "cancelled_at": -80,
+    "po_qty": 122
+   }
+  },
+  {
+   "id": "T022",
+   "split": "dev_train",
+   "workflow": "stale_cancel",
+   "seed": 5022,
+   "params": {
+    "price": "16.75",
+    "receipts": [
+     58,
+     24
+    ],
+    "other_invoices": [
+     10
+    ],
+    "invoice_qty": 58,
+    "physical_total": 82,
+    "delay": 480,
+    "cancelled_invoices": [
+     15
+    ],
+    "cancelled_at": -80,
+    "po_qty": 143
+   }
+  },
+  {
+   "id": "T023",
+   "split": "dev_train",
+   "workflow": "stale_cancel",
+   "seed": 5023,
+   "params": {
+    "price": "31.25",
+    "receipts": [
+     74,
+     52
+    ],
+    "other_invoices": [
+     4
+    ],
+    "invoice_qty": 121,
+    "physical_total": 126,
+    "delay": 480,
+    "cancelled_invoices": [
+     36
+    ],
+    "cancelled_at": -80,
+    "po_qty": 219
+   }
+  },
+  {
+   "id": "T024",
+   "split": "dev_train",
+   "workflow": "stale_cancel",
+   "seed": 5024,
+   "params": {
+    "price": "45.00",
+    "receipts": [
+     44,
+     60
+    ],
+    "other_invoices": [
+     1
+    ],
+    "invoice_qty": 95,
+    "physical_total": 104,
+    "delay": 480,
+    "cancelled_invoices": [
+     40
+    ],
+    "cancelled_at": -80,
+    "po_qty": 173
+   }
+  },
+  {
+   "id": "T025",
+   "split": "dev_train",
+   "workflow": "stale_cancel",
+   "seed": 5025,
+   "params": {
+    "price": "45.00",
+    "receipts": [
+     39,
+     24
+    ],
+    "other_invoices": [
+     7
+    ],
+    "invoice_qty": 53,
+    "physical_total": 63,
+    "delay": 480,
+    "cancelled_invoices": [
+     22
+    ],
+    "cancelled_at": -80,
+    "po_qty": 138
+   }
+  },
+  {
+   "id": "T026",
+   "split": "dev_train",
+   "workflow": "release_after_posting",
+   "seed": 5026,
+   "params": {
+    "price": "4.80",
+    "receipts": [
+     75,
+     33
+    ],
+    "other_invoices": [],
+    "invoice_qty": 121,
+    "physical_total": 126,
+    "delay": 240,
+    "po_qty": 151
+   }
+  },
+  {
+   "id": "T027",
+   "split": "dev_train",
+   "workflow": "release_after_posting",
+   "seed": 5027,
+   "params": {
+    "price": "7.35",
+    "receipts": [
+     45,
+     27
+    ],
+    "other_invoices": [
+     16
+    ],
+    "invoice_qty": 76,
+    "physical_total": 100,
+    "delay": 960,
+    "po_qty": 106
+   }
+  },
+  {
+   "id": "T028",
+   "split": "dev_train",
+   "workflow": "release_after_posting",
+   "seed": 5028,
+   "params": {
+    "price": "4.80",
+    "receipts": [
+     39,
+     58
+    ],
+    "other_invoices": [
+     11
+    ],
+    "invoice_qty": 89,
+    "physical_total": 101,
+    "delay": 480,
+    "po_qty": 140
+   }
+  },
+  {
+   "id": "T029",
+   "split": "dev_train",
+   "workflow": "release_after_posting",
+   "seed": 5029,
+   "params": {
+    "price": "12.50",
+    "receipts": [
+     38,
+     37
+    ],
+    "other_invoices": [],
+    "invoice_qty": 88,
+    "physical_total": 93,
+    "delay": 720,
+    "po_qty": 101
+   }
+  },
+  {
+   "id": "T030",
+   "split": "dev_train",
+   "workflow": "release_after_posting",
+   "seed": 5030,
+   "params": {
+    "price": "4.80",
+    "receipts": [
+     32
+    ],
+    "other_invoices": [],
+    "invoice_qty": 48,
+    "physical_total": 50,
+    "delay": 240,
+    "po_qty": 76
+   }
+  },
+  {
+   "id": "T031",
+   "split": "dev_train",
+   "workflow": "release_after_posting",
+   "seed": 5031,
+   "params": {
+    "price": "9.99",
+    "receipts": [
+     81,
+     33
+    ],
+    "other_invoices": [
+     30
+    ],
+    "invoice_qty": 86,
+    "physical_total": 125,
+    "delay": 480,
+    "po_qty": 160
+   }
+  },
+  {
+   "id": "T032",
+   "split": "dev_train",
+   "workflow": "release_after_posting",
+   "seed": 5032,
+   "params": {
+    "price": "9.99",
+    "receipts": [
+     90
+    ],
+    "other_invoices": [
+     12
+    ],
+    "invoice_qty": 95,
+    "physical_total": 115,
+    "delay": 960,
+    "po_qty": 166
+   }
+  },
+  {
+   "id": "T033",
+   "split": "dev_train",
+   "workflow": "release_after_posting",
+   "seed": 5033,
+   "params": {
+    "price": "7.35",
+    "receipts": [
+     71,
+     46
+    ],
+    "other_invoices": [],
+    "invoice_qty": 123,
+    "physical_total": 124,
+    "delay": 240,
+    "po_qty": 175
+   }
+  },
+  {
+   "id": "T034",
+   "split": "dev_train",
+   "workflow": "release_after_posting",
+   "seed": 5034,
+   "params": {
+    "price": "31.25",
+    "receipts": [
+     25
+    ],
+    "other_invoices": [
+     6
+    ],
+    "invoice_qty": 25,
+    "physical_total": 40,
+    "delay": 720,
+    "po_qty": 57
+   }
+  },
+  {
+   "id": "T035",
+   "split": "dev_train",
+   "workflow": "release_after_posting",
+   "seed": 5035,
+   "params": {
+    "price": "9.99",
+    "receipts": [
+     86,
+     47
+    ],
+    "other_invoices": [],
+    "invoice_qty": 135,
+    "physical_total": 143,
+    "delay": 720,
+    "po_qty": 160
+   }
+  },
+  {
+   "id": "T036",
+   "split": "dev_train",
+   "workflow": "release_after_posting",
+   "seed": 5036,
+   "params": {
+    "price": "16.75",
+    "receipts": [
+     36,
+     32
+    ],
+    "other_invoices": [],
+    "invoice_qty": 88,
+    "physical_total": 90,
+    "delay": 960,
+    "po_qty": 134
+   }
+  },
+  {
+   "id": "T037",
+   "split": "dev_train",
+   "workflow": "release_after_posting",
+   "seed": 5037,
+   "params": {
+    "price": "9.99",
+    "receipts": [
+     59,
+     54
+    ],
+    "other_invoices": [
+     25
+    ],
+    "invoice_qty": 95,
+    "physical_total": 128,
+    "delay": 480,
+    "po_qty": 132
+   }
+  },
+  {
+   "id": "T038",
+   "split": "dev_train",
+   "workflow": "keep_blocked",
+   "seed": 5038,
+   "params": {
+    "price": "12.50",
+    "receipts": [
+     35,
+     34
+    ],
+    "other_invoices": [
+     16
+    ],
+    "invoice_qty": 65,
+    "physical_total": 69,
+    "delay": 480,
+    "po_qty": 112
+   }
+  },
+  {
+   "id": "T039",
+   "split": "dev_train",
+   "workflow": "keep_blocked",
+   "seed": 5039,
+   "params": {
+    "price": "12.50",
+    "receipts": [
+     52,
+     46
+    ],
+    "other_invoices": [
+     24
+    ],
+    "invoice_qty": 78,
+    "physical_total": 98,
+    "delay": 960,
+    "po_qty": 160
+   }
+  },
+  {
+   "id": "T040",
+   "split": "dev_train",
+   "workflow": "keep_blocked",
+   "seed": 5040,
+   "params": {
+    "price": "31.25",
+    "receipts": [
+     22,
+     28
+    ],
+    "other_invoices": [
+     6
+    ],
+    "invoice_qty": 62,
+    "physical_total": 50,
+    "delay": 720,
+    "po_qty": 78
+   }
+  },
+  {
+   "id": "T041",
+   "split": "dev_train",
+   "workflow": "keep_blocked",
+   "seed": 5041,
+   "params": {
+    "price": "20.00",
+    "receipts": [
+     68,
+     29
+    ],
+    "other_invoices": [],
+    "invoice_qty": 114,
+    "physical_total": 97,
+    "delay": 480,
+    "po_qty": 133
+   }
+  },
+  {
+   "id": "T042",
+   "split": "dev_train",
+   "workflow": "keep_blocked",
+   "seed": 5042,
+   "params": {
+    "price": "7.35",
+    "receipts": [
+     27,
+     27
+    ],
+    "other_invoices": [
+     6
+    ],
+    "invoice_qty": 58,
+    "physical_total": 54,
+    "delay": 480,
+    "po_qty": 109
+   }
+  },
+  {
+   "id": "T043",
+   "split": "dev_train",
+   "workflow": "keep_blocked",
+   "seed": 5043,
+   "params": {
+    "price": "12.50",
+    "receipts": [
+     69
+    ],
+    "other_invoices": [
+     5
+    ],
+    "invoice_qty": 68,
+    "physical_total": 69,
+    "delay": 720,
+    "po_qty": 85
+   }
+  },
+  {
+   "id": "T044",
+   "split": "dev_train",
+   "workflow": "keep_blocked",
+   "seed": 5044,
+   "params": {
+    "price": "45.00",
+    "receipts": [
+     78,
+     30
+    ],
+    "other_invoices": [
+     27
+    ],
+    "invoice_qty": 99,
+    "physical_total": 108,
+    "delay": 240,
+    "po_qty": 157
+   }
+  },
+  {
+   "id": "T045",
+   "split": "dev_train",
+   "workflow": "keep_blocked",
+   "seed": 5045,
+   "params": {
+    "price": "18.40",
+    "receipts": [
+     81,
+     32
+    ],
+    "other_invoices": [
+     14
+    ],
+    "invoice_qty": 111,
+    "physical_total": 113,
+    "delay": 720,
+    "po_qty": 150
+   }
+  },
+  {
+   "id": "T046",
+   "split": "dev_train",
+   "workflow": "keep_blocked",
+   "seed": 5046,
+   "params": {
+    "price": "18.40",
+    "receipts": [
+     31,
+     48
+    ],
+    "other_invoices": [],
+    "invoice_qty": 82,
+    "physical_total": 79,
+    "delay": 720,
+    "po_qty": 124
+   }
+  },
+  {
+   "id": "T047",
+   "split": "dev_train",
+   "workflow": "keep_blocked",
+   "seed": 5047,
+   "params": {
+    "price": "4.80",
+    "receipts": [
+     48,
+     13
+    ],
+    "other_invoices": [],
+    "invoice_qty": 65,
+    "physical_total": 61,
+    "delay": 240,
+    "po_qty": 89
+   }
+  },
+  {
+   "id": "T048",
+   "split": "dev_train",
+   "workflow": "pending",
+   "seed": 5048,
+   "params": {
+    "price": "31.25",
+    "receipts": [
+     72
+    ],
+    "other_invoices": [],
+    "invoice_qty": 74,
+    "physical_total": 72,
+    "delay": null,
+    "po_qty": 104
+   }
+  },
+  {
+   "id": "T049",
+   "split": "dev_train",
+   "workflow": "pending",
+   "seed": 5049,
+   "params": {
+    "price": "18.40",
+    "receipts": [
+     72,
+     20
+    ],
+    "other_invoices": [],
+    "invoice_qty": 102,
+    "physical_total": 92,
+    "delay": null,
+    "po_qty": 162
+   }
+  },
+  {
+   "id": "T050",
+   "split": "dev_train",
+   "workflow": "pending",
+   "seed": 5050,
+   "params": {
+    "price": "31.25",
+    "receipts": [
+     85
+    ],
+    "other_invoices": [
+     18
+    ],
+    "invoice_qty": 73,
+    "physical_total": 85,
+    "delay": null,
+    "po_qty": 125
+   }
+  },
+  {
+   "id": "E051",
+   "split": "dev_eval",
+   "workflow": "release_after_posting",
+   "seed": 5051,
+   "params": {
+    "price": "16.75",
+    "receipts": [
+     81,
+     57
+    ],
+    "other_invoices": [],
+    "invoice_qty": 144,
+    "physical_total": 145,
+    "delay": 720,
+    "po_qty": 203
+   }
+  },
+  {
+   "id": "E052",
+   "split": "dev_eval",
+   "workflow": "release_after_posting",
+   "seed": 5052,
+   "params": {
+    "price": "12.50",
+    "receipts": [
+     35,
+     12
+    ],
+    "other_invoices": [],
+    "invoice_qty": 57,
+    "physical_total": 61,
+    "delay": 240,
+    "po_qty": 103
+   }
+  },
+  {
+   "id": "E053",
+   "split": "dev_eval",
+   "workflow": "keep_blocked",
+   "seed": 5053,
+   "params": {
+    "price": "12.50",
+    "receipts": [
+     67,
+     50
+    ],
+    "other_invoices": [
+     16
+    ],
+    "invoice_qty": 106,
+    "physical_total": 117,
+    "delay": 960,
+    "po_qty": 143
+   }
+  },
+  {
+   "id": "E054",
+   "split": "dev_eval",
+   "workflow": "keep_blocked",
+   "seed": 5054,
+   "params": {
+    "price": "20.00",
+    "receipts": [
+     60
+    ],
+    "other_invoices": [],
+    "invoice_qty": 66,
+    "physical_total": 60,
+    "delay": 240,
+    "po_qty": 85
+   }
+  },
+  {
+   "id": "E055",
+   "split": "dev_eval",
+   "workflow": "pending",
+   "seed": 5055,
+   "params": {
+    "price": "12.50",
+    "receipts": [
+     27,
+     29
+    ],
+    "other_invoices": [],
+    "invoice_qty": 62,
+    "physical_total": 56,
+    "delay": null,
+    "po_qty": 75
+   }
+  }
+ ]
+}
